@@ -1,0 +1,58 @@
+\RequirePackage[l2tabu,orthodox]{nag}
+
+% TODO: decide if one-sided/two-sided
+%\documentclass[headsepline,footsepline,footinclude=false,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc,BCOR=12mm,DIV=12]{scrbook} % two-sided
+\documentclass[headsepline,footsepline,footinclude=false,oneside,fontsize=11pt,paper=a4,listof=totoc,bibliography=totoc]{scrbook} % one-sided
+
+% TODO: change citation style in settings
+\input{settings}
+
+\newcommand*{\getUniversity}{Technische Universität München}
+\newcommand*{\getFaculty}{Department of Informatics}
+\newcommand*{\getTitle}{Android-based camera-based traffic sign detection in driving simulator data with OpenCV}
+\newcommand*{\getTitleGer}{Android-basierte Kamera-gestützte Verkehrschilder-Erkennung in Fahrsimulator-Daten mit OpenCV}
+\newcommand*{\getAuthor}{Tobias Bauer}
+\newcommand*{\getDoctype}{Bachelor's Thesis in Informatics}
+\newcommand*{\getSupervisor}{Prof. Dr. Uwe Baumgarten}
+\newcommand*{\getAdvisor}{Sebastian Eckl, M.Sc.}
+\newcommand*{\getSubmissionDate}{15.02.2018}
+\newcommand*{\getSubmissionLocation}{Munich}
+
+\begin{document}
+
+% Set page numbering to avoid "destination with the same identifier has been already used" warning for cover page.
+% (see https://en.wikibooks.org/wiki/LaTeX/Hyperlinks#Problems_with_Links_and_Pages).
+\pagenumbering{alph}
+\input{pages/cover}
+
+\frontmatter{}
+
+\input{pages/title}
+\input{pages/disclaimer}
+\input{pages/acknowledgements}
+\input{pages/abstract}
+\microtypesetup{protrusion=false}
+\tableofcontents{}
+\microtypesetup{protrusion=true}
+\mainmatter{}
+
+
+
+\input{chapters/01_introduction}
+\input{chapters/02_motivation}
+\input{chapters/03_related_work}
+\input{chapters/04_neural_networks}
+\input{chapters/05_concept}
+\input{chapters/06_integration_into_existing_app}
+\input{chapters/07_implementation}
+\input{chapters/08_evaluation}
+
+\appendix{}
+
+\microtypesetup{protrusion=false}
+\listoffigures{}
+\listoftables{}
+\microtypesetup{protrusion=true}
+\printbibliography{}
+
+\end{document}
