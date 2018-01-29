@@ -34,34 +34,38 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Concept}{5}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Feature Extraction}{6}{section.5.1}
+\contentsline {section}{\numberline {5.1}Feature Extraction}{5}{section.5.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.1}Circle Hough Transform}{6}{subsection.5.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Classification}{6}{section.5.2}
+\contentsline {subsubsection}{\nonumberline Fixed Radius}{6}{section*.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Integration into existing App}{7}{chapter.6}
+\contentsline {subsubsection}{\nonumberline Variable Radius}{7}{section*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Overview and existing functions of App}{7}{section.6.1}
+\contentsline {section}{\numberline {5.2}Classification}{7}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Implementation}{9}{chapter.7}
+\contentsline {chapter}{\numberline {6}Integration into existing App}{8}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Android Studio}{9}{section.7.1}
+\contentsline {section}{\numberline {6.1}Overview and existing functions of App}{8}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Native Development Kit}{9}{section.7.2}
+\contentsline {chapter}{\numberline {7}Implementation}{10}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Image processing (Opencv)}{9}{section.7.3}
+\contentsline {section}{\numberline {7.1}Android Studio}{10}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Neural Net Classification}{9}{section.7.4}
+\contentsline {section}{\numberline {7.2}Native Development Kit}{10}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.4.1}Building Neural Network}{9}{subsection.7.4.1}
+\contentsline {section}{\numberline {7.3}Image processing (Opencv)}{10}{section.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Evaluation}{10}{chapter.8}
+\contentsline {section}{\numberline {7.4}Neural Net Classification}{10}{section.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Section}{10}{section.8.1}
+\contentsline {subsection}{\numberline {7.4.1}Building Neural Network}{10}{subsection.7.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1.1}Subsection}{10}{subsection.8.1.1}
+\contentsline {chapter}{\numberline {8}Evaluation}{11}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{11}{chapter*.6}
+\contentsline {section}{\numberline {8.1}Section}{11}{section.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{12}{chapter*.7}
+\contentsline {subsection}{\numberline {8.1.1}Subsection}{11}{subsection.8.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Figures}{12}{chapter*.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Tables}{13}{chapter*.10}
