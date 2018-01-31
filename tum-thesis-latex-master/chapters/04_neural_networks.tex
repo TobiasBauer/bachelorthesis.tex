@@ -50,6 +50,28 @@ After forming an output signal $y_{k}$ (\ref{eqn:dendrites_sum}), the Axon can f
 \end{equation}
 
 \subsection{From Neurons To Networks}
-
+Feeding a signal or data through a Neuron and transporting resulting output further to the next Neurons basically forms a Network. Now as the major purpose of Artificial Neural Networks are to process any sort of data given to the ANN and produce some sort of output. Consequently a model needs to have two different kinds of Interfaces for importing and exporting data. \newline
+The input part comprises a so called Input Layer, containing several Neurons that can be fed with data from outside of the network. Respectively there is the other end of the ANN, that produces a result after the calculation, performed by our net. Every Neurons outputting data outside of the net is called output Neuron, these Neurons together form the Output Layer. The remaining Neurons between input and output are hidden Neurons, they can be grouped in one or more hidden layers, depending on the architecture, normally each Neuron of a layer $l_{n}$ has a connection to every Neuron of it's subsequent layer $l_{n+1}$.
 
 \section{Common Types}
+There are a lot of different types of Neural Networks, but digging deeper into the matter would definitely go beyond the scope of this discussion, so i am going to limit this section to describe more or less shallowly only the two main types of ANNs.\newline
+The type of architecture, which I used in my project is called Feed Forward Neural Network, in this approach data is only fed in one direction, meaning from the Input Layer successively to the Hidden Layer(s) and at some point to the Output Layer, forming no cycles or loops. \newline
+In contrast to this Recurrent Neural Networks are slightly more complex than FFNNs, because they add the directed cycles component, therefor these networks have internal memory to a certain extent, that is capable of forming dynamic temporal behavior.
+
+
+\begin{figure}[H]
+	
+	\minipage{0.5\textwidth}
+	\includegraphics[height=4cm]{images/feed_forward_neural_net.png}
+	\caption{Feed Forward Neural Network}
+	\label{fig:ff_neural_net}
+	\endminipage
+	\hfill
+	\minipage{0.65\textwidth}
+	\includegraphics[height=4cm]{images/recurrent_neural_net.png}
+	\caption{Recurrent Neural Network}
+	\label{fig:rec_neural_net}
+	\endminipage
+\end{figure}
+
+
