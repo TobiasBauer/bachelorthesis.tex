@@ -29,8 +29,9 @@ The Circle Hough Transform is a special case of the Hough transform, which deter
 
 \subsubsection{Fixed Radius}
 First of all our image is being Converted to a binary image  (Figure: \ref{fig:binary_image}), further it is being processed via edge detection to determine every visible edge contained in the photo (Figure: \ref{fig:edge_detected_image}).
-After this, the actual core of the Algorithm is being executed. Therefore an Accumulator Matrix is initialized with zeros. As the radius of the circle is considered constant, every ring in the picture can solely be described by 
-Above-mentioned Matrix can be pictured as a grid over the original image, where single pixels can be combined to bigger baskets. Now every basket or pixel of a detected edge (Figure: \ref{fig:edge_detected_image}) becomes the center of a new circle, with given fixed radius. Now each pixel that got "cut" by the circle gets incremented or up-voted in corresponding Accumulator Matrix (Figure \ref{fig:voted_image}). The baskets or pixels with the highest votes can be considered centers of circles.\newline
+After this, the actual core of the Algorithm is being executed. Therefore an Accumulator Matrix is initialized with zeros. As the radius of the circle is considered constant, every ring in the picture can solely be described by two variables (x and y coordinate), therefore the helping Accumulator Matrix is 2-Dimensional.
+Above-mentioned Matrix can be pictured as a grid over the original image, where single pixels can be combined to bigger baskets. Now every basket or pixel of a detected edge (Figure: \ref{fig:edge_detected_image}) becomes the center of a new circle, with given fixed radius. Now each pixel that got "cut" by the circle gets incremented or up-voted in corresponding Accumulator Matrix (Figure \ref{fig:voted_image}). The baskets or pixels with the highest votes can be considered centers of circles.
+\newline
 
 \begin{figure}[H]
 	\minipage{0.32\textwidth}
@@ -49,7 +50,8 @@ Above-mentioned Matrix can be pictured as a grid over the original image, where 
 
 \subsubsection{Variable Radius}
 A circle on a two-dimensional plane can be described by following formula: \[ (x - a)^2 + (y - b)^2 = r^2  \]
-, meaning the circle can be represented by the parameters (a, b, r), where "a" and "b" are the "x" respectively "y" value representing the center of the circle, whereas "r" stores the radius of given ring. 
+, meaning the circle can be represented by the parameters (a, b, r), where "a" and "b" are the 2-Dimensional coordinate values representing the center of the circle, whereas the variable "r" provides the radius of given ring. \newline
+The preprocessing (Figure: \ref{fig:binary_image} and Figure: \ref{fig:edge_detected_image}) is identical to the fixed-radius Circle Hough Transform, but what makes the difference now is, our Accumulation Matrix gains another Dimension, from having variable radii, therefore it is 3-Dimensional now. Usually you specify a range for the radiuses to make things a little easier. Now the voting happens exactly as it would with algorithm described before, but the difference now is that it has to be done with every radius in the before determined range. The center of the potential circles are now the ones with the most voted radii in all radius-dimensions. The desired radius of a point is the radius with the highest vote.
 
 \section{Classification}
 Preceding stage delivers an image of fixed size, that needs to be categorized into one out of 10 groups, these are Speed limits "10km/h", "20km/h",..., "90km/h" and "no sign". To gain these information about the sub-image of the original image, I decided to apply a Feed Forward Deep Neural Network. Said Neural Network is fed each individual pixel, provided by the ROI to its input neurons, the trained Model then outputs a prediction on what class the input picture might belong to. 

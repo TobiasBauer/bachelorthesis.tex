@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.29)  29 JAN 2018 18:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.29)  31 JAN 2018 13:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -459,21 +459,6 @@ Package: babel 2017/06/29 3.12 The Babel package
 (/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
 File: switch.def 2017/06/29 3.12 Babel switching mechanism
 )
-
-! Package babel Error: Unknown option `ngerman'. Either you misspelled it
-(babel)                or the language definition file ngerman.ldf was not foun
-d.
-
-See the babel package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.389 \ProcessOptions*
-                      
-Valid options are: shorthands=, KeepShorthandsActive,
-activeacute, activegrave, noconfigs, safe=, main=, math=
-headfoot=, strings=, config=, hyphenmap=, or a language name.
-
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/american.ldf
 Language: american 2017/06/06 v3.3r English support from the babel system
 
@@ -1766,8 +1751,99 @@ Package scrhack Info: redefining \newfloat on input line 161.
 Package scrhack Info: redefining \listof on input line 161.
 Package scrhack Info: undefining \float@addtolists on input line 161.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2017/05/24 v1.19 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count428
+\calc@Bcount=\count429
+\calc@Adimen=\dimen284
+\calc@Bdimen=\dimen285
+\calc@Askip=\skip81
+\calc@Bskip=\skip82
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count430
+\calc@Cskip=\skip83
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/11/05 v2.16a AMS math features
+\@mathmargin=\skip84
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks40
+\ex@=\dimen286
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen287
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count431
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count432
+\leftroot@=\count433
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count434
+\DOTSCASE@=\count435
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box60
+\strutbox@=\box61
+\big@size=\dimen288
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count436
+\c@MaxMatrixCols=\count437
+\dotsspace@=\muskip17
+\c@parentequation=\count438
+\dspbrk@lvl=\count439
+\tag@help=\toks41
+\row@=\count440
+\column@=\count441
+\maxfields@=\count442
+\andhelp@=\toks42
+\eqnshift@=\dimen289
+\alignsep@=\dimen290
+\tagshift@=\dimen291
+\tagwidth@=\dimen292
+\totwidth@=\dimen293
+\lineht@=\dimen294
+\@envbody=\toks43
+\multlinegap=\skip85
+\multlinetaggap=\skip86
+\mathdisplay@stack=\toks44
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count443
+\l_MT_multwidth_dim=\dimen295
+\origjot=\skip87
+\l_MT_shortvdotswithinadjustabove_dim=\dimen296
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen297
+\l_MT_above_intertext_sep=\dimen298
+\l_MT_below_intertext_sep=\dimen299
+\l_MT_above_shortintertext_sep=\dimen300
+\l_MT_below_shortintertext_sep=\dimen301
+)
 Package tocbasic Info: defining new hook before heading of `toc' on input line 
-35.
+36.
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1811,31 +1887,30 @@ Package nag Info: Command \RaggedLeft not defined, skipping amendment on input
 line 21.
 Package nag Info: Command \RaggedRight not defined, skipping amendment on input
  line 21.
-\big@size=\dimen284
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
 \openout4 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' not found.
-
-No file main.bbl.
+Package biblatex Info: ... file 'main.bbl' found.
+ (./main.bbl)
 Package biblatex Info: Reference section=0 on input line 21.
 Package biblatex Info: Reference segment=0 on input line 21.
+
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count428
-\scratchdimen=\dimen285
-\scratchbox=\box60
-\nofMPsegments=\count429
-\nofMParguments=\count430
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count431
-\MPscratchDim=\dimen286
-\MPnumerator=\count432
-\makeMPintoPDFobject=\count433
-\everyMPtoPDFconversion=\toks41
+\scratchcounter=\count444
+\scratchdimen=\dimen302
+\scratchbox=\box62
+\nofMPsegments=\count445
+\nofMParguments=\count446
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count447
+\MPscratchDim=\dimen303
+\MPnumerator=\count448
+\makeMPintoPDFobject=\count449
+\everyMPtoPDFconversion=\toks46
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1853,7 +1928,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count434
+\c@lstlisting=\count450
 Package scrhack Info: undefining \float@addtolists on input line 21.
 
 ABD: EveryShipout initializing macros
@@ -1877,7 +1952,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box61
+\AtBeginShipoutBox=\box63
 Package hyperref Info: Link coloring OFF on input line 21.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1886,7 +1961,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count435
+\c@section@level=\count451
 )
 LaTeX Info: Redefining \ref on input line 21.
 LaTeX Info: Redefining \pageref on input line 21.
@@ -1908,18 +1983,8 @@ LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <20.74> not available
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./pages/title.tex
-
-! Package babel Error: You haven't defined the language ngerman yet.
-
-See the babel package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.23 ... \foreignlanguage{ngerman}{\getTitleGer{}}
-                                                  }
-Your command will be ignored, type <return> to proceed
-
 LaTeX Font Info:    Try loading font information for OT1+pplx on input line 26.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
@@ -2012,98 +2077,113 @@ LaTeX Warning: Citation 'latex' on page 3 undefined on input line 7.
 
 ]
 chapter 4.
+<images/Fig-1-Analogy-between-artificial-neuron-and-biological-neuron.png, id=2
+18, 481.8pt x 314.17375pt>
+File: images/Fig-1-Analogy-between-artificial-neuron-and-biological-neuron.png 
+Graphic file (type png)
+<use images/Fig-1-Analogy-between-artificial-neuron-and-biological-neuron.png>
+Package pdftex.def Info: images/Fig-1-Analogy-between-artificial-neuron-and-bio
+logical-neuron.png  used on input line 11. on input line 11.
+Package pdftex.def Info: Requested size: 196.58061pt x 128.18407pt on input lin
+e 11.
+<images/artificial_neuron.png, id=219, 273.02pt x 187.70125pt>
+File: images/artificial_neuron.png Graphic file (type png)
+<use images/artificial_neuron.png>
+Package pdftex.def Info: images/artificial_neuron.png  used on input line 16. o
+n input line 16.
+Package pdftex.def Info: Requested size: 167.29967pt x 115.01886pt on input lin
+e 16.
+[4
 
-LaTeX Warning: Citation 'latex' on page 4 undefined on input line 7.
 
-) (./chapters/05_concept.tex [4
-
-
-]
+ <./images/Fig-1-Analogy-between-artificial-neuron-and-biological-neuron.png (P
+NG copy)> <./images/artificial_neuron.png>]) (./chapters/05_concept.tex
+[5]
 chapter 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--7
 
  []
 
-<images/101.jpg, id=218, 267.8005pt x 308.352pt>
+<images/101.jpg, id=246, 267.8005pt x 308.352pt>
 File: images/101.jpg Graphic file (type jpg)
 <use images/101.jpg>
 Package pdftex.def Info: images/101.jpg  used on input line 11. on input line 1
 1.
 Package pdftex.def Info: Requested size: 138.02509pt x 158.92302pt on input lin
 e 11.
-<images/filteredimg.png, id=219, 502.12593pt x 578.16pt>
+<images/filteredimg.png, id=247, 502.12593pt x 578.16pt>
 File: images/filteredimg.png Graphic file (type png)
 <use images/filteredimg.png>
 Package pdftex.def Info: images/filteredimg.png  used on input line 15. on inpu
 t line 15.
 Package pdftex.def Info: Requested size: 138.02509pt x 158.92831pt on input lin
 e 15.
-<images/detectedimg.png, id=220, 502.12593pt x 578.16pt>
+<images/detectedimg.png, id=248, 502.12593pt x 578.16pt>
 File: images/detectedimg.png Graphic file (type png)
 <use images/detectedimg.png>
 Package pdftex.def Info: images/detectedimg.png  used on input line 19. on inpu
 t line 19.
 Package pdftex.def Info: Requested size: 138.02509pt x 158.92831pt on input lin
 e 19.
-[5
+[6
 
 
  <./images/101.jpg> <./images/filteredimg.png> <./images/detectedimg.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 31--34
+Underfull \hbox (badness 10000) in paragraph at lines 31--35
 
  []
 
-<images/circles.jpg, id=232, 321.2pt x 240.9pt>
+<images/circles.jpg, id=261, 321.2pt x 240.9pt>
 File: images/circles.jpg Graphic file (type jpg)
 <use images/circles.jpg>
-Package pdftex.def Info: images/circles.jpg  used on input line 37. on input li
-ne 37.
+Package pdftex.def Info: images/circles.jpg  used on input line 38. on input li
+ne 38.
 Package pdftex.def Info: Requested size: 133.84483pt x 100.387pt on input line 
-37.
-<images/circle_edges.jpg, id=233, 321.2pt x 240.9pt>
+38.
+<images/circle_edges.jpg, id=262, 321.2pt x 240.9pt>
 File: images/circle_edges.jpg Graphic file (type jpg)
 <use images/circle_edges.jpg>
-Package pdftex.def Info: images/circle_edges.jpg  used on input line 41. on inp
-ut line 41.
+Package pdftex.def Info: images/circle_edges.jpg  used on input line 42. on inp
+ut line 42.
 Package pdftex.def Info: Requested size: 133.84483pt x 100.387pt on input line 
-41.
-<images/hough_circle.jpg, id=234, 321.2pt x 240.9pt>
+42.
+<images/hough_circle.jpg, id=263, 321.2pt x 240.9pt>
 File: images/hough_circle.jpg Graphic file (type jpg)
 <use images/hough_circle.jpg>
-Package pdftex.def Info: images/hough_circle.jpg  used on input line 45. on inp
-ut line 45.
+Package pdftex.def Info: images/hough_circle.jpg  used on input line 46. on inp
+ut line 46.
 Package pdftex.def Info: Requested size: 133.84483pt x 100.387pt on input line 
-45.
-[6 <./images/circles.jpg> <./images/circle_edges.jpg> <./images/hough_circle.jp
-g>]) (./chapters/06_integration_into_existing_app.tex [7]
+46.
+[7]) (./chapters/06_integration_into_existing_app.tex [8 <./images/circles.jpg>
+ <./images/circle_edges.jpg> <./images/hough_circle.jpg>]
 chapter 6.
-<images/screenshot_main.png, id=251, 721.69624pt x 1059.96pt>
+<images/screenshot_main.png, id=279, 721.69624pt x 1059.96pt>
 File: images/screenshot_main.png Graphic file (type png)
 <use images/screenshot_main.png>
 Package pdftex.def Info: images/screenshot_main.png  used on input line 13. on 
 input line 13.
 Package pdftex.def Info: Requested size: 138.02509pt x 202.70456pt on input lin
 e 13.
-<images/screenshot_load_image.png, id=252, 721.69624pt x 1056.94875pt>
+<images/screenshot_load_image.png, id=280, 721.69624pt x 1056.94875pt>
 File: images/screenshot_load_image.png Graphic file (type png)
 <use images/screenshot_load_image.png>
 Package pdftex.def Info: images/screenshot_load_image.png  used on input line 1
 7. on input line 17.
 Package pdftex.def Info: Requested size: 138.02509pt x 202.1287pt on input line
  17.
-<images/screenshot_about.png, id=253, 720.6925pt x 1057.9525pt>
+<images/screenshot_about.png, id=281, 720.6925pt x 1057.9525pt>
 File: images/screenshot_about.png Graphic file (type png)
 <use images/screenshot_about.png>
 Package pdftex.def Info: images/screenshot_about.png  used on input line 21. on
  input line 21.
 Package pdftex.def Info: Requested size: 138.02509pt x 202.61122pt on input lin
 e 21.
-[8
+) (./chapters/07_implementation.tex [9
 
 
-]) (./chapters/07_implementation.tex [9 <./images/screenshot_main.png> <./image
-s/screenshot_load_image.png> <./images/screenshot_about.png>]
+ <./images/screenshot_main.png> <./images/screenshot_load_image.png> <./images/
+screenshot_about.png>]
 chapter 7.
 ) (./chapters/08_evaluation.tex [10
 
@@ -2113,11 +2193,14 @@ chapter 8.
 
 LaTeX Warning: Citation 'latex' on page 11 undefined on input line 7.
 
+
+LaTeX Warning: Citation 'meinkampf' on page 11 undefined on input line 7.
+
 ) [11
 
 
 ]
-Package tocbasic Info: character protrusion at lof deactivated on input line 53
+Package tocbasic Info: character protrusion at lof deactivated on input line 52
 .
  (./main.lof)
 \tf@lof=\write8
@@ -2127,7 +2210,7 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 53
 
 
 ]
-Package tocbasic Info: character protrusion at lot deactivated on input line 54
+Package tocbasic Info: character protrusion at lot deactivated on input line 53
 .
  (./main.lot)
 \tf@lot=\write9
@@ -2135,20 +2218,20 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 54
 
 
 
-LaTeX Warning: Empty bibliography on input line 56.
+LaTeX Warning: Empty bibliography on input line 55.
 
 No complaints by nag.
 [13
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D3057D896EA171466131AEBF8B3192F1;1858.
+(rerunfilecheck)             Checksum: D6D2E9BAF6F14B5F327CD850B7AB11E1;1924.
 
 
 LaTeX Warning: There were undefined references.
@@ -2166,23 +2249,26 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48453 strings out of 494307
- 1070258 string characters out of 6163504
- 1708820 words of memory out of 5000000
- 50908 multiletter control sequences out of 15000+600000
- 569368 words of font info for 152 fonts, out of 8000000 for 9000
+ 49668 strings out of 494307
+ 1088292 string characters out of 6163504
+ 1731784 words of memory out of 5000000
+ 52051 multiletter control sequences out of 15000+600000
+ 573684 words of font info for 182 fonts, out of 8000000 for 9000
  372 hyphenation exceptions out of 8191
- 77i,9n,128p,10457b,1952s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 77i,8n,128p,10457b,1959s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino
-/uplri8a.pfb>
-Output written on main.pdf (20 pages, 2968943 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mat
+hpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (20 pages, 3046974 bytes).
 PDF statistics:
- 324 PDF objects out of 1000 (max. 8388607)
- 285 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
- 26938 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 364 PDF objects out of 1000 (max. 8388607)
+ 317 compressed objects within 4 object streams
+ 65 named destinations out of 1000 (max. 500000)
+ 26956 words of extra memory for PDF output out of 29859 (max. 10000000)
 
