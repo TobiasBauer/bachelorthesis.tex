@@ -2,7 +2,7 @@
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 \chapter{Concept}\label{chapter:Concept}
 
-The task of looking at a picture and telling what is in it, is quite trivial to humans and would usually not pose a challenging task to perform, whereas it is not that simple to Computers. In order to Classify images, or more exactly the objects comprised, machines ordinarily need a certain amount of Preprocessing to extract characteristic Features. As described in chapter \ref{chapter:Related Work} it is common practice to partition the many small steps of the process in two bigger, more generalized, steps of Feature Extraction and Classification. Our targeted devices are going to be any smartphones running Android as operating system, basically the App on the device should be able to handle live input from the Camera, detecting and classifying in real time. In the following subsections I am going to break down in detail, what  methods are used and how they work. \newline
+The task of looking at a picture and telling what is in it, is quite trivial to humans and would usually not pose a challenging task to perform, whereas it is not that simple to computers. In order to classify images, or more exactly the objects comprised, machines ordinarily need a certain amount of preprocessing to extract characteristic Features. As described in chapter \ref{chapter:Related Work} it is common practice to partition the many small steps of the process in two bigger, more generalized, steps of Feature Extraction and Classification. Our targeted devices are going to be any smartphones running Android as operating system, basically the app on the device should be able to handle live input from the camera, detecting and classifying in real time. In the following subsections I am going to break down in detail, what  methods are used and how they work. \newline\newline\newline
 Komponentendiagramm\newline
 
 
@@ -25,7 +25,7 @@ Komponentendiagramm\newline
 Before we pass data through to the Classification phase, it is a reasonable step in our Program, to specify a Region Of Interest, with regard to saving some processing power. In order to specify ROIs, I took advantage of the red circle around European Speed signs, the main steps of this part are to filter every red pixel out of the original image (Figure: \ref{fig:red_filtered_image}), subsequently an algorithm checks the filtered image for circles (Figure: \ref{fig:detected_image}). Filtering red pixels from a picture is not that big of a sorcery, so i am going to skip that part for now and come back later to this in the implementation section. The real magic happens when you try to search an image for circles, therefore a common method is the Circle Hough Transform. 
 
 \subsection{Circle Hough Transform}
-The Circle Hough Transform is a special case of the Hough transform, which determines lines in an image through Edge Detection Algorithms. There are two slightly different Circle Hough Transforms, the first is only able to find circles of fixed radial size, the second is generally capable of finding Circles of any size. At first I am just going to start with the fixed radius form of the algorithm, subsequently we are going to extend that approach to a more universal algorithm.
+The Circle Hough Transform is a special case of the Hough transform, which determines lines in an image through Edge Detection Algorithms \cite{circlehough}. There are two slightly different Circle Hough Transforms, the first is only able to find circles of fixed radial size, the second is generally capable of finding Circles of any size. At first I am just going to start with the fixed radius form of the algorithm, subsequently we are going to extend that approach to a more universal algorithm.
 
 \subsubsection{Fixed Radius}
 First of all our image is being Converted to a binary image  (Figure: \ref{fig:binary_image}), further it is being processed via edge detection to determine every visible edge contained in the photo (Figure: \ref{fig:edge_detected_image}).
@@ -34,15 +34,20 @@ Above-mentioned Matrix can be pictured as a grid over the original image, where 
 \newline
 
 \begin{figure}[H]
-	\minipage{0.32\textwidth}
+	\minipage{0.4\textwidth}
 	\includegraphics[width=\linewidth]{images/circles.jpg}
 	\caption{Binary image }\label{fig:binary_image}
 	\endminipage\hfill
-	\minipage{0.32\textwidth}
+	\minipage{0.4\textwidth}
 	\includegraphics[width=\linewidth]{images/circle_edges.jpg}
 	\caption{Edge detected }\label{fig:edge_detected_image}
-	\endminipage\hfill
-	\minipage{0.32\textwidth}%
+	\endminipage\newline
+	\minipage{0.4\textwidth}%
+	\includegraphics[width=\linewidth]{images/circlehough_explanation.jpg}
+	\caption{Voting process visualized}\label{fig:circlehough_explanation}
+	\endminipage
+	\hfill
+	\minipage{0.4\textwidth}%
 	\includegraphics[width=\linewidth]{images/hough_circle.jpg}
 	\caption{Voted image }\label{fig:voted_image}
 	\endminipage

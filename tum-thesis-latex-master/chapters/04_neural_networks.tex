@@ -1,27 +1,28 @@
 % !TeX root = ../main.tex
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 \chapter{Artificial Neural Networks}\label{chapter:Related Work}
-Artificial Neural Networks, or simply Neural Networks, are certain kind of computing systems that are inspired by the functionality of Biological Neural Networks, for Example the brains of mammals'. ANNs are import representatives or techniques for modern Artificial Intelligence, although the idea of NNs is not as new as the recent hype over them, seen in the last couple years. Actually, the beginning of ANNs point back to the 1940s. These networks are basically trained by feeding data and telling them what the corresponding output should look like. So what has changed over the last couple of years, is the massive amount of new data and a general increase in computing power, these two major advantages over earlier years, may have been contributed to the new success of Artificial Neural Networks.
+Artificial Neural Networks, or simply Neural Networks, are certain kind of computing systems that are inspired by the functionality of Biological Neural Networks, for Example the brains of mammals'. ANNs are import representatives or techniques for modern Artificial Intelligence, although the idea of NNs is not as new as the recent hype over them, seen in the last couple years. Actually, the beginning of ANNs point back to the end of the 1940s, when D.O. Hebb created Hypothesis on neural plasticity \cite{hebb} and these theories where actually being executed on digital calculators by Farley an Clark in 1954 \cite{farleyclark}. Today's networks are basically trained by feeding data and telling them what the corresponding output should look like. So what has changed over the last couple of years, increasing the importance of NNs, is the massive amount of new data and a general increase in computing power[moore], these two major advantages over earlier years, may have been contributed to the new success of Artificial Neural Networks.
 
 \section{Fundamentals}
 
 \begin{figure}[H]
 	\centering
 	\minipage{0.47\textwidth}
-	\includegraphics[width=\linewidth]{images/Fig-1-Analogy-between-artificial-neuron-and-biological-neuron.png}
-	\caption{Biological and Artificial Neuron}
+	\includegraphics[height=4cm]{images/Fig-1-Analogy-between-artificial-neuron-and-biological-neuron.png}
+	\caption{Biological and Artificial Neuron \cite{analogyneurons}}
 	\label{fig:artifical_and_biological}
 	\endminipage\hfill
 	\minipage{0.4\textwidth}
-	\includegraphics[width=\linewidth]{images/artificial_neuron.png}
-	\caption{Single Artificial Neuron}
+	\includegraphics[height=4cm]{images/artificial_neuron.png}
+	\caption{Single Artificial Neuron \cite{artificialneuron}}
 	\label{fig:artificial_neuron}
 	\endminipage
 \end{figure}
 
 \subsection{Neurons}
-As already mentioned, ANNs have several things in common with Biological Neural Networks, in this Analogy, an Artificial Neuron is a simplified abstraction of a Biological Neuron, both have a cell body and incoming respectively outgoing connections, called Dendrites and Axons (Figure: \ref{fig:artifical_and_biological}). Every arriving signal over the Dendrite is first multiplied with it's corresponding weight, then added together. Be noted that $x_{0}$ is no input signal from a different Neuron, but rather is always set to 1 and is called the bias input. \newline
-After totalizing the input values, our signal is channeled through an activation- or transfer function (Figure \ref{fig:artificial_neuron}). There are several possibilities for the transformation function to choose from, which aims to handle when the Neuron produces output and when it remains silent. Another reason would be to keep the values between certain boundaries, usually it is desirable to stay in range [0;1]. Common transfer functions would be the Sigmoid- (\ref{eqn:sigmoid}) and the Heaviside Step Function (\ref{eqn:heaviside}). Coming back to previous analogy, the Sum-Operator in series connection to the Activation function form the artificial cell body.\newline 
+An artificial Neuron is a mathematic function, aimed to imitate biological Neurons.
+As already mentioned, ANNs have several things in common with Biological Neural Networks, in this Analogy, an Artificial Neuron is a simplified abstraction of a Biological Neuron, both have a cell body and incoming respectively outgoing connections, called Dendrites and Axons \cite{nntutorial}] (Figure: \ref{fig:artifical_and_biological}). Every arriving signal over the Dendrite is first multiplied with it's corresponding weight, then added together. Be noted that $x_{0}$ is no input signal from a different Neuron, but rather is a constant input of +1 and is called the bias input. \newline
+After totalizing the input values, our signal is channeled through an activation- or transfer function (Figure \ref{fig:artificial_neuron}). There are several possibilities for the transformation function to choose from, which aims to handle when the Neuron produces output and when it remains silent. Another reason would be to keep the values between certain boundaries, usually it is desirable to stay in range [0;1]. A Common transfer function would be the Sigmoid function (\ref{eqn:sigmoid}) although there are diverse other reasonable choices like the hyperbolic tangent function. Catching up with above mentioned bias, it's purpose is to shift the activation function horizontally, the corresponding weight determines how much the function is being shifted. Coming back to previous analogy, the Sum-Operator in series connection to the Activation function form the artificial cell body.\newline 
 After forming an output signal $y_{k}$ (\ref{eqn:dendrites_sum}), the Axon can fork into one or multiple branches, serving one or multiple Neurons as it's or their input dendrites, after they have been weighted by their corresponding new weights.   
 
 
@@ -40,36 +41,37 @@ After forming an output signal $y_{k}$ (\ref{eqn:dendrites_sum}), the Axon can f
 	S(x) = \frac{e^x}{e^x + 1} = \frac{1}{1 + e^{-x}}
 \end{equation} 
 
-\begin{equation}
-	\label{eqn:heaviside}
-	H(x)= 
-	\begin{cases}
-	1,& x\geq 0\\
-	0,& x < 0
-	\end{cases}
-\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{images/sigmoid.png}
+	\caption{Sigmoid function with bias weight: 5, 0, -5{\cite{sigmoid}}}
+	\label{fig:sigmoid}
+	
+\end{figure}
+
 
 \subsection{From Neurons To Networks}
 Feeding a signal or data through a Neuron and transporting resulting output further to the next Neurons basically forms a Network. Now as the major purpose of Artificial Neural Networks are to process any sort of data given to the ANN and produce some sort of output. Consequently a model needs to have two different kinds of Interfaces for importing and exporting data. \newline
 The input part comprises a so called Input Layer, containing several Neurons that can be fed with data from outside of the network. Respectively there is the other end of the ANN, that produces a result after the calculation, performed by our net. Every Neurons outputting data outside of the net is called output Neuron, these Neurons together form the Output Layer. The remaining Neurons between input and output are hidden Neurons, they can be grouped in one or more hidden layers, depending on the architecture, normally each Neuron of a layer $l_{n}$ has a connection to every Neuron of it's subsequent layer $l_{n+1}$.
 
 \section{Common Types}
-There are a lot of different types of Neural Networks, but digging deeper into the matter would definitely go beyond the scope of this discussion, so i am going to limit this section to describe more or less shallowly only the two main types of ANNs.\newline
+There are a lot of different types of Neural Networks, but digging deeper into the matter would definitely go beyond the scope of this discussion, so i am going to limit this section to describe more or less shallowly only the two main types of ANNs \cite{nntutorial}.\newline
 The type of architecture, which I used in my project is called Feed Forward Neural Network, in this approach data is only fed in one direction, meaning from the Input Layer successively to the Hidden Layer(s) and at some point to the Output Layer, forming no cycles or loops. \newline
 In contrast to this Recurrent Neural Networks are slightly more complex than FFNNs, because they add the directed cycles component, therefor these networks have internal memory to a certain extent, that is capable of forming dynamic temporal behavior.
 
 
 \begin{figure}[H]
 	
-	\minipage{0.5\textwidth}
+	\minipage{0.45\textwidth}
 	\includegraphics[height=4cm]{images/feed_forward_neural_net.png}
-	\caption{Feed Forward Neural Network}
+	\caption{Feed Forward Neural Network \cite{ffnn}}
 	\label{fig:ff_neural_net}
 	\endminipage
 	\hfill
-	\minipage{0.65\textwidth}
+	\minipage{0.45\textwidth}
 	\includegraphics[height=4cm]{images/recurrent_neural_net.png}
-	\caption{Recurrent Neural Network}
+	\caption{Recurrent Neural Network \cite{rnn}}
 	\label{fig:rec_neural_net}
 	\endminipage
 \end{figure}
