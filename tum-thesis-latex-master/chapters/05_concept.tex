@@ -21,7 +21,7 @@ Komponentendiagramm\newline
 	\endminipage
 \end{figure}
 
-\section{Feature Extraction}
+\section{Detection}
 Before we pass data through to the Classification phase, it is a reasonable step in our Program, to specify a Region Of Interest, with regard to saving some processing power. In order to specify ROIs, I took advantage of the red circle around European Speed signs, the main steps of this part are to filter every red pixel out of the original image (Figure: \ref{fig:red_filtered_image}), subsequently an algorithm checks the filtered image for circles (Figure: \ref{fig:detected_image}). Filtering red pixels from a picture is not that big of a sorcery, so i am going to skip that part for now and come back later to this in the implementation section. The real magic happens when you try to search an image for circles, therefore a common method is the Circle Hough Transform. 
 
 \subsection{Circle Hough Transform}
@@ -30,7 +30,7 @@ The Circle Hough Transform is a special case of the Hough transform, which deter
 \subsubsection{Fixed Radius}
 First of all our image is being Converted to a binary image  (Figure: \ref{fig:binary_image}), further it is being processed via edge detection to determine every visible edge contained in the photo (Figure: \ref{fig:edge_detected_image}).
 After this, the actual core of the Algorithm is being executed. Therefore an Accumulator Matrix is initialized with zeros. As the radius of the circle is considered constant, every ring in the picture can solely be described by two variables (x and y coordinate), therefore the helping Accumulator Matrix is 2-Dimensional.
-Above-mentioned Matrix can be pictured as a grid over the original image, where single pixels can be combined to bigger baskets. Now every basket or pixel of a detected edge (Figure: \ref{fig:edge_detected_image}) becomes the center of a new circle, with given fixed radius. Now each pixel that got "cut" by the circle gets incremented or up-voted in corresponding Accumulator Matrix (Figure \ref{fig:voted_image}). The baskets or pixels with the highest votes can be considered centers of circles.
+Above-mentioned Matrix can be pictured as a grid over the original image, where single pixels can be combined to bigger baskets. Now every basket or pixel of a detected edge (Figure: \ref{fig:edge_detected_image}) becomes the center of a new circle, with given fixed radius. Now each pixel that got "cut" by the circle gets incremented or up-voted in corresponding Accumulator Matrix. (Figure \ref{fig:circlehough_explanation}) Visualizes the voting steps, by displaying the green, red and blue circle as single examples of voting. The baskets or pixels with the highest votes can be considered centers of circles \ref{fig:voted_image}).
 \newline
 
 \begin{figure}[H]
@@ -59,8 +59,19 @@ A circle on a two-dimensional plane can be described by following formula: \[ (x
 The preprocessing (Figure: \ref{fig:binary_image} and Figure: \ref{fig:edge_detected_image}) is identical to the fixed-radius Circle Hough Transform, but what makes the difference now is, our Accumulation Matrix gains another Dimension, from having variable radii, therefore it is 3-Dimensional now. Usually you specify a range for the radiuses to make things a little easier. Now the voting happens exactly as it would with algorithm described before, but the difference now is that it has to be done with every radius in the before determined range. The center of the potential circles are now the ones with the most voted radii in all radius-dimensions. The desired radius of a point is the radius with the highest vote.
 
 \section{Classification}
-Preceding stage delivers an image of fixed size, that needs to be categorized into one out of 10 groups, these are Speed limits "10km/h", "20km/h",..., "90km/h" and "no sign". To gain these information about the sub-image of the original image, I decided to apply a Feed Forward Deep Neural Network. Said Neural Network is fed each individual pixel, provided by the ROI to its input neurons, the trained Model then outputs a prediction on what class the input picture might belong to. 
+In my project, I decided the scope of signs should be from 10 to 90 km/h, to reduce the amount of input data, I had to provide, this range could be extended easily, by adding output Neurons and broaden the data set classes, used to train the Artificial Neural Network. \newline\newline
+Preceding stage delivers an image of fixed size, that needs to be categorized into one out of 10 groups, these are Speed limits "10km/h", "20km/h",..., "90km/h" and "no sign". To gain these information about the sub-image of the original image, I decided to apply a Feed Forward Deep Neural Network. Said Neural Network is fed each individual pixel, provided by the ROI to its input neurons, the trained Model then outputs a prediction on what class the input picture might belong to.
 \newline
-wieso nur bis 90? 
-\newline
-Neuronales netz model
+
+\subsection{Model}
+When coming up with determining my own model for classification purposes, it was relatively trivial to define the number of output neurons: They just had to be the number of different signs, plus an additional neuron for signalizing, given input image can not be classified as a sign, this leaves us with 10 neurons in our output layer. Generally the more neurons your model has, the more calculation operations have to be performed, when calculating output.\newline
+As the signs, I specialized on, were all circular, it made sense, to accept a square image as input. Therefore the number of neurons, included by the input layer had to be a square number, as they represent the pixels fed by the image. Comparable datasets/classifiers, like NIST or MNIST\cite{mnist} use 20x20 respectively 28x28 pixels. These datasets are established ones, that are used to train classifiers for recognizing handwritten digits. With regard to the more or less limited processing power of Android smartphones, I took over the 20x20 format, demanding 400 neurons for the input layer. \newline
+A NN is referred to be "deep", as soon as it contains more than one hidden layer on the inside.
+Since i wanted to create a deep Neural Network with the limitations of running it in real time on an Android device, I chose only two input layers. The amount of neurons in each layer was once again chosen with regard to the performance claims and set to 100 each.\newline
+What needs to be said about the simplified visualization of my model(Figure:\ref{fig:neuralnetmodel}) is, not every connection between the neurons is present in the figure. Obviously every arrow to the next layer is symbolic for a connection from said neuron to every neuron from the subsequent layer, and of course i was not able to represent every node in each layer.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{images/neuralnetmodel.jpg}
+	\caption{Simplified representation of the Neural Network Model }\label{fig:neuralnetmodel}	
+\end{figure}

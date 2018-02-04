@@ -2144,25 +2144,22 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">latex</bcf:citekey>
-    <bcf:citekey order="2">latex</bcf:citekey>
-    <bcf:citekey order="3">latex</bcf:citekey>
-    <bcf:citekey order="4">hebb</bcf:citekey>
-    <bcf:citekey order="5">farleyclark</bcf:citekey>
-    <bcf:citekey order="6">analogyneurons</bcf:citekey>
-    <bcf:citekey order="7">analogyneurons</bcf:citekey>
-    <bcf:citekey order="8">artificialneuron</bcf:citekey>
-    <bcf:citekey order="9">artificialneuron</bcf:citekey>
-    <bcf:citekey order="10">nntutorial</bcf:citekey>
-    <bcf:citekey order="11">sigmoid</bcf:citekey>
-    <bcf:citekey order="12">sigmoid</bcf:citekey>
-    <bcf:citekey order="13">nntutorial</bcf:citekey>
-    <bcf:citekey order="14">ffnn</bcf:citekey>
-    <bcf:citekey order="15">ffnn</bcf:citekey>
-    <bcf:citekey order="16">rnn</bcf:citekey>
-    <bcf:citekey order="17">rnn</bcf:citekey>
-    <bcf:citekey order="18">circlehough</bcf:citekey>
-    <bcf:citekey order="19">latex</bcf:citekey>
-    <bcf:citekey order="20">meinkampf</bcf:citekey>
+    <bcf:citekey order="2">hebb</bcf:citekey>
+    <bcf:citekey order="3">farleyclark</bcf:citekey>
+    <bcf:citekey order="4">analogyneurons</bcf:citekey>
+    <bcf:citekey order="5">analogyneurons</bcf:citekey>
+    <bcf:citekey order="6">artificialneuron</bcf:citekey>
+    <bcf:citekey order="7">artificialneuron</bcf:citekey>
+    <bcf:citekey order="8">nntutorial</bcf:citekey>
+    <bcf:citekey order="9">sigmoid</bcf:citekey>
+    <bcf:citekey order="10">sigmoid</bcf:citekey>
+    <bcf:citekey order="11">nntutorial</bcf:citekey>
+    <bcf:citekey order="12">ffnn</bcf:citekey>
+    <bcf:citekey order="13">ffnn</bcf:citekey>
+    <bcf:citekey order="14">rnn</bcf:citekey>
+    <bcf:citekey order="15">rnn</bcf:citekey>
+    <bcf:citekey order="16">circlehough</bcf:citekey>
+    <bcf:citekey order="17">mnist</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

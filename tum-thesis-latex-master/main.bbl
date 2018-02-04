@@ -200,6 +200,15 @@
       \field{title}{LaTeX : A Documentation Preparation System User's Guide and Reference Manual}
       \field{year}{1994}
     \endentry
+    \entry{mnist}{online}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labeltitlesource}{title}
+      \field{title}{MNIST dataset}
+      \verb{url}
+      \verb http://yann.lecun.com/exdb/mnist/
+      \endverb
+    \endentry
     \entry{rnn}{online}{}
       \field{sortinit}{R}
       \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
@@ -210,7 +219,6 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{meinkampf}
 \endrefsection
 \endinput
 
