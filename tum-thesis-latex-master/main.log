@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.29)  6 FEB 2018 14:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.29)  6 FEB 2018 15:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2250,12 +2250,28 @@ e 21.
  <./images/screenshot_main.png> <./images/screenshot_load_image.png> <./images/
 screenshot_about.png>]
 chapter 7.
+<images/filterredimage.jpg, id=366, 1166.3575pt x 268.00125pt>
+File: images/filterredimage.jpg Graphic file (type jpg)
+<use images/filterredimage.jpg>
+Package pdftex.def Info: images/filterredimage.jpg  used on input line 18. on i
+nput line 18.
+Package pdftex.def Info: Requested size: 418.25555pt x 96.10414pt on input line
+ 18.
 [14
 
 
-]) (./chapters/08_evaluation.tex [15]
+]
+<images/hsv.jpg, id=373, 329.23pt x 290.08376pt>
+File: images/hsv.jpg Graphic file (type jpg)
+<use images/hsv.jpg>
+Package pdftex.def Info: images/hsv.jpg  used on input line 26. on input line 2
+6.
+Package pdftex.def Info: Requested size: 209.12778pt x 184.26752pt on input lin
+e 26.
+ [15 <./images/filterredimage.jpg>]) (./chapters/08_evaluation.tex [16 <./image
+s/hsv.jpg>]
 chapter 8.
-) [16
+) [17
 
 
 ]
@@ -2265,7 +2281,7 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 52
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
- [17
+ [18
 
 
 ]
@@ -2275,7 +2291,7 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 53
 \tf@lot=\write9
 \openout9 = `main.lot'.
 
- [18
+ [19
 
 
 ]
@@ -2314,19 +2330,19 @@ cial -[] neuron -[] and -[] biological -[]
 Package biblatex Warning: No driver for entry type 'unknown'.
 (biblatex)                Using fallback driver on input line 55.
 
-[19
+[20
 
 
 ]
 No complaints by nag.
-[20]
+[21]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5B577D86EEA36E25E65D87400E1AE7D6;1958.
+(rerunfilecheck)             Checksum: 82A1AACFB881EA6A74707A5DFA589C96;1958.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2336,13 +2352,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49934 strings out of 494307
- 1094726 string characters out of 6163504
- 1735220 words of memory out of 5000000
- 52178 multiletter control sequences out of 15000+600000
+ 49949 strings out of 494307
+ 1095013 string characters out of 6163504
+ 1735344 words of memory out of 5000000
+ 52188 multiletter control sequences out of 15000+600000
  583673 words of font info for 260 fonts, out of 8000000 for 9000
  372 hyphenation exceptions out of 8191
- 77i,8n,128p,10457b,2694s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 77i,9n,128p,10457b,2694s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/baba/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600p
 k>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
@@ -2352,10 +2368,10 @@ fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type
 fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (27 pages, 3220288 bytes).
+Output written on main.pdf (28 pages, 3438731 bytes).
 PDF statistics:
- 563 PDF objects out of 1000 (max. 8388607)
- 437 compressed objects within 5 object streams
- 93 named destinations out of 1000 (max. 500000)
- 33645 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 573 PDF objects out of 1000 (max. 8388607)
+ 444 compressed objects within 5 object streams
+ 96 named destinations out of 1000 (max. 500000)
+ 33655 words of extra memory for PDF output out of 35830 (max. 10000000)
 

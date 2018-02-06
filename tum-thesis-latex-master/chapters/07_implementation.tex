@@ -11,8 +11,22 @@ As i took the android-application described in passage \ref{chapter:Integration 
  
 \section{Extracting Speed Sign Candidates}
 I implemented the algorithm in three languages: C++, Java and Python, every language serving different purposes. C++ and Java versions where necessary to operate for the application, first one running the Native approach, the second for the "standard" version. Last program written in Python was utilized for extracting data from images collected from Google image search, running on my PC, in order to get training data to feed my Neural Network model (more about this topic later on). Nevertheless, apart from syntactical differences, every program basically does the same operations. For the sake of simplicity I am only going to present the python variation, as it is probably the easiest to read.\newline
-After reading the image, changing the colourspace from RGB/BGR to HSL/HSV is an optional, but reasonable step, because in the RGB/BGR space, all three Values of red, green and blue are correlated when it comes to changes in brightness \cite{imagesegmentation}. Unlike that, HSL/HSV holds lightness or the value of brightness in a separate variable, which can lead to better results with respect to filtering colours under difficult lightning conditions. \newline
+After reading the image, changing the colourspace from RGB/BGR to HSL/HSV is an optional, but reasonable step, because in the RGB/BGR space, all three Values of red, green and blue are correlated when it comes to changes in brightness \cite{imagesegmentation}. Unlike that, HSL/HSV holds lightness or the value of brightness in a separate variable, which can lead to better results with respect to filtering colours under difficult lighting conditions. In the following we are going to stick to the HSV space, even though both work almost analogical, they differentiate each other from the arrangement of brightness. \newline
+Nevertheless filtering red pixels from our preferred colourspace works slightly different than just excerpting the Red channel of an image, as you would using RGB:
+\begin{figure}[H]
+	\minipage{\textwidth}
+	\includegraphics[width=\linewidth]{images/filterredimage.jpg}
+	\caption{Python code for extracting red pixels}\label{fig:pythonredpix}
+	\endminipage\hfill
+\end{figure}
 
+\begin{figure}[H]
+	\centering
+	\minipage{0.5\textwidth}
+	\includegraphics[width=\linewidth]{images/hsv.jpg}
+	\caption{HSV colourspace}\label{fig:hsv}
+	\endminipage\hfill
+\end{figure}
 
 
 
