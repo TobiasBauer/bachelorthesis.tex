@@ -2170,6 +2170,9 @@
     <bcf:citekey order="25">hough3</bcf:citekey>
     <bcf:citekey order="26">hough3</bcf:citekey>
     <bcf:citekey order="27">mnist</bcf:citekey>
+    <bcf:citekey order="28">androidndk</bcf:citekey>
+    <bcf:citekey order="29">ndkspeed</bcf:citekey>
+    <bcf:citekey order="30">imagesegmentation</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

@@ -49,7 +49,72 @@
       \verb https://www.researchgate.net/profile/Carmen_Galan2/publication/7947079/figure/fig1/AS:277631451844608@1443203904065/Fig-1-Analogy-between-artificial-neuron-and-biological-neuron.png
       \endverb
     \endentry
-    \entry{kia4sm}{unknown}{}
+    \entry{androidndk}{online}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{labeltitlesource}{title}
+      \field{title}{Android NDK info}
+      \verb{url}
+      \verb https://developer.android.com/ndk/index.html
+      \endverb
+    \endentry
+    \entry{imagesegmentation}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=6a4fb8812f6b52a9a22824dacc04cefd}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={H.D.},
+           giveni={H\bibinitperiod}}}%
+        {{uniquename=0,hash=78ff46021a6cbb356cae393e92d8a44b}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={X.H.},
+           giveni={X\bibinitperiod}}}%
+        {{uniquename=0,hash=fd4b50822038eee23ed27b6ca3012cbb}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{uniquename=0,hash=0e75fa96800ce3fefcf761f9b4156c90}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jingli},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{d14930b4cecac6953ab72731d94bbe08}
+      \strng{fullhash}{d14930b4cecac6953ab72731d94bbe08}
+      \strng{authornamehash}{d14930b4cecac6953ab72731d94bbe08}
+      \strng{authorfullhash}{d14930b4cecac6953ab72731d94bbe08}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0031-3203}
+      \field{journaltitle}{Pattern Recognition}
+      \field{number}{12}
+      \field{title}{Color image segmentation: advances and prospects}
+      \field{volume}{34}
+      \field{year}{2001}
+      \field{pages}{2259\bibrangedash 2281}
+      \range{pages}{23}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0031-3203(00)00149-7
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0031320300001497
+      \endverb
+      \keyw{Color image segmentation,Color representations,Color space transformations,Neural networks,Thresholding,Clustering,Edge detection,Region-based approach,Physics based approach,Fuzzy logic}
+    \endentry
+    \entry{hough2}{online}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labeltitlesource}{title}
+      \field{title}{Circle Hough Transform explained}
+      \verb{url}
+      \verb http://www.aishack.in/static/img/tut/circlehough_explanation.jpg
+      \endverb
+    \endentry
+    \entry{kia4sm}{online}{}
       \name{author}{3}{}{%
         {{uniquename=0,hash=13ab7241b77dad7bd1ca319a8d0062eb}{%
            family={Eckl},
@@ -183,7 +248,7 @@
       \endverb
       \keyw{character recognition;neural nets;neurophysiology;ANN application;artificial computational model;artificial neural networks;basic biological neuron;character recognition;interconnected simple processors;learning processes;massively parallel systems;network architectures;Artificial neural networks;Biological neural networks;Biological system modeling;Biology computing;Computer architecture;Concurrent computing;Humans;Integrated circuit interconnections;Parallel processing;Tutorial}
     \endentry
-    \entry{circlehough}{inproceedings}{}
+    \entry{circlehough}{unknown}{}
       \name{author}{2}{}{%
         {{uniquename=0,hash=d9aafe46b57824aa3f5935a1263c8234}{%
            family={Kerbyson},
@@ -233,41 +298,65 @@
       \verb https://i.stack.imgur.com/KmrmP.png
       \endverb
     \endentry
-    \entry{hough0}{online}{}
-      \field{sortinit}{t}
-      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+    \entry{hough3}{online}{}
+      \field{sortinit}{R}
+      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
       \field{labeltitlesource}{title}
-      \field{title}{title}
+      \field{title}{Result of Circle Hough Transorm}
+      \verb{url}
+      \verb http://www.aishack.in/static/img/tut/hough_circle.jpg
+      \endverb
+    \endentry
+    \entry{hough0}{online}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labeltitlesource}{title}
+      \field{title}{Sample circles for describing Circle Hough Transform}
       \verb{url}
       \verb http://www.aishack.in/static/img/tut/circles.gif
       \endverb
     \endentry
     \entry{hough1}{online}{}
-      \field{sortinit}{t}
-      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
       \field{labeltitlesource}{title}
-      \field{title}{title}
+      \field{title}{Sample edge detetction for describing Circle Hough Transform}
       \verb{url}
       \verb http://www.aishack.in/static/img/tut/circle_edges.jpg
       \endverb
     \endentry
-    \entry{hough2}{online}{}
-      \field{sortinit}{t}
-      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+    \entry{ndkspeed}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=d6928f590afebe1bc6a97a790a39e198}{%
+           family={Son},
+           familyi={S\bibinitperiod},
+           given={Ki-Cheol},
+           giveni={K\bibinithyphendelim C\bibinitperiod}}}%
+        {{uniquename=0,hash=6db364f556c700588ce89af303f556f1}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Jong-Yeol},
+           giveni={J\bibinithyphendelim Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{e9ce0061ddcc3bd8a87aeb1a23de3a9f}
+      \strng{fullhash}{e9ce0061ddcc3bd8a87aeb1a23de3a9f}
+      \strng{authornamehash}{e9ce0061ddcc3bd8a87aeb1a23de3a9f}
+      \strng{authorfullhash}{e9ce0061ddcc3bd8a87aeb1a23de3a9f}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{title}
-      \verb{url}
-      \verb http://www.aishack.in/static/img/tut/circlehough_explanation.jpg
+      \field{booktitle}{2011 3rd International Conference on Awareness Science and Technology (iCAST)}
+      \field{issn}{2325-5986}
+      \field{month}{9}
+      \field{title}{The method of android application speed up by using NDK}
+      \field{year}{2011}
+      \field{pages}{382\bibrangedash 385}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/ICAwST.2011.6163104
       \endverb
-    \endentry
-    \entry{hough3}{online}{}
-      \field{sortinit}{t}
-      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
-      \field{labeltitlesource}{title}
-      \field{title}{title}
-      \verb{url}
-      \verb http://www.aishack.in/static/img/tut/hough_circle.jpg
-      \endverb
+      \keyw{C language;Java;augmented reality;operating systems (computers);software engineering;Android NDK;Android application speed up method;C libraries;JAVA language;JNI;Java native interface;NyARToolKit;TV;augmented reality engine;embedded OS;image processing;native code libraries;native development kit;robot;smart phones;Androids;Google;Hardware;Humanoid robots;Java;Libraries;Android;JAVA;JNI;NDK;Native C;NyARToolKit;Smart phone}
     \endentry
   \endsortlist
 \endrefsection
