@@ -9,7 +9,7 @@ Komponentendiagramm\newline
 \begin{figure}[H]
 	\minipage{0.33\textwidth}
 	\includegraphics[width=\linewidth]{images/101.jpg}
-	\caption{Original image}\label{fig:original_image}
+	\caption{Original image\cite{10kmh}}\label{fig:original_image}
 	\endminipage\hfill
 	\minipage{0.33\textwidth}
 	\includegraphics[width=\linewidth]{images/filteredimg.png}
@@ -36,25 +36,25 @@ Above-mentioned Matrix can be pictured as a grid over the original image, where 
 \begin{figure}[H]
 	\minipage{0.4\textwidth}
 	\includegraphics[width=\linewidth]{images/circles.jpg}
-	\caption{Binary image }\label{fig:binary_image}
+	\caption{Binary image \cite{hough0}}\label{fig:binary_image}
 	\endminipage\hfill
 	\minipage{0.4\textwidth}
 	\includegraphics[width=\linewidth]{images/circle_edges.jpg}
-	\caption{Edge detected }\label{fig:edge_detected_image}
+	\caption{Edge detected \cite{hough1}}\label{fig:edge_detected_image}
 	\endminipage\newline
 	\minipage{0.4\textwidth}%
 	\includegraphics[width=\linewidth]{images/circlehough_explanation.jpg}
-	\caption{Voting process visualized}\label{fig:circlehough_explanation}
+	\caption{Voting process visualized\cite{hough2}}\label{fig:circlehough_explanation}
 	\endminipage
 	\hfill
 	\minipage{0.4\textwidth}%
 	\includegraphics[width=\linewidth]{images/hough_circle.jpg}
-	\caption{Voted image }\label{fig:voted_image}
+	\caption{Voted image \cite{hough3}}\label{fig:voted_image}
 	\endminipage
 \end{figure}
 
 \subsubsection{Variable Radius}
-A circle on a two-dimensional plane can be described by following formula: \[ (x - a)^2 + (y - b)^2 = r^2  \]
+A circle on a two-dimensional plane can be described by following formula[10]: \[ (x - a)^2 + (y - b)^2 = r^2  \]
 , meaning the circle can be represented by the parameters (a, b, r), where "a" and "b" are the 2-Dimensional coordinate values representing the center of the circle, whereas the variable "r" provides the radius of given ring. \newline
 The preprocessing (Figure: \ref{fig:binary_image} and Figure: \ref{fig:edge_detected_image}) is identical to the fixed-radius Circle Hough Transform, but what makes the difference now is, our Accumulation Matrix gains another Dimension, from having variable radii, therefore it is 3-Dimensional now. Usually you specify a range for the radiuses to make things a little easier. Now the voting happens exactly as it would with algorithm described before, but the difference now is that it has to be done with every radius in the before determined range. The center of the potential circles are now the ones with the most voted radii in all radius-dimensions. The desired radius of a point is the radius with the highest vote.
 

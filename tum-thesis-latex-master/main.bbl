@@ -33,6 +33,13 @@
       \verb https://i.stack.imgur.com/t2mC3.png
       \endverb
     \endentry
+    \entry{10kmh}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{url}
+      \verb https://upload.wikimedia.org/wikipedia/commons/1/1f/Fu%C3%9Fg%C3%A4nger_10_kmh.jpg
+      \endverb
+    \endentry
     \entry{analogyneurons}{online}{}
       \field{sortinit}{A}
       \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
@@ -41,6 +48,36 @@
       \verb{url}
       \verb https://www.researchgate.net/profile/Carmen_Galan2/publication/7947079/figure/fig1/AS:277631451844608@1443203904065/Fig-1-Analogy-between-artificial-neuron-and-biological-neuron.png
       \endverb
+    \endentry
+    \entry{kia4sm}{unknown}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=13ab7241b77dad7bd1ca319a8d0062eb}{%
+           family={Eckl},
+           familyi={E\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{uniquename=0,hash=eb41d4501dd927fe61fe9408579b82df}{%
+           family={Krefft},
+           familyi={K\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{uniquename=0,hash=8ff8947df7aecbdd21ee0f275e7d3aa0}{%
+           family={Baumgarten},
+           familyi={B\bibinitperiod},
+           given={Uwe},
+           giveni={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{fff7677ba77c13baaffbfa81dbd85507}
+      \strng{fullhash}{fff7677ba77c13baaffbfa81dbd85507}
+      \strng{authornamehash}{fff7677ba77c13baaffbfa81dbd85507}
+      \strng{authorfullhash}{fff7677ba77c13baaffbfa81dbd85507}
+      \field{sortinit}{E}
+      \field{sortinithash}{07bbd5a529b5beaa311df5be05b874bc}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{04}
+      \field{title}{KIA4SM - Cooperative Integration Architecture for Future Smart Mobility Solutions}
+      \field{year}{2015}
     \endentry
     \entry{farleyclark}{article}{}
       \name{author}{2}{}{%
@@ -178,28 +215,6 @@
       \endverb
       \keyw{Hough transforms;convolution;edge detection;filtering theory;-16 dB;-25 dB;Hough transform filters;SNR;circle Hough transform;circle detection;complex phase;complex vector CHT;convolution operations;edge orientation;edge point distance;orientation;parameter space;positional accuracy;signal to noise ratios}
     \endentry
-    \entry{latex}{book}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=5d77435450d10a850a5b58577b9a456b}{%
-           family={Lamport},
-           familyi={L\bibinitperiod},
-           given={Leslie},
-           giveni={L\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Addison-Wesley Professional}%
-      }
-      \strng{namehash}{5d77435450d10a850a5b58577b9a456b}
-      \strng{fullhash}{5d77435450d10a850a5b58577b9a456b}
-      \strng{authornamehash}{5d77435450d10a850a5b58577b9a456b}
-      \strng{authorfullhash}{5d77435450d10a850a5b58577b9a456b}
-      \field{sortinit}{L}
-      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{LaTeX : A Documentation Preparation System User's Guide and Reference Manual}
-      \field{year}{1994}
-    \endentry
     \entry{mnist}{online}{}
       \field{sortinit}{M}
       \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
@@ -216,6 +231,42 @@
       \field{title}{Recurrent Neural Network}
       \verb{url}
       \verb https://i.stack.imgur.com/KmrmP.png
+      \endverb
+    \endentry
+    \entry{hough0}{online}{}
+      \field{sortinit}{t}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labeltitlesource}{title}
+      \field{title}{title}
+      \verb{url}
+      \verb http://www.aishack.in/static/img/tut/circles.gif
+      \endverb
+    \endentry
+    \entry{hough1}{online}{}
+      \field{sortinit}{t}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labeltitlesource}{title}
+      \field{title}{title}
+      \verb{url}
+      \verb http://www.aishack.in/static/img/tut/circle_edges.jpg
+      \endverb
+    \endentry
+    \entry{hough2}{online}{}
+      \field{sortinit}{t}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labeltitlesource}{title}
+      \field{title}{title}
+      \verb{url}
+      \verb http://www.aishack.in/static/img/tut/circlehough_explanation.jpg
+      \endverb
+    \endentry
+    \entry{hough3}{online}{}
+      \field{sortinit}{t}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labeltitlesource}{title}
+      \field{title}{title}
+      \verb{url}
+      \verb http://www.aishack.in/static/img/tut/hough_circle.jpg
       \endverb
     \endentry
   \endsortlist

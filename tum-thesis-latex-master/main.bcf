@@ -2143,7 +2143,7 @@
     <bcf:datasource type="file" datatype="bibtex">bibliography.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">latex</bcf:citekey>
+    <bcf:citekey order="1">kia4sm</bcf:citekey>
     <bcf:citekey order="2">hebb</bcf:citekey>
     <bcf:citekey order="3">farleyclark</bcf:citekey>
     <bcf:citekey order="4">analogyneurons</bcf:citekey>
@@ -2158,8 +2158,18 @@
     <bcf:citekey order="13">ffnn</bcf:citekey>
     <bcf:citekey order="14">rnn</bcf:citekey>
     <bcf:citekey order="15">rnn</bcf:citekey>
-    <bcf:citekey order="16">circlehough</bcf:citekey>
-    <bcf:citekey order="17">mnist</bcf:citekey>
+    <bcf:citekey order="16">10kmh</bcf:citekey>
+    <bcf:citekey order="17">10kmh</bcf:citekey>
+    <bcf:citekey order="18">circlehough</bcf:citekey>
+    <bcf:citekey order="19">hough0</bcf:citekey>
+    <bcf:citekey order="20">hough0</bcf:citekey>
+    <bcf:citekey order="21">hough1</bcf:citekey>
+    <bcf:citekey order="22">hough1</bcf:citekey>
+    <bcf:citekey order="23">hough2</bcf:citekey>
+    <bcf:citekey order="24">hough2</bcf:citekey>
+    <bcf:citekey order="25">hough3</bcf:citekey>
+    <bcf:citekey order="26">hough3</bcf:citekey>
+    <bcf:citekey order="27">mnist</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>
