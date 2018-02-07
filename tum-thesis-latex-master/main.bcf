@@ -2173,6 +2173,9 @@
     <bcf:citekey order="28">androidndk</bcf:citekey>
     <bcf:citekey order="29">ndkspeed</bcf:citekey>
     <bcf:citekey order="30">imagesegmentation</bcf:citekey>
+    <bcf:citekey order="31">houghcircles</bcf:citekey>
+    <bcf:citekey order="32">hsv</bcf:citekey>
+    <bcf:citekey order="33">hsv</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

@@ -114,6 +114,15 @@
       \verb http://www.aishack.in/static/img/tut/circlehough_explanation.jpg
       \endverb
     \endentry
+    \entry{houghcircles}{online}{}
+      \field{sortinit}{c}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labeltitlesource}{title}
+      \field{title}{cv2.HoughCircles() documentation}
+      \verb{url}
+      \verb https://docs.opencv.org/2.4/modules/imgproc/doc/feature_detection.html?highlight=houghcircles#houghcircles
+      \endverb
+    \endentry
     \entry{kia4sm}{online}{}
       \name{author}{3}{}{%
         {{uniquename=0,hash=13ab7241b77dad7bd1ca319a8d0062eb}{%

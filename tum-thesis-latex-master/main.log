@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.29)  6 FEB 2018 15:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.29)  7 FEB 2018 15:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1862,6 +1862,9 @@ File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 
 LaTeX Warning: Label `chapter:Related Work' multiply defined.
 
+
+LaTeX Warning: Label `fig:original_image' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
@@ -2261,17 +2264,114 @@ Package pdftex.def Info: Requested size: 418.25555pt x 96.10414pt on input line
 
 
 ]
-<images/hsv.jpg, id=373, 329.23pt x 290.08376pt>
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+<images/detectioncode.png, id=377, 1530.71875pt x 487.8225pt>
+File: images/detectioncode.png Graphic file (type png)
+<use images/detectioncode.png>
+Package pdftex.def Info: images/detectioncode.png  used on input line 26. on in
+put line 26.
+Package pdftex.def Info: Requested size: 418.25555pt x 133.29187pt on input lin
+e 26.
+[15 <./images/filterredimage.jpg>]
+File: images/101.jpg Graphic file (type jpg)
+<use images/101.jpg>
+Package pdftex.def Info: images/101.jpg  used on input line 35. on input line 3
+5.
+Package pdftex.def Info: Requested size: 138.02509pt x 158.92302pt on input lin
+e 35.
+<images/lowerred.png, id=388, 502.12593pt x 578.16pt>
+File: images/lowerred.png Graphic file (type png)
+<use images/lowerred.png>
+Package pdftex.def Info: images/lowerred.png  used on input line 39. on input l
+ine 39.
+Package pdftex.def Info: Requested size: 138.02509pt x 158.92831pt on input lin
+e 39.
+
+Underfull \hbox (badness 2368) in paragraph at lines 40--40
+[][][]|\T1/pplx/m/n/10.95 (+20) Lower red hue
+ []
+
+<images/upperred.png, id=389, 502.12593pt x 578.16pt>
+File: images/upperred.png Graphic file (type png)
+<use images/upperred.png>
+Package pdftex.def Info: images/upperred.png  used on input line 43. on input l
+ine 43.
+Package pdftex.def Info: Requested size: 138.02509pt x 158.92831pt on input lin
+e 43.
+
+Underfull \hbox (badness 1983) in paragraph at lines 44--44
+[][][]|\T1/pplx/m/n/10.95 (+20) Up-per red hue
+ []
+
+<images/redcombined1.png, id=390, 502.12593pt x 578.16pt>
+File: images/redcombined1.png Graphic file (type png)
+<use images/redcombined1.png>
+Package pdftex.def Info: images/redcombined1.png  used on input line 49. on inp
+ut line 49.
+Package pdftex.def Info: Requested size: 138.02509pt x 158.92831pt on input lin
+e 49.
+<images/redcombined2.png, id=391, 502.12593pt x 578.16pt>
+File: images/redcombined2.png Graphic file (type png)
+<use images/redcombined2.png>
+Package pdftex.def Info: images/redcombined2.png  used on input line 53. on inp
+ut line 53.
+Package pdftex.def Info: Requested size: 138.02509pt x 158.92831pt on input lin
+e 53.
+<images/detectedcirclescircle.png, id=392, 502.12593pt x 578.16pt>
+File: images/detectedcirclescircle.png Graphic file (type png)
+<use images/detectedcirclescircle.png>
+Package pdftex.def Info: images/detectedcirclescircle.png  used on input line 5
+7. on input line 57.
+Package pdftex.def Info: Requested size: 138.02509pt x 158.92831pt on input lin
+e 57.
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--60
+
+ []
+
+[16 <./images/detectioncode.png>]
+<images/2020.png, id=400, 53.44969pt x 53.44969pt>
+File: images/2020.png Graphic file (type png)
+<use images/2020.png>
+Package pdftex.def Info: images/2020.png  used on input line 65. on input line 
+65.
+Package pdftex.def Info: Requested size: 204.94751pt x 204.9932pt on input line
+ 65.
+<images/binaryimg.png, id=401, 53.44969pt x 53.44969pt>
+File: images/binaryimg.png Graphic file (type png)
+<use images/binaryimg.png>
+Package pdftex.def Info: images/binaryimg.png  used on input line 69. on input 
+line 69.
+Package pdftex.def Info: Requested size: 204.94751pt x 204.9932pt on input line
+ 69.
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--73
+
+ []
+
+[17 <./images/lowerred.png> <./images/upperred.png> <./images/redcombined1.png>
+ <./images/redcombined2.png> <./images/detectedcirclescircle.png>]
+<images/hsv.jpg, id=406, 329.23pt x 290.08376pt>
 File: images/hsv.jpg Graphic file (type jpg)
 <use images/hsv.jpg>
-Package pdftex.def Info: images/hsv.jpg  used on input line 26. on input line 2
-6.
+Package pdftex.def Info: images/hsv.jpg  used on input line 80. on input line 8
+0.
 Package pdftex.def Info: Requested size: 209.12778pt x 184.26752pt on input lin
-e 26.
- [15 <./images/filterredimage.jpg>]) (./chapters/08_evaluation.tex [16 <./image
-s/hsv.jpg>]
+e 80.
+
+
+LaTeX Warning: Citation 'hsv' on page 18 undefined on input line 81.
+
+
+LaTeX Warning: Citation 'hsv' on page 18 undefined on input line 81.
+
+) (./chapters/08_evaluation.tex [18 <./images/2020.png> <./images/binaryimg.png
+> <./images/hsv.jpg>] [19]
 chapter 8.
-) [17
+) [20
 
 
 ]
@@ -2281,7 +2381,7 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 52
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
- [18
+ [21
 
 
 ]
@@ -2291,7 +2391,7 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 53
 \tf@lot=\write9
 \openout9 = `main.lot'.
 
- [19
+ [22
 
 
 ]
@@ -2327,36 +2427,56 @@ cial -[] neuron -[] and -[] biological -[]
  []
 
 
+Overfull \hbox (7.7896pt too wide) in paragraph at lines 55--55
+\T1/cmtt/m/n/10.95 imgproc / doc / feature _ detection . html ? highlight = hou
+ghcircles # houghcircles$[]\T1/pplx/m/n/10.95 (-20) . 
+ []
+
+
 Package biblatex Warning: No driver for entry type 'unknown'.
 (biblatex)                Using fallback driver on input line 55.
 
-[20
+[23
 
 
 ]
 No complaints by nag.
-[21]
+[24]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 82A1AACFB881EA6A74707A5DFA589C96;1958.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 96F622F20C7CECE41239BD6D85B74113;1958
+(rerunfilecheck)             After:  1F4703BB18D9F9CF6A0794F912586E8D;1974.
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49949 strings out of 494307
- 1095013 string characters out of 6163504
- 1735344 words of memory out of 5000000
- 52188 multiletter control sequences out of 15000+600000
- 583673 words of font info for 260 fonts, out of 8000000 for 9000
+ 50011 strings out of 494307
+ 1096330 string characters out of 6163504
+ 1735867 words of memory out of 5000000
+ 52230 multiletter control sequences out of 15000+600000
+ 583945 words of font info for 264 fonts, out of 8000000 for 9000
  372 hyphenation exceptions out of 8191
  77i,9n,128p,10457b,2694s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/baba/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600p
@@ -2368,10 +2488,10 @@ fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type
 fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (28 pages, 3438731 bytes).
+Output written on main.pdf (31 pages, 4662054 bytes).
 PDF statistics:
- 573 PDF objects out of 1000 (max. 8388607)
- 444 compressed objects within 5 object streams
- 96 named destinations out of 1000 (max. 500000)
- 33655 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 620 PDF objects out of 1000 (max. 8388607)
+ 478 compressed objects within 5 object streams
+ 103 named destinations out of 1000 (max. 500000)
+ 33695 words of extra memory for PDF output out of 35830 (max. 10000000)
 
