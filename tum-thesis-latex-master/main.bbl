@@ -217,6 +217,15 @@
       \field{year}{1949}
       \field{dateera}{ce}
     \endentry
+    \entry{hsv}{online}{}
+      \field{sortinit}{H}
+      \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
+      \field{labeltitlesource}{title}
+      \field{title}{HSV colour space}
+      \verb{url}
+      \verb https://edoras.sdsu.edu/doc/matlab/toolbox/images/color11.html
+      \endverb
+    \endentry
     \entry{nntutorial}{article}{}
       \name{author}{3}{}{%
         {{uniquename=0,hash=9ee29fa046999b31c2634e59233a0eca}{%
@@ -366,6 +375,24 @@
       \verb 10.1109/ICAwST.2011.6163104
       \endverb
       \keyw{C language;Java;augmented reality;operating systems (computers);software engineering;Android NDK;Android application speed up method;C libraries;JAVA language;JNI;Java native interface;NyARToolKit;TV;augmented reality engine;embedded OS;image processing;native code libraries;native development kit;robot;smart phones;Androids;Google;Hardware;Humanoid robots;Java;Libraries;Android;JAVA;JNI;NDK;Native C;NyARToolKit;Smart phone}
+    \endentry
+    \entry{tensorflowcore}{online}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labeltitlesource}{title}
+      \field{title}{Tensorflow core Github repository}
+      \verb{url}
+      \verb https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core
+      \endverb
+    \endentry
+    \entry{tensorflow}{online}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labeltitlesource}{title}
+      \field{title}{Tensorflow homepage}
+      \verb{url}
+      \verb https://www.tensorflow.org/
+      \endverb
     \endentry
   \endsortlist
 \endrefsection

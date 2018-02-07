@@ -28,7 +28,7 @@ At first you extract ranges of HSV values, that are considered to be red. This i
 	\endminipage\hfill
 \end{figure}
 When executing the HoughCircles Function \cite{houghcircles}, the result is passed to the circles variable, this function returns all found circles, described with an array of [x-coordinate, y-coordinate, radius],  after checking, whether any circles were found, we only have to round these values to integer and loop over the array containing every triplet. \newline
-In order to crop our input image, the x- and y- coordinates of the cropping window are calculated, this window can be described by the coordinates of two edges. After actually cropping the image we resize this section to our desired 20 by 20 pixels format (Figure: \ref{fig:2020}). Then we convert this sub picture from coloured to binary format (Figure: \ref{fig:2020bin}). Now the image is actually ready, to be passed to the Neural Network. Be noted, there can be multiple candidates in one image that need to be passed further.   
+In order to crop our input image, the x- and y- coordinates of the cropping window are calculated, this window can be described by the coordinates of two edges. After actually cropping the image we resize this section to our desired 20 by 20 pixels format (Figure: \ref{fig:2020}). Then we convert this sub picture from coloured to binary format (Figure: \ref{fig:2020bin}). Now the image is actually ready, to be passed to the Neural Network. It should be noted, there can be multiple candidates in one image that need to be passed further.   
 
 \begin{figure}[H]
 	\minipage[t]{0.33\textwidth}%
@@ -85,5 +85,15 @@ In order to crop our input image, the x- and y- coordinates of the cropping wind
 
 
 \section{Neural Net Classification}
-Hypothetically speaking, we only need to put this image into a tensor, feed it into our model and get the result back. Getting to this point there needs some work to be done, regarding our Neural Network though.  
+Hypothetically speaking, we only need to put this image into a tensor, feed it into our model and get the result back. Getting to this point there needs to be done some work, regarding our Neural Network though.  
 \subsection{Building Neural Network with Tensorflow}
+TensorFlow™ is an open source software library for numerical computation using data flow graphs. Nodes in the graph represent mathematical operations, while the graph edges represent the multidimensional data arrays (tensors) communicated between them. \cite{tensorflow} When it comes to building models on a PC, you could use Tensorflow's C++, Go, Java or Python API, although the core is programmed in C++ \cite{tensorflowcore}. I decided to use the Python API, because again I thought this language to be the easiest choice. \newline
+\begin{figure}[H]
+	\centering
+	\minipage{\textwidth}
+	\includegraphics[width=\linewidth]{images/neuralnetmodelcode.png}
+	\caption{Neural Net Model in Python}\label{fig:NNmodelPyth}
+	\endminipage\hfill
+\end{figure}
+
+Obviously, the "data" parameter, given to the neural\_network\_model represents our input tensor, thus it holds every pixel provided by the image. The dictionaries "hidden\_layer\_1", "hidden\_layer\_2" and "output\_layer" hold the weights and biases of the incoming edges, they are all initialized with random values before the training phase. The "tf.add" and "tf.mul" adds, respectively multiplies two tensors. The variables "l1" and "l2" each have two initialization steps, in the first, preceding nodes are multiplied with the corresponding weights and added to it's biases. The second part calls "tf.nn.relu", which is just the activation function used for this network. The "output" variable finally holds and returns the final output tensor. 
