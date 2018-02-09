@@ -22,14 +22,16 @@
 \BOOKMARK [2][-]{subsection.5.2.1}{Model}{section.5.2}% 22
 \BOOKMARK [0][-]{chapter.6}{Integration into existing App}{}% 23
 \BOOKMARK [0][-]{chapter.7}{Implementation}{}% 24
-\BOOKMARK [1][-]{section.7.1}{Native Development Kit}{chapter.7}% 25
-\BOOKMARK [1][-]{section.7.2}{Extracting Speed Sign Candidates}{chapter.7}% 26
-\BOOKMARK [1][-]{section.7.3}{Neural Net Classification}{chapter.7}% 27
-\BOOKMARK [2][-]{subsection.7.3.1}{Building Neural Network with Tensorflow}{section.7.3}% 28
-\BOOKMARK [2][-]{subsection.7.3.2}{Training data collection}{section.7.3}% 29
-\BOOKMARK [0][-]{chapter.8}{Evaluation}{}% 30
-\BOOKMARK [1][-]{section.8.1}{Section}{chapter.8}% 31
-\BOOKMARK [2][-]{subsection.8.1.1}{Subsection}{section.8.1}% 32
-\BOOKMARK [0][-]{chapter*.18}{List of Figures}{}% 33
-\BOOKMARK [0][-]{chapter*.19}{List of Tables}{}% 34
-\BOOKMARK [0][-]{chapter*.20}{Bibliography}{}% 35
+\BOOKMARK [1][-]{section.7.1}{Target device}{chapter.7}% 25
+\BOOKMARK [1][-]{section.7.2}{Native Development Kit}{chapter.7}% 26
+\BOOKMARK [1][-]{section.7.3}{Extracting Speed Sign Candidates}{chapter.7}% 27
+\BOOKMARK [1][-]{section.7.4}{Neural Net Classification}{chapter.7}% 28
+\BOOKMARK [2][-]{subsection.7.4.1}{Building Neural Network with Tensorflow}{section.7.4}% 29
+\BOOKMARK [2][-]{subsection.7.4.2}{Preparing training data}{section.7.4}% 30
+\BOOKMARK [2][-]{subsection.7.4.3}{Feeding and training}{section.7.4}% 31
+\BOOKMARK [0][-]{chapter.8}{Evaluation}{}% 32
+\BOOKMARK [1][-]{section.8.1}{Section}{chapter.8}% 33
+\BOOKMARK [2][-]{subsection.8.1.1}{Subsection}{section.8.1}% 34
+\BOOKMARK [0][-]{chapter*.18}{List of Figures}{}% 35
+\BOOKMARK [0][-]{chapter*.19}{List of Tables}{}% 36
+\BOOKMARK [0][-]{chapter*.20}{Bibliography}{}% 37

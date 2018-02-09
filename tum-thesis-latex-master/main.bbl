@@ -385,6 +385,15 @@
       \verb https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core
       \endverb
     \endentry
+    \entry{tensorflowdata}{online}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labeltitlesource}{title}
+      \field{title}{Tensorflow feed input manual}
+      \verb{url}
+      \verb https://www.tensorflow.org/programmers_guide/datasets
+      \endverb
+    \endentry
     \entry{tensorflow}{online}{}
       \field{sortinit}{T}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
