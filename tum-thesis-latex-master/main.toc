@@ -56,18 +56,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.2}Extracting Speed Sign Candidates}{14}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Neural Net Classification}{18}{section.7.3}
+\contentsline {section}{\numberline {7.3}Neural Net Classification}{19}{section.7.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.3.1}Building Neural Network with Tensorflow}{19}{subsection.7.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Evaluation}{20}{chapter.8}
+\contentsline {subsection}{\numberline {7.3.2}Training data collection}{21}{subsection.7.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Section}{20}{section.8.1}
+\contentsline {chapter}{\numberline {8}Evaluation}{22}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1.1}Subsection}{20}{subsection.8.1.1}
+\contentsline {section}{\numberline {8.1}Section}{22}{section.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{21}{chapter*.18}
+\contentsline {subsection}{\numberline {8.1.1}Subsection}{22}{subsection.8.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{22}{chapter*.19}
+\contentsline {chapter}{\nonumberline List of Figures}{23}{chapter*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{23}{chapter*.20}
+\contentsline {chapter}{\nonumberline List of Tables}{24}{chapter*.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Bibliography}{25}{chapter*.20}

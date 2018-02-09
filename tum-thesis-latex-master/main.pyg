@@ -1,0 +1,5 @@
+	hsv_image = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+	lower_red = cv2.inRange(hsv_image, (0, 100, 100), (10, 255, 255))
+	upper_red = cv2.inRange(hsv_image, (160, 100, 100), (179, 255, 255))
+	red_combined = cv2.addWeighted(lower_red, 1.0, upper_red, 1.0, 0.0)
+	red_combined = cv2.GaussianBlur(red_combined, (9, 9), 2, 2)

@@ -26,9 +26,10 @@
 \BOOKMARK [1][-]{section.7.2}{Extracting Speed Sign Candidates}{chapter.7}% 26
 \BOOKMARK [1][-]{section.7.3}{Neural Net Classification}{chapter.7}% 27
 \BOOKMARK [2][-]{subsection.7.3.1}{Building Neural Network with Tensorflow}{section.7.3}% 28
-\BOOKMARK [0][-]{chapter.8}{Evaluation}{}% 29
-\BOOKMARK [1][-]{section.8.1}{Section}{chapter.8}% 30
-\BOOKMARK [2][-]{subsection.8.1.1}{Subsection}{section.8.1}% 31
-\BOOKMARK [0][-]{chapter*.18}{List of Figures}{}% 32
-\BOOKMARK [0][-]{chapter*.19}{List of Tables}{}% 33
-\BOOKMARK [0][-]{chapter*.20}{Bibliography}{}% 34
+\BOOKMARK [2][-]{subsection.7.3.2}{Training data collection}{section.7.3}% 29
+\BOOKMARK [0][-]{chapter.8}{Evaluation}{}% 30
+\BOOKMARK [1][-]{section.8.1}{Section}{chapter.8}% 31
+\BOOKMARK [2][-]{subsection.8.1.1}{Subsection}{section.8.1}% 32
+\BOOKMARK [0][-]{chapter*.18}{List of Figures}{}% 33
+\BOOKMARK [0][-]{chapter*.19}{List of Tables}{}% 34
+\BOOKMARK [0][-]{chapter*.20}{Bibliography}{}% 35

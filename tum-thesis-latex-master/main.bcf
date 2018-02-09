@@ -2173,9 +2173,9 @@
     <bcf:citekey order="28">androidndk</bcf:citekey>
     <bcf:citekey order="29">ndkspeed</bcf:citekey>
     <bcf:citekey order="30">imagesegmentation</bcf:citekey>
-    <bcf:citekey order="31">houghcircles</bcf:citekey>
+    <bcf:citekey order="31">hsv</bcf:citekey>
     <bcf:citekey order="32">hsv</bcf:citekey>
-    <bcf:citekey order="33">hsv</bcf:citekey>
+    <bcf:citekey order="33">houghcircles</bcf:citekey>
     <bcf:citekey order="34">tensorflow</bcf:citekey>
     <bcf:citekey order="35">tensorflowcore</bcf:citekey>
   </bcf:section>

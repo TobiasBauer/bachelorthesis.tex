@@ -50,29 +50,29 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.1}{\ignorespaces Python code for extracting red pixels\relax }}{15}{figure.caption.12}
+\contentsline {figure}{\numberline {\relax 7.1}{\ignorespaces HSV colourspace \cite {hsv}\relax }}{15}{figure.caption.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.2}{\ignorespaces Code for performing Circle Hough Transform\relax }}{16}{figure.caption.13}
+\contentsline {figure}{\numberline {\relax 7.2}{\ignorespaces Python code for extracting red pixels\relax }}{16}{figure.caption.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.3}{\ignorespaces Original Image\relax }}{17}{figure.caption.14}
+\contentsline {figure}{\numberline {\relax 7.3}{\ignorespaces Code for performing Circle Hough Transform\relax }}{16}{figure.caption.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.4}{\ignorespaces Lower red hue pixels\relax }}{17}{figure.caption.14}
+\contentsline {figure}{\numberline {\relax 7.4}{\ignorespaces Original Image\relax }}{18}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.5}{\ignorespaces Upper red hue pixels\relax }}{17}{figure.caption.14}
+\contentsline {figure}{\numberline {\relax 7.5}{\ignorespaces Lower red hue pixels\relax }}{18}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.6}{\ignorespaces Upper and lower pixels combined\relax }}{17}{figure.caption.14}
+\contentsline {figure}{\numberline {\relax 7.6}{\ignorespaces Upper red hue pixels\relax }}{18}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.7}{\ignorespaces Gaussian Blurred\relax }}{17}{figure.caption.14}
+\contentsline {figure}{\numberline {\relax 7.7}{\ignorespaces Upper and lower pixels combined\relax }}{18}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.8}{\ignorespaces Marked circle in original image\relax }}{17}{figure.caption.14}
+\contentsline {figure}{\numberline {\relax 7.8}{\ignorespaces Gaussian Blurred\relax }}{18}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.9}{\ignorespaces Cropped image\relax }}{18}{figure.caption.15}
+\contentsline {figure}{\numberline {\relax 7.9}{\ignorespaces Marked circle in original image\relax }}{18}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.10}{\ignorespaces Cropped and converted image\relax }}{18}{figure.caption.15}
+\contentsline {figure}{\numberline {\relax 7.10}{\ignorespaces Cropped image\relax }}{19}{figure.caption.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.11}{\ignorespaces HSV colourspace \cite {hsv}\relax }}{18}{figure.caption.16}
+\contentsline {figure}{\numberline {\relax 7.11}{\ignorespaces Cropped and converted image\relax }}{19}{figure.caption.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.12}{\ignorespaces Neural Net Model in Python\relax }}{19}{figure.caption.17}
+\contentsline {figure}{\numberline {\relax 7.12}{\ignorespaces Neural Net Model in Python\relax }}{20}{figure.caption.17}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
