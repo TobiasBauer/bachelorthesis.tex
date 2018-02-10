@@ -7,9 +7,37 @@ The subsequent chapter is going to give a detailed view of how the methods descr
 As the Android-application described in passage \ref{chapter:Integration into existing App} was used as a basis, there is no reasonable alternative to further developing the app with Android Studio.
 
 \section{Target device}
-As target device, the mid- to low-end phone Huawei P8 Lite ALE-L21 is going to be used. 
-
-
+As target device, the mid- to low-end phone Huawei P8 Lite ALE-L21 is going to be used (Figure: \ref{fig:p8lite}).
+\begin{table}[h]
+	\begin{tabular}{|p{0.3\linewidth} || p{0.58\linewidth}|}
+		\hline
+		\multicolumn{2}{|c|}{Relevant specifications} \\
+		\hline\hline
+		CPU & Hisilicon Kirin 620 CPU 8 X 1.2 GHz \\
+		\hline
+		GPU & ARM Mali-450MP4 \\
+		\hline
+		Operating System & Android 6.0  \\
+		\hline
+		Memory & 2 GB RAM + 16 GB ROM \\
+		\hline
+		Connectivity & LTE Cat4/ Wi-Fi 802.11 b/g/n/ Bluetooth 4.0/ \\
+		\hline
+		Camera & 13 MP BSI camera + 5 MP camera\\
+		\hline
+		Video & 1080p@30fps \\
+		\hline
+	\end{tabular}
+	\caption{Specifications}
+	\label{table:specifications}
+\end{table}
+\begin{figure}[h]
+	\centering
+	\minipage{0.35\textwidth}
+	\includegraphics[width=\linewidth]{images/p8lite.jpg}
+	\caption{Huawei P8 Lite ALE-L21}\label{fig:p8lite}
+	\endminipage\hfill
+\end{figure}
 
 \section{Native Development Kit}
 The Android NDK is a toolset that lets you implement parts of your app in native code, using languages such as C and C++. For certain types of apps, this can help to reuse code libraries written in those languages \cite{androidndk}. Moreover employing the Native Development Kit to the application's code can increase the performance significantly  \cite{ndkspeed}. Anticipated using the Native Kit might have a bigger workload, than Android's classic SDK, was considered just fine, if the performance was superiorly compared to the approach written in Java. \newline
@@ -17,7 +45,7 @@ The first part, dealing with the detection of Speed Signs, doing image processin
 
 \section{Extracting Speed Sign Candidates}\label{extraction}
 The algorithm has been implemented in three languages: C++, Java and Python, every language serving different purposes. C++ and Java versions were necessary to operate for the application, first one running the Native approach, the second for the "standard" SDK version. The last program written in Python has been utilized for extracting data from images collected from Google image search, running on PC, in order to get training data to feed my Neural Network model (more about this topic later on). Nevertheless, apart from syntactical differences, every program basically does the same operations. For the sake of simplicity, only the python variation is going to be examined, as it is probably the easiest version to read. Every step of image processing in every language has been done with the OpenCV library. \newline
-After reading the image, changing the colour space from RGB/BGR to HSL/HSV is optional, but a reasonable step, because in the RGB/BGR space, all three Values of red, green and blue are correlated when it comes to changes in brightness \cite{imagesegmentation}. Unlike that, HSL/HSV holds lightness or the value of brightness in a separate variable, which can lead to better results with respect to filtering colours under alternating lighting conditions. In the following, the HSV space is going to be used, even though HSL space is defined almost analogical, they differentiate each other from the arrangement of colour tones. \newline
+After reading the image, changing the colour space from RGB/BGR to HSL/HSV is optional, but a reasonable step, because in the RGB/BGR space, all three Values of red, green and blue are correlated when it comes to changes in brightness \cite{imagesegmentation}. Unlike that, HSL/HSV holds lightness or the value of brightness in a separate variable, which can lead to better results with respect to filtering colours under alternating lighting conditions. In the following, the HSV space is going to be used, even though HSL space is defined almost analogical, they differentiate each other from the arrangement of white color \cite{zynq}. \newline
 
 \begin{figure}[H]
 	\centering
@@ -206,6 +234,9 @@ features {
 
 \end{lstlisting}
 \end{minipage}
+
+\subsection{Tensorflow Sessions}
+A Session object encapsulates the environment in which Operation objects are executed, and Tensor objects are evaluated\cite{tensorflowsession}. A session owns resources like Variables, in given case, all weights and biases are stored in a session, moreover if they change, say during the process of training, the current values are enclosed by the Session. In order to safe the current state of the graph, Tensorflow provides the Saver class, that allows easy saving of the whole session informations. 
 
 \subsection{Feeding and training}
 

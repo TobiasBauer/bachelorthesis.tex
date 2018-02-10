@@ -325,6 +325,39 @@
       \verb http://www.aishack.in/static/img/tut/hough_circle.jpg
       \endverb
     \endentry
+    \entry{zynq}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=923e68d313f472401d9b315880927e71}{%
+           family={Russell},
+           familyi={R\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{uniquename=0,hash=abe15de61f8bb3d908080589b4102b4f}{%
+           family={Fischaber},
+           familyi={F\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{6ead59a374aca5286f5500a977780302}
+      \strng{fullhash}{6ead59a374aca5286f5500a977780302}
+      \strng{authornamehash}{6ead59a374aca5286f5500a977780302}
+      \strng{authorfullhash}{6ead59a374aca5286f5500a977780302}
+      \field{sortinit}{R}
+      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2013 11th IEEE International Conference on Industrial Informatics (INDIN)}
+      \field{issn}{1935-4576}
+      \field{month}{7}
+      \field{title}{OpenCV based road sign recognition on Zynq}
+      \field{year}{2013}
+      \field{pages}{596\bibrangedash 601}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/INDIN.2013.6622951
+      \endverb
+      \keyw{filtering theory;image classification;image colour analysis;public domain software;road vehicles;system-on-chip;traffic engineering computing;FMC slot;OpenCV-based road sign recognition;UK road sign database;Xilinx Zynq-7020 chip;Zedboard;Zynq PL section;autonomous vehicles;color-based image filtering;driver assistance systems;filtered image shape classification;image preprocessing functions;image scanning;on-semiconductor VITA-2000 sensor;real-time system-on-chip-based approach;road sign identification;road sign maintenance;template matching function;Field programmable gate arrays;Hardware;Image color analysis;Image segmentation;Roads;Shape;Software}
+    \endentry
     \entry{hough0}{online}{}
       \field{sortinit}{S}
       \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
@@ -401,6 +434,15 @@
       \field{title}{Tensorflow homepage}
       \verb{url}
       \verb https://www.tensorflow.org/
+      \endverb
+    \endentry
+    \entry{tensorflowsession}{online}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labeltitlesource}{title}
+      \field{title}{Tensorflow session manual}
+      \verb{url}
+      \verb https://www.tensorflow.org/api_docs/python/tf/Session
       \endverb
     \endentry
   \endsortlist
