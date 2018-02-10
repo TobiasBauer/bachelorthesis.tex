@@ -409,6 +409,51 @@
       \endverb
       \keyw{C language;Java;augmented reality;operating systems (computers);software engineering;Android NDK;Android application speed up method;C libraries;JAVA language;JNI;Java native interface;NyARToolKit;TV;augmented reality engine;embedded OS;image processing;native code libraries;native development kit;robot;smart phones;Androids;Google;Hardware;Humanoid robots;Java;Libraries;Android;JAVA;JNI;NDK;Native C;NyARToolKit;Smart phone}
     \endentry
+    \entry{machinelearning}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=3dcb1b9936b53ea12ad71b8ed82d498f}{%
+           family={Stallkamp},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{uniquename=0,hash=fd40de770204554f459fc717f42e8a26}{%
+           family={Schlipsing},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{uniquename=0,hash=6980e6d6278c4b0a2fdd829c39c36da7}{%
+           family={Salmen},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{uniquename=0,hash=351ab81d647f21521947df49a5ba174a}{%
+           family={Igel},
+           familyi={I\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ce55a4a1596241c819712d509dd88eb}
+      \strng{fullhash}{9ce55a4a1596241c819712d509dd88eb}
+      \strng{authornamehash}{9ce55a4a1596241c819712d509dd88eb}
+      \strng{authorfullhash}{9ce55a4a1596241c819712d509dd88eb}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1524-9050}
+      \field{journaltitle}{IEEE Transactions on Intelligent Transportation Systems}
+      \field{month}{12}
+      \field{number}{4}
+      \field{title}{Introduction to the Special Issue on Machine Learning for Traffic Sign Recognition}
+      \field{volume}{13}
+      \field{year}{2012}
+      \field{pages}{1481\bibrangedash 1483}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1109/TITS.2012.2225192
+      \endverb
+      \keyw{Machine learning algorithms;Neural networks;Real-time systems;Special issues and sections}
+    \endentry
     \entry{tensorflowcore}{online}{}
       \field{sortinit}{T}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}

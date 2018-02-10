@@ -1,21 +1,22 @@
 [0] Config.pm:354> INFO - This is Biber 2.7 (beta)
 [0] Config.pm:357> INFO - Logfile is 'main.blg'
-[24] biber:303> INFO - === Sa Feb 10, 2018, 14:41:03
-[35] Biber.pm:360> INFO - Reading 'main.bcf'
-[93] Biber.pm:836> INFO - Found 26 citekeys in bib section 0
-[105] Biber.pm:3671> INFO - Processing section 0
-[116] Biber.pm:3841> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
-[118] bibtex.pm:1424> INFO - Decoding LaTeX character macros into UTF-8
-[123] bibtex.pm:1281> INFO - Found BibTeX data source 'bibliography.bib'
-[128] Utils.pm:164> WARN - month field 'July' in entry 'zynq' is not an integer - this will probably not sort properly.
-[131] Utils.pm:164> WARN - month field 'September' in entry 'farleyclark' is not an integer - this will probably not sort properly.
-[136] Utils.pm:164> WARN - month field 'Mar' in entry 'nntutorial' is not an integer - this will probably not sort properly.
-[139] Utils.pm:164> WARN - month field 'Jul' in entry 'circlehough' is not an integer - this will probably not sort properly.
-[142] Utils.pm:164> WARN - month field 'Sept' in entry 'ndkspeed' is not an integer - this will probably not sort properly.
-[175] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[175] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[175] Biber.pm:3500> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'en-US'
-[176] Biber.pm:3506> INFO - No sort tailoring available for locale 'en-US'
-[191] bbl.pm:608> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[194] bbl.pm:712> INFO - Output to main.bbl
-[194] Biber.pm:110> INFO - WARNINGS: 5
+[25] biber:303> INFO - === Sa Feb 10, 2018, 18:14:16
+[37] Biber.pm:360> INFO - Reading 'main.bcf'
+[94] Biber.pm:836> INFO - Found 27 citekeys in bib section 0
+[106] Biber.pm:3671> INFO - Processing section 0
+[118] Biber.pm:3841> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[119] bibtex.pm:1424> INFO - Decoding LaTeX character macros into UTF-8
+[125] bibtex.pm:1281> INFO - Found BibTeX data source 'bibliography.bib'
+[130] Utils.pm:164> WARN - month field 'July' in entry 'zynq' is not an integer - this will probably not sort properly.
+[132] Utils.pm:164> WARN - month field 'Dec' in entry 'machinelearning' is not an integer - this will probably not sort properly.
+[134] Utils.pm:164> WARN - month field 'September' in entry 'farleyclark' is not an integer - this will probably not sort properly.
+[140] Utils.pm:164> WARN - month field 'Mar' in entry 'nntutorial' is not an integer - this will probably not sort properly.
+[143] Utils.pm:164> WARN - month field 'Jul' in entry 'circlehough' is not an integer - this will probably not sort properly.
+[146] Utils.pm:164> WARN - month field 'Sept' in entry 'ndkspeed' is not an integer - this will probably not sort properly.
+[182] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[182] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[182] Biber.pm:3500> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'en-US'
+[182] Biber.pm:3506> INFO - No sort tailoring available for locale 'en-US'
+[199] bbl.pm:608> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[202] bbl.pm:712> INFO - Output to main.bbl
+[202] Biber.pm:110> INFO - WARNINGS: 6

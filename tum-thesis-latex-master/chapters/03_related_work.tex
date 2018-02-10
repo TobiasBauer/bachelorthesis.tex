@@ -2,15 +2,10 @@
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 
 \chapter{Related Work}\label{chapter:Related Work}
-In this section i am going to inspect projects from third parties, who also did work related to recognizing traffic signs, explaining them and trying to point out which methods have been used and why.
+In this section projects from third parties are going to be inspected, who also did work related to recognizing traffic signs, their used methods are pointed out, seeking to explain why they have been used.
 
 \section{Computer Vision}
 \subsection{OpenCV Based Road Sign Recognition on Zynq}
-The paper by Matthew Russell and Scott Fischaber presents a system on chip approach with a Xilinx Zynq-7020 chip, for recognizing and classifying road signs. The methods for detection are color-based techniques paired with shape recognition, implemented with the OpenCV library. To finally classify the regions of interest, found in the first steps, template matching is used. The system's performance is around 0.2 frames per second \cite{zynq}. Subsequent paragraph is going to describe the methods used to extract certain regions, that might be important for the task of road sign detection, thus the green part of figure \ref{fig:zynq}. \newline
-The first stage in the algorithm is
-converting the image into the HSV color space, in order to remove background colors. HSV was chosen over HSI, because it is easier to implement in hardware, calculating  HSI requires more divisions and would therefore increase latency in hardware, resulting in an overall slowed down system. With the focus on red and blue traffic signs, red and blue pixels are being extracted and thresholded by the algorithm. Therafter Morphology  operations  are  applied  to  the  filtered 
-image to recover some broken signs and to remove very small objects. After being converted to gray scale, the Canny Edge detection is being used, to determine every edge in given image, provided by OpenCV. 
-
 \begin{figure}[H]
 	\centering
 	\minipage{0.6\textwidth}
@@ -18,6 +13,74 @@ image to recover some broken signs and to remove very small objects. After being
 	\caption{Concept \cite{zynq}}\label{fig:zynq}
 	\endminipage\hfill
 \end{figure}
+The paper by Matthew Russell and Scott Fischaber presents a system on chip approach with a Xilinx Zynq-7020 chip, for recognizing and classifying road signs. The methods for detection are color-based techniques paired with shape recognition, implemented with the OpenCV library. To finally classify the regions of interest, found in the first steps, template matching is used. The system's performance is around 0.2 frames per second \cite{zynq}. Subsequent paragraph is going to describe the methods used to extract certain regions, that might be important for the task of road sign detection, thus the green part of figure \ref{fig:zynq}. \newline
+The first stage in the algorithm is
+converting the image into the HSV color space, in order to remove background colors (Figure: \ref{fig:zynq0}). HSV was chosen over HSI, because it is easier to implement in hardware, calculating  HSI requires more divisions and would therefore increase latency in hardware, resulting in an overall slowed down system. With the focus on red and blue traffic signs, red and blue pixels are being extracted and thresholded by the algorithm (Figure: \ref{fig:zynq1}). Therafter Morphology  operations  are  applied  to  the  filtered image to recover some broken signs and to remove very small objects. After being converted to gray scale (Figure: \ref{fig:zynq2}), the Canny Edge detection is being used, to determine every edge in given image (Figure: \ref{fig:zynq3}), provided by OpenCV. Resulting picture is searched for contours, found contours are being filled with white pixels (Figure: \ref{fig:zynq4}), whereas contours smaller than 30 pixels are removed, the image is binary now. The next operation cuts every circle out of the picture (Figure: \ref{fig:zynq5}), to determine where circles are, the Circle Hough Transform from OpenCV is applied.
+Another useful tool, provided by this library is the  Ramer-Douglas-Peucker 
+algorithm, that is used to approximate a shape.
+This is applied to the remaining filled contours, in order to count the number of corners. The count is used
+to classify the shape as a triangle (3), rectangle(4), octagon(8) or unknown(others). This is repeated for all detected bounds and the detected shapes are joined with the list of circles to form a full list of detected sign candidates in the image. Mentioned list is now passed to the recognition step, where these nominees are classified via Template Matching. \newline
+As the purpose of addressing this work, was to highlight the Computer Vision aspect, so the classification, the overview ends here, but more about the recognition can be read independently in the paper \cite{zynq}. 
+\begin{figure}[H]
+	\minipage{0.33\textwidth}
+	\includegraphics[width=\linewidth]{images/zynq0.png}
+	\caption{}\label{fig:zynq0}
+	\endminipage\hfill
+	\minipage{0.33\textwidth}
+	\includegraphics[width=\linewidth]{images/zynq1.png}
+	\caption{}\label{fig:zynq1}
+	\endminipage\hfill
+	\minipage{0.33\textwidth}%
+	\includegraphics[width=\linewidth]{images/zynq2.png}
+	\caption{}\label{fig:zynq2}
+	\endminipage
+	\newline
+	\minipage{0.33\textwidth}
+	\includegraphics[width=\linewidth]{images/zynq3.png}
+	\caption{}\label{fig:zynq3}
+	\endminipage\hfill
+	\minipage{0.33\textwidth}
+	\includegraphics[width=\linewidth]{images/zynq4.png}
+	\caption{}\label{fig:zynq4}
+	\endminipage\hfill
+	\minipage{0.33\textwidth}%
+	\includegraphics[width=\linewidth]{images/zynq5.png}
+	\caption{}\label{fig:zynq5}
+	\endminipage
+	\newline
+	\caption{Steps of processing image}
+\end{figure}
 
 \section{Machine Learning}
+\subsection{Introduction to the Special Issue on Machine Learning for Traffic Sign Recognition}
+
+J. Stallkamp, M. Schlipsing, J. Salmen and C. Igel wrote their paper \cite{machinelearning}, in order to give a brief overview of the machine learning algorithms in the field of traffic sign recognition, with regard to the classification. \newline
+They point out, that some subsets of classes are
+very similar to each other (e.g., speed limit signs). In addition to these interclass differences and similarities, the classifier must be able to handle different optical appearances, like changes in lighting, partial occlusions, rotations and diverse other irregularities. In 2011 a competition named: "IEEE Joint
+Conference on Neural Networks" (IJCNN) \cite{ijcnn} took place, in order to compare pattern recognition and machine learning approaches. Over 20 participating teams competed against each other, with the following approaches: different kinds of neural
+networks, support vector machines (SVMs), linear discriminant analysis, subspace analysis, ensemble classifiers, slow feature analysis, nearest neighbor classifiers and random forests. \newline
+The first and the second place were won by classifiers both using convolutional Nerual Networks, the third place was won by a random forest technique approach, paired with a Support Vector Machine. Notably, in the course of the competition, a human's performance on single framed image recognition was tested, as comparison, resulting in a score of 98.84\% correctly recognized images. In contrast to this result, the first place, utilizing a multi-column deep neural network (MCDNN) scored a total of 99.46\%, therefore beeing even better than a real person. 
+
+\begin{table}[h]
+	\begin{tabular}{||p{0.05\linewidth} | p{0.2\linewidth}|p{0.2\linewidth}|p{0.2\linewidth}|p{0.2\linewidth}||}
+		\hline
+		Rank  &	Team & Representative &	Method &	Correct recognition rate\\
+		\hline
+		\hline
+		1 & IDSIA & Dan Ciresan & Committee of CNNs &	99.46\% \\
+		\hline
+		2 &	INI & & Human Performance & 98.84\% \\
+		\hline
+		3 & sermanet & Pierre Sermanet & Multi-Scale CNNs & 98.31 \% \\
+		\hline
+		4 & CAOR & Fatin Zaklouta & Random Forests &	96.14\% \\
+		\hline
+		
+	\end{tabular}
+	\caption{Final results of the IJCNN 2011}
+	\label{table:icjnn2011}
+	
+\end{table}
+
+
 \section{Deep Learning}
