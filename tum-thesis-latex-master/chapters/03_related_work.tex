@@ -84,3 +84,39 @@ The first and the second place were won by classifiers both using convolutional 
 
 
 \section{Deep Learning}
+\if false
+
+\subsection{Traffic Sign Recognition system on Android devices}
+Another really good example of similar work, that has been produced on the topic of traffic sign recognition was done by Tran, Hai S., Traffic Sign Recognition was implemented on an Android device. This system was designed to recognize 85 New Zealand traffic signs with various colours and shapes \cite{androidnn}. \newline
+Two different techniques are used to extract sign candidates from raw images before they are classified to the correct class. The first technique uses colour filters to specify relevant regions, as the
+second technique applies the detector on two consecutive raw images without colour-filtering. As mentioned Sign detector an AdaBoost classifier using Linear Binary Pattern was utilized to extract required features. Regions of interest from the sign detector are called ”sign candidates” and classified by a back propagating neural network. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=5cm]{images/tranNN.jpg}
+	\caption{Applied Neural Network}
+	\label{fig:tranNN}
+\end{figure}
+
+
+
+
+This report
+finds the colour-filtering technique with the filtering threshold carefully tuned
+overperforms the cascade detecting technique, but the latter is less likely to
+miss a sign in different lighting conditions.
+
+\fi
+
+\subsection{Real-time Traffic Sign Recognition System with Deep Convolutional Neural Network}
+In this paper, 6 types of traffic signs are trained to be classified by a convolutional
+neural network (CNN) architecture. In the detection phase, light-weight color-based segmentation and the Hough transform  are applied to extract sign candidates, that can be fed forward into the CNN. The recognition system
+nearly achieves real-time performance.
+On-line
+recognition test is performed on the KA[ST campus road,
+and the result shows all 16 traffic signs are recognized
+successfully through the driving. The recognition system
+is implanted into autonomous vehicle 'Eurecar'. Different
+types of traffic signs are trained consistently and
+development of clustering algorithm is considered as a
+future work for robust recognition system.

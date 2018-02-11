@@ -226,6 +226,15 @@
       \verb https://edoras.sdsu.edu/doc/matlab/toolbox/images/color11.html
       \endverb
     \endentry
+    \entry{ijcnn}{online}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labeltitlesource}{title}
+      \field{title}{ICJNN with results}
+      \verb{url}
+      \verb http://benchmark.ini.rub.de./
+      \endverb
+    \endentry
     \entry{nntutorial}{article}{}
       \name{author}{3}{}{%
         {{uniquename=0,hash=9ee29fa046999b31c2634e59233a0eca}{%
@@ -489,6 +498,25 @@
       \verb{url}
       \verb https://www.tensorflow.org/api_docs/python/tf/Session
       \endverb
+    \endentry
+    \entry{androidnn}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=0774e78ecf7a1933e8d3accde1c951cf}{%
+           family={Tran},
+           familyi={T\bibinitperiod},
+           given={Hai\bibnamedelima S.},
+           giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{0774e78ecf7a1933e8d3accde1c951cf}
+      \strng{fullhash}{0774e78ecf7a1933e8d3accde1c951cf}
+      \strng{authornamehash}{0774e78ecf7a1933e8d3accde1c951cf}
+      \strng{authorfullhash}{0774e78ecf7a1933e8d3accde1c951cf}
+      \field{sortinit}{T}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Traffic Sign Recognition system on Android devices}
+      \field{year}{2013}
     \endentry
   \endsortlist
 \endrefsection
