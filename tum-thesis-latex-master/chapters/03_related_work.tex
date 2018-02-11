@@ -52,13 +52,13 @@ As the purpose of addressing this work, was to highlight the Computer Vision asp
 \end{figure}
 
 \section{Machine Learning}
-\subsection{Introduction to the Special Issue on Machine Learning for Traffic Sign Recognition}
+\subsection{Introduction to the Special Issue on Machine Learning for Traffic Sign Recognition}\label{ssec:machinelearning}
 
 J. Stallkamp, M. Schlipsing, J. Salmen and C. Igel wrote their paper \cite{machinelearning}, in order to give a brief overview of the machine learning algorithms in the field of traffic sign recognition, with regard to the classification. \newline
 They point out, that some subsets of classes are
 very similar to each other (e.g., speed limit signs). In addition to these interclass differences and similarities, the classifier must be able to handle different optical appearances, like changes in lighting, partial occlusions, rotations and diverse other irregularities. In 2011 a competition named: "IEEE Joint
 Conference on Neural Networks" (IJCNN) \cite{ijcnn} took place, in order to compare pattern recognition and machine learning approaches. Over 20 participating teams competed against each other, with the following approaches: different kinds of neural
-networks, support vector machines (SVMs), linear discriminant analysis, subspace analysis, ensemble classifiers, slow feature analysis, nearest neighbor classifiers and random forests. \newline
+networks (NN), support vector machines (SVMs), linear discriminant analysis, subspace analysis, ensemble classifiers, slow feature analysis, nearest neighbor classifiers and random forests. \newline
 The first and the second place were won by classifiers both using convolutional Nerual Networks, the third place was won by a random forest technique approach, paired with a Support Vector Machine. Notably, in the course of the competition, a human's performance on single framed image recognition was tested, as comparison, resulting in a score of 98.84\% correctly recognized images. In contrast to this result, the first place, utilizing a multi-column deep neural network (MCDNN) scored a total of 99.46\%, therefore beeing even better than a real person. 
 
 \begin{table}[h]
@@ -83,7 +83,7 @@ The first and the second place were won by classifiers both using convolutional 
 \end{table}
 
 
-\section{Deep Learning}
+\section{Deep Learning}\label{ssec:koreancnn}
 \if false
 
 \subsection{Traffic Sign Recognition system on Android devices}
@@ -120,7 +120,9 @@ training happened only with positive samples, created by hand cropped images. Af
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 0.8\linewidth]{images/koreancnn.png}
-	\caption{Applied Neural Network}
-	\label{fig:koreanNN}
+	\caption{Applied Convolutional Neural Network \cite{tsrcnn}}
+	\label{fig:koreanNN }
 \end{figure}
 
+\subsection{Conclusion}
+As from subsection \ref{ssec:machinelearning} emerges, artificial neural networks (ANN) play an important role in classifying images and their performance seems to be overwhelming, because these approaches are even capable of outperforming human image classification. So the direction for the following project was set towards a neural network based system. Though convolutional are often the architecture of choice, they require a decent amount of computing power provided by the hardware, like in subsection \ref{ssec:koreancnn}. Furthermore given the task of only classifying numbers, a more simple network, could also be sufficient. Regarding these aspects, the choice was made to utilize a deep but not convolutional ANN, with respect to the more or less minimalistic circumstances of using an Android powered device.

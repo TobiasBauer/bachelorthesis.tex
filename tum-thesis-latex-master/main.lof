@@ -26,67 +26,67 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 3.8}{\ignorespaces Steps of processing image\relax }}{5}{figure.caption.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.9}{\ignorespaces Applied Neural Network\relax }}{7}{figure.caption.6}
+\contentsline {figure}{\numberline {\relax 3.9}{\ignorespaces Applied Convolutional Neural Network \cite {tsrcnn}\relax }}{7}{figure.caption.6}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Biological and Artificial Neuron \cite {analogyneurons}\relax }}{8}{figure.caption.7}
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Biological and artificial neuron \cite {analogyneurons}\relax }}{10}{figure.caption.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Single Artificial Neuron \cite {artificialneuron}\relax }}{8}{figure.caption.7}
+\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Single artificial neuron \cite {artificialneuron}\relax }}{10}{figure.caption.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Sigmoid function with bias weight: 5 (blue), 0 (green), -5 (red){\cite {sigmoid}}\relax }}{10}{figure.caption.8}
+\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Sigmoid function with bias weight: 5 (blue), 0 (green), -5 (red){\cite {sigmoid}}\relax }}{11}{figure.caption.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Feed Forward Neural Network \cite {ffnn}\relax }}{11}{figure.caption.9}
+\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Feed forward neural network \cite {ffnn}\relax }}{12}{figure.caption.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces Recurrent Neural Network \cite {rnn}\relax }}{11}{figure.caption.9}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Original image\cite {10kmh}\relax }}{12}{figure.caption.10}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Filtered Image\relax }}{12}{figure.caption.10}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces Detected image\relax }}{12}{figure.caption.10}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces Binary image \cite {hough0}\relax }}{14}{figure.caption.12}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 5.5}{\ignorespaces Edge detected \cite {hough1}\relax }}{14}{figure.caption.12}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 5.6}{\ignorespaces Voting process visualized\cite {hough2}\relax }}{14}{figure.caption.12}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 5.7}{\ignorespaces Voted image \cite {hough3}\relax }}{14}{figure.caption.12}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 5.8}{\ignorespaces Simplified representation of the Neural Network Model \relax }}{16}{figure.caption.14}
+\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces Recurrent neural network \cite {rnn}\relax }}{12}{figure.caption.9}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Main screen\relax }}{17}{figure.caption.15}
+\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Original image\cite {10kmh}\relax }}{13}{figure.caption.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Load Image\relax }}{17}{figure.caption.15}
+\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Filtered Image\relax }}{13}{figure.caption.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces About\relax }}{17}{figure.caption.15}
+\contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces Detected image\relax }}{13}{figure.caption.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces Binary image \cite {hough0}\relax }}{15}{figure.caption.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 5.5}{\ignorespaces Edge detected \cite {hough1}\relax }}{15}{figure.caption.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 5.6}{\ignorespaces Voting process visualized\cite {hough2}\relax }}{15}{figure.caption.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 5.7}{\ignorespaces Voted image \cite {hough3}\relax }}{15}{figure.caption.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 5.8}{\ignorespaces Simplified representation of the Neural Network Model \relax }}{17}{figure.caption.14}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.1}{\ignorespaces Huawei P8 Lite ALE-L21\relax }}{19}{figure.caption.17}
+\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Main screen\relax }}{18}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.2}{\ignorespaces HSV colourspace \cite {hsv}\relax }}{20}{figure.caption.18}
+\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Load Image\relax }}{18}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.3}{\ignorespaces Original Image\relax }}{22}{figure.caption.19}
+\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces About\relax }}{18}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.4}{\ignorespaces Lower red hue pixels\relax }}{22}{figure.caption.19}
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.5}{\ignorespaces Upper red hue pixels\relax }}{22}{figure.caption.19}
+\contentsline {figure}{\numberline {\relax 7.1}{\ignorespaces Huawei P8 Lite ALE-L21\relax }}{20}{figure.caption.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.6}{\ignorespaces Upper and lower pixels combined\relax }}{22}{figure.caption.19}
+\contentsline {figure}{\numberline {\relax 7.2}{\ignorespaces HSV colourspace \cite {hsv}\relax }}{21}{figure.caption.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.7}{\ignorespaces Gaussian Blurred\relax }}{22}{figure.caption.19}
+\contentsline {figure}{\numberline {\relax 7.3}{\ignorespaces Original Image\relax }}{23}{figure.caption.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.8}{\ignorespaces Marked circle in original image\relax }}{22}{figure.caption.19}
+\contentsline {figure}{\numberline {\relax 7.4}{\ignorespaces Lower red hue pixels\relax }}{23}{figure.caption.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.9}{\ignorespaces Cropped image\relax }}{23}{figure.caption.20}
+\contentsline {figure}{\numberline {\relax 7.5}{\ignorespaces Upper red hue pixels\relax }}{23}{figure.caption.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.10}{\ignorespaces Cropped and converted image\relax }}{23}{figure.caption.20}
+\contentsline {figure}{\numberline {\relax 7.6}{\ignorespaces Upper and lower pixels combined\relax }}{23}{figure.caption.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 7.7}{\ignorespaces Gaussian Blurred\relax }}{23}{figure.caption.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 7.8}{\ignorespaces Marked circle in original image\relax }}{23}{figure.caption.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 7.9}{\ignorespaces Cropped image\relax }}{24}{figure.caption.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 7.10}{\ignorespaces Cropped and converted image\relax }}{24}{figure.caption.20}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

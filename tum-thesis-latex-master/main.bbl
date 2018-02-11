@@ -123,6 +123,42 @@
       \verb https://docs.opencv.org/2.4/modules/imgproc/doc/feature_detection.html?highlight=houghcircles#houghcircles
       \endverb
     \endentry
+    \entry{deep-learning-methods}{report}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=2f5fbdc5c3cf91f62a64663cd72397b3}{%
+           family={Deng},
+           familyi={D\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+        {{uniquename=0,hash=93509a9a7ccede33feb1e702b5a8bb9f}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Dong},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{location}{0}{%
+      }
+      \list{publisher}{1}{%
+        {NOW Publishers}%
+      }
+      \strng{namehash}{a68740927aac82a2c4c1e855b5fc9c0b}
+      \strng{fullhash}{a68740927aac82a2c4c1e855b5fc9c0b}
+      \strng{authornamehash}{a68740927aac82a2c4c1e855b5fc9c0b}
+      \strng{authorfullhash}{a68740927aac82a2c4c1e855b5fc9c0b}
+      \field{sortinit}{D}
+      \field{sortinithash}{d10b5413de1f3d197b20897dd0d565bb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{title}{Deep Learning: Methods and Applications}
+      \field{type}{techreport}
+      \field{year}{2014}
+      \field{pages}{199\bibrangedash 200}
+      \range{pages}{2}
+      \verb{url}
+      \verb https://www.microsoft.com/en-us/research/publication/deep-learning-methods-and-applications/
+      \endverb
+    \endentry
     \entry{kia4sm}{online}{}
       \name{author}{3}{}{%
         {{uniquename=0,hash=13ab7241b77dad7bd1ca319a8d0062eb}{%
@@ -194,7 +230,7 @@
       \field{labeltitlesource}{title}
       \field{title}{Feed Forward Neural Network}
       \verb{url}
-      \verb http://www.aman.site/img/in-post/DeepLearning_neural_network/a-feed-forward-neural-network.png
+      \verb https://www.researchgate.net/profile/Ramon_Quiza/publication/234055140/figure/fig2/AS:299964002521096@1448528399250/Figure-42-Graph-of-a-feed-forward-neural-network.png
       \endverb
     \endentry
     \entry{hebb}{book}{}
@@ -358,13 +394,43 @@
       \verb http://yann.lecun.com/exdb/mnist/
       \endverb
     \endentry
+    \entry{moore}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=e365c9e9c31fb6d66d07d5a37d9f6893}{%
+           family={Moore},
+           familyi={M\bibinitperiod},
+           given={G.\bibnamedelimi E.},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{e365c9e9c31fb6d66d07d5a37d9f6893}
+      \strng{fullhash}{e365c9e9c31fb6d66d07d5a37d9f6893}
+      \strng{authornamehash}{e365c9e9c31fb6d66d07d5a37d9f6893}
+      \strng{authorfullhash}{e365c9e9c31fb6d66d07d5a37d9f6893}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1098-4232}
+      \field{journaltitle}{IEEE Solid-State Circuits Society Newsletter}
+      \field{month}{9}
+      \field{number}{3}
+      \field{title}{Cramming more components onto integrated circuits, Reprinted from Electronics, volume 38, number 8, April 19, 1965, pp.114 ff.}
+      \field{volume}{11}
+      \field{year}{2006}
+      \field{pages}{33\bibrangedash 35}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1109/N-SSC.2006.4785860
+      \endverb
+      \keyw{Computers;Data mining;Films;Heating;Integrated circuits;Microwave amplifiers;Silicon}
+    \endentry
     \entry{rnn}{online}{}
       \field{sortinit}{R}
       \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
       \field{labeltitlesource}{title}
       \field{title}{Recurrent Neural Network}
       \verb{url}
-      \verb https://i.stack.imgur.com/KmrmP.png
+      \verb https://www.researchgate.net/profile/Ramon_Quiza/publication/234055140/figure/fig3/AS:299964002521099@1448528399394/Figure-43-Graph-of-a-recurrent-neural-network.png
       \endverb
     \endentry
     \entry{hough3}{online}{}
