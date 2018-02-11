@@ -275,6 +275,48 @@
       \endverb
       \keyw{character recognition;neural nets;neurophysiology;ANN application;artificial computational model;artificial neural networks;basic biological neuron;character recognition;interconnected simple processors;learning processes;massively parallel systems;network architectures;Artificial neural networks;Biological neural networks;Biological system modeling;Biology computing;Computer architecture;Concurrent computing;Humans;Integrated circuit interconnections;Parallel processing;Tutorial}
     \endentry
+    \entry{tsrcnn}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{uniquename=1,hash=9ddce5cf5ce8c712e6edca7b7c4abffd}{%
+           family={Jung},
+           familyi={J\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{uniquename=1,hash=f5770f2600da45ff2aaeebfa8608aae4}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={U.},
+           giveni={U\bibinitperiod}}}%
+        {{uniquename=1,hash=79c4e747b998b98bacd8e84a5517c8f6}{%
+           family={Jung},
+           familyi={J\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{uniquename=0,hash=3a526a90ba9fa0f99e34852a88900c26}{%
+           family={Shim},
+           familyi={S\bibinitperiod},
+           given={D.\bibnamedelimi H.},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{9fdf0507f983d0273f4c7b539e8f2b27}
+      \strng{fullhash}{9fdf0507f983d0273f4c7b539e8f2b27}
+      \strng{authornamehash}{9fdf0507f983d0273f4c7b539e8f2b27}
+      \strng{authorfullhash}{9fdf0507f983d0273f4c7b539e8f2b27}
+      \field{sortinit}{J}
+      \field{sortinithash}{c86bd6cced82a15683b396c2169909ef}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2016 13th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI)}
+      \field{month}{8}
+      \field{title}{Real-time Traffic Sign Recognition system with deep convolutional neural network}
+      \field{year}{2016}
+      \field{pages}{31\bibrangedash 34}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/URAI.2016.7734014
+      \endverb
+      \keyw{Hough transforms;cameras;driver information systems;image colour analysis;image recognition;image segmentation;neural nets;real-time systems;road traffic;vehicles;ADAS;EURO NCAP policy rating;Hough transform algorithm;advanced drive assistance system;deep convolutional neural network;front camera;light weight color-based segmentation algorithm;online recognition testing;real-time traffic sign recognition system;Automobiles;Out of order;Autonomous Vehicle;CNN (Convolutional Neural Network);Real-time Image Processing;TSR (Traffic Sign Recognition)}
+    \endentry
     \entry{circlehough}{unknown}{}
       \name{author}{2}{}{%
         {{uniquename=0,hash=d9aafe46b57824aa3f5935a1263c8234}{%
@@ -392,7 +434,7 @@
            familyi={S\bibinitperiod},
            given={Ki-Cheol},
            giveni={K\bibinithyphendelim C\bibinitperiod}}}%
-        {{uniquename=0,hash=6db364f556c700588ce89af303f556f1}{%
+        {{uniquename=1,hash=6db364f556c700588ce89af303f556f1}{%
            family={Lee},
            familyi={L\bibinitperiod},
            given={Jong-Yeol},
@@ -498,25 +540,6 @@
       \verb{url}
       \verb https://www.tensorflow.org/api_docs/python/tf/Session
       \endverb
-    \endentry
-    \entry{androidnn}{article}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=0774e78ecf7a1933e8d3accde1c951cf}{%
-           family={Tran},
-           familyi={T\bibinitperiod},
-           given={Hai\bibnamedelima S.},
-           giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-      }
-      \strng{namehash}{0774e78ecf7a1933e8d3accde1c951cf}
-      \strng{fullhash}{0774e78ecf7a1933e8d3accde1c951cf}
-      \strng{authornamehash}{0774e78ecf7a1933e8d3accde1c951cf}
-      \strng{authorfullhash}{0774e78ecf7a1933e8d3accde1c951cf}
-      \field{sortinit}{T}
-      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Traffic Sign Recognition system on Android devices}
-      \field{year}{2013}
     \endentry
   \endsortlist
 \endrefsection

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.29)  11 FEB 2018 14:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.29)  11 FEB 2018 16:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2087,49 +2087,49 @@ chapter 2.
 
 ]
 chapter 3.
-<images/zynqconcept.png, id=256, 982.67125pt x 713.66624pt>
+<images/zynqconcept.png, id=262, 982.67125pt x 713.66624pt>
 File: images/zynqconcept.png Graphic file (type png)
 <use images/zynqconcept.png>
 Package pdftex.def Info: images/zynqconcept.png  used on input line 12. on inpu
 t line 12.
 Package pdftex.def Info: Requested size: 250.95587pt x 182.24927pt on input lin
 e 12.
-<images/zynq0.png, id=269, 510.90875pt x 287.0725pt>
+<images/zynq0.png, id=275, 510.90875pt x 287.0725pt>
 File: images/zynq0.png Graphic file (type png)
 <use images/zynq0.png>
 Package pdftex.def Info: images/zynq0.png  used on input line 26. on input line
  26.
 Package pdftex.def Info: Requested size: 138.02509pt x 77.55441pt on input line
  26.
-<images/zynq1.png, id=270, 513.92pt x 290.08376pt>
+<images/zynq1.png, id=276, 513.92pt x 290.08376pt>
 File: images/zynq1.png Graphic file (type png)
 <use images/zynq1.png>
 Package pdftex.def Info: images/zynq1.png  used on input line 30. on input line
  30.
 Package pdftex.def Info: Requested size: 138.02509pt x 77.90758pt on input line
  30.
-<images/zynq2.png, id=271, 513.92pt x 290.08376pt>
+<images/zynq2.png, id=277, 513.92pt x 290.08376pt>
 File: images/zynq2.png Graphic file (type png)
 <use images/zynq2.png>
 Package pdftex.def Info: images/zynq2.png  used on input line 34. on input line
  34.
 Package pdftex.def Info: Requested size: 138.02509pt x 77.90758pt on input line
  34.
-<images/zynq3.png, id=272, 513.92pt x 290.08376pt>
+<images/zynq3.png, id=278, 513.92pt x 290.08376pt>
 File: images/zynq3.png Graphic file (type png)
 <use images/zynq3.png>
 Package pdftex.def Info: images/zynq3.png  used on input line 39. on input line
  39.
 Package pdftex.def Info: Requested size: 138.02509pt x 77.90758pt on input line
  39.
-<images/zynq4.png, id=273, 507.8975pt x 286.06876pt>
+<images/zynq4.png, id=279, 507.8975pt x 286.06876pt>
 File: images/zynq4.png Graphic file (type png)
 <use images/zynq4.png>
 Package pdftex.def Info: images/zynq4.png  used on input line 43. on input line
  43.
 Package pdftex.def Info: Requested size: 138.02509pt x 77.74158pt on input line
  43.
-<images/zynq5.png, id=274, 507.8975pt x 286.06876pt>
+<images/zynq5.png, id=280, 507.8975pt x 286.06876pt>
 File: images/zynq5.png Graphic file (type png)
 <use images/zynq5.png>
 Package pdftex.def Info: images/zynq5.png  used on input line 47. on input line
@@ -2176,10 +2176,18 @@ Overfull \hbox (4.45775pt too wide) in paragraph at lines 65--80
 [][] 
  []
 
-) (./chapters/04_neural_networks.tex [6]
+[6]
+<images/koreancnn.png, id=316, 1529.715pt x 1293.83376pt>
+File: images/koreancnn.png Graphic file (type png)
+<use images/koreancnn.png>
+Package pdftex.def Info: images/koreancnn.png  used on input line 122. on input
+ line 122.
+Package pdftex.def Info: Requested size: 334.60571pt x 283.00569pt on input lin
+e 122.
+) (./chapters/04_neural_networks.tex [7 <./images/koreancnn.png>]
 chapter 4.
 <images/Fig-1-Analogy-between-artificial-neuron-and-biological-neuron.png, id=3
-10, 481.8pt x 314.17375pt>
+24, 481.8pt x 314.17375pt>
 File: images/Fig-1-Analogy-between-artificial-neuron-and-biological-neuron.png 
 Graphic file (type png)
 <use images/Fig-1-Analogy-between-artificial-neuron-and-biological-neuron.png>
@@ -2187,27 +2195,27 @@ Package pdftex.def Info: images/Fig-1-Analogy-between-artificial-neuron-and-bio
 logical-neuron.png  used on input line 13. on input line 13.
 Package pdftex.def Info: Requested size: 174.52855pt x 113.81102pt on input lin
 e 13.
-<images/artificial_neuron.png, id=313, 273.02pt x 187.70125pt>
+<images/artificial_neuron.png, id=327, 273.02pt x 187.70125pt>
 File: images/artificial_neuron.png Graphic file (type png)
 <use images/artificial_neuron.png>
 Package pdftex.def Info: images/artificial_neuron.png  used on input line 18. o
 n input line 18.
 Package pdftex.def Info: Requested size: 165.5463pt x 113.81102pt on input line
  18.
-[7
+[8
 
 
  <./images/Fig-1-Analogy-between-artificial-neuron-and-biological-neuron.png (P
 NG copy)> <./images/artificial_neuron.png>]
-<images/sigmoid.png, id=332, 642.4pt x 481.8pt>
+<images/sigmoid.png, id=345, 642.4pt x 481.8pt>
 File: images/sigmoid.png Graphic file (type png)
 <use images/sigmoid.png>
 Package pdftex.def Info: images/sigmoid.png  used on input line 49. on input li
 ne 49.
 Package pdftex.def Info: Requested size: 418.25555pt x 313.70296pt on input lin
 e 49.
- [8] [9 <./images/sigmoid.png>]
-<images/feed_forward_neural_net.png, id=355, 473.77pt x 285.065pt>
+ [9] [10 <./images/sigmoid.png>]
+<images/feed_forward_neural_net.png, id=368, 473.77pt x 285.065pt>
 File: images/feed_forward_neural_net.png Graphic file (type png)
 <use images/feed_forward_neural_net.png>
 Package pdftex.def Info: images/feed_forward_neural_net.png  used on input line
@@ -2219,7 +2227,7 @@ Overfull \hbox (0.93669pt too wide) in paragraph at lines 69--70
 [][] 
  []
 
-<images/recurrent_neural_net.png, id=358, 476.53032pt x 233.37187pt>
+<images/recurrent_neural_net.png, id=371, 476.53032pt x 233.37187pt>
 File: images/recurrent_neural_net.png Graphic file (type png)
 <use images/recurrent_neural_net.png>
 Package pdftex.def Info: images/recurrent_neural_net.png  used on input line 75
@@ -2231,7 +2239,7 @@ Overfull \hbox (44.18295pt too wide) in paragraph at lines 75--76
 [][] 
  []
 
-) (./chapters/05_concept.tex [10 <./images/feed_forward_neural_net.png (PNG cop
+) (./chapters/05_concept.tex [11 <./images/feed_forward_neural_net.png (PNG cop
 y)> <./images/recurrent_neural_net.png>]
 chapter 5.
 
@@ -2249,28 +2257,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--7
 
  []
 
-<images/101.jpg, id=370, 267.8005pt x 308.352pt>
+<images/101.jpg, id=383, 267.8005pt x 308.352pt>
 File: images/101.jpg Graphic file (type jpg)
 <use images/101.jpg>
 Package pdftex.def Info: images/101.jpg  used on input line 11. on input line 1
 1.
 Package pdftex.def Info: Requested size: 138.02509pt x 158.92302pt on input lin
 e 11.
-<images/filteredimg.png, id=373, 502.12593pt x 578.16pt>
+<images/filteredimg.png, id=386, 502.12593pt x 578.16pt>
 File: images/filteredimg.png Graphic file (type png)
 <use images/filteredimg.png>
 Package pdftex.def Info: images/filteredimg.png  used on input line 15. on inpu
 t line 15.
 Package pdftex.def Info: Requested size: 138.02509pt x 158.92831pt on input lin
 e 15.
-<images/detectedimg.png, id=374, 502.12593pt x 578.16pt>
+<images/detectedimg.png, id=387, 502.12593pt x 578.16pt>
 File: images/detectedimg.png Graphic file (type png)
 <use images/detectedimg.png>
 Package pdftex.def Info: images/detectedimg.png  used on input line 19. on inpu
 t line 19.
 Package pdftex.def Info: Requested size: 138.02509pt x 158.92831pt on input lin
 e 19.
-[11
+[12
 
 
  <./images/101.jpg> <./images/filteredimg.png> <./images/detectedimg.png>]
@@ -2278,35 +2286,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--35
 
  []
 
-<images/circles.jpg, id=389, 321.2pt x 240.9pt>
+<images/circles.jpg, id=403, 321.2pt x 240.9pt>
 File: images/circles.jpg Graphic file (type jpg)
 <use images/circles.jpg>
 Package pdftex.def Info: images/circles.jpg  used on input line 38. on input li
 ne 38.
 Package pdftex.def Info: Requested size: 196.58061pt x 147.43765pt on input lin
 e 38.
-<images/circle_edges.jpg, id=392, 321.2pt x 240.9pt>
+<images/circle_edges.jpg, id=406, 321.2pt x 240.9pt>
 File: images/circle_edges.jpg Graphic file (type jpg)
 <use images/circle_edges.jpg>
 Package pdftex.def Info: images/circle_edges.jpg  used on input line 42. on inp
 ut line 42.
 Package pdftex.def Info: Requested size: 196.58061pt x 147.43765pt on input lin
 e 42.
-<images/circlehough_explanation.jpg, id=395, 240.9pt x 180.675pt>
+<images/circlehough_explanation.jpg, id=409, 240.9pt x 180.675pt>
 File: images/circlehough_explanation.jpg Graphic file (type jpg)
 <use images/circlehough_explanation.jpg>
 Package pdftex.def Info: images/circlehough_explanation.jpg  used on input line
  46. on input line 46.
 Package pdftex.def Info: Requested size: 196.58061pt x 147.44041pt on input lin
 e 46.
-<images/hough_circle.jpg, id=398, 321.2pt x 240.9pt>
+<images/hough_circle.jpg, id=412, 321.2pt x 240.9pt>
 File: images/hough_circle.jpg Graphic file (type jpg)
 <use images/hough_circle.jpg>
 Package pdftex.def Info: images/hough_circle.jpg  used on input line 51. on inp
 ut line 51.
 Package pdftex.def Info: Requested size: 196.58061pt x 147.43765pt on input lin
 e 51.
-[12] [13 <./images/circles.jpg> <./images/circle_edges.jpg> <./images/circlehou
+[13] [14 <./images/circles.jpg> <./images/circle_edges.jpg> <./images/circlehou
 gh_explanation.jpg> <./images/hough_circle.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 62--65
 
@@ -2317,45 +2325,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--65
 
  []
 
-[14]
-<images/neuralnetmodel.jpg, id=427, 705.63625pt x 422.57875pt>
+[15]
+<images/neuralnetmodel.jpg, id=440, 705.63625pt x 422.57875pt>
 File: images/neuralnetmodel.jpg Graphic file (type jpg)
 <use images/neuralnetmodel.jpg>
 Package pdftex.def Info: images/neuralnetmodel.jpg  used on input line 75. on i
 nput line 75.
 Package pdftex.def Info: Requested size: 376.42744pt x 225.42937pt on input lin
 e 75.
-) (./chapters/06_integration_into_existing_app.tex [15 <./images/neuralnetmodel
+) (./chapters/06_integration_into_existing_app.tex [16 <./images/neuralnetmodel
 .jpg>]
 chapter 6.
-<images/screenshot_main.png, id=435, 721.69624pt x 1059.96pt>
+<images/screenshot_main.png, id=448, 721.69624pt x 1059.96pt>
 File: images/screenshot_main.png Graphic file (type png)
 <use images/screenshot_main.png>
 Package pdftex.def Info: images/screenshot_main.png  used on input line 13. on 
 input line 13.
 Package pdftex.def Info: Requested size: 138.02509pt x 202.70456pt on input lin
 e 13.
-<images/screenshot_load_image.png, id=436, 721.69624pt x 1056.94875pt>
+<images/screenshot_load_image.png, id=449, 721.69624pt x 1056.94875pt>
 File: images/screenshot_load_image.png Graphic file (type png)
 <use images/screenshot_load_image.png>
 Package pdftex.def Info: images/screenshot_load_image.png  used on input line 1
 7. on input line 17.
 Package pdftex.def Info: Requested size: 138.02509pt x 202.1287pt on input line
  17.
-<images/screenshot_about.png, id=437, 720.6925pt x 1057.9525pt>
+<images/screenshot_about.png, id=450, 720.6925pt x 1057.9525pt>
 File: images/screenshot_about.png Graphic file (type png)
 <use images/screenshot_about.png>
 Package pdftex.def Info: images/screenshot_about.png  used on input line 21. on
  input line 21.
 Package pdftex.def Info: Requested size: 138.02509pt x 202.61122pt on input lin
 e 21.
-) (./chapters/07_implementation.tex [16
+) (./chapters/07_implementation.tex [17
 
 
  <./images/screenshot_main.png> <./images/screenshot_load_image.png> <./images/
 screenshot_about.png>]
 chapter 7.
-<images/p8lite.jpg, id=446, 351.3125pt x 351.3125pt>
+<images/p8lite.jpg, id=459, 351.3125pt x 351.3125pt>
 File: images/p8lite.jpg Graphic file (type jpg)
 <use images/p8lite.jpg>
 Package pdftex.def Info: images/p8lite.jpg  used on input line 37. on input lin
@@ -2370,7 +2378,7 @@ Underfull \hbox (badness 6825) in paragraph at lines 38--38
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[17
+[18
 
 
 ]
@@ -2378,8 +2386,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--49
 
  []
 
-[18 <./images/p8lite.jpg>]
-<images/hsv.jpg, id=464, 329.23pt x 290.08376pt>
+[19 <./images/p8lite.jpg>]
+<images/hsv.jpg, id=478, 329.23pt x 290.08376pt>
 File: images/hsv.jpg Graphic file (type jpg)
 <use images/hsv.jpg>
 Package pdftex.def Info: images/hsv.jpg  used on input line 53. on input line 5
@@ -2412,14 +2420,14 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 88--104
 []$[]$ 
  []
 
-[19 <./images/hsv.jpg>]
+[20 <./images/hsv.jpg>]
 File: images/101.jpg Graphic file (type jpg)
 <use images/101.jpg>
 Package pdftex.def Info: images/101.jpg  used on input line 110. on input line 
 110.
 Package pdftex.def Info: Requested size: 138.02509pt x 158.92302pt on input lin
 e 110.
-<images/lowerred.png, id=490, 502.12593pt x 578.16pt>
+<images/lowerred.png, id=503, 502.12593pt x 578.16pt>
 File: images/lowerred.png Graphic file (type png)
 <use images/lowerred.png>
 Package pdftex.def Info: images/lowerred.png  used on input line 115. on input 
@@ -2431,7 +2439,7 @@ Underfull \hbox (badness 2368) in paragraph at lines 116--116
 [][][]|\T1/pplx/m/n/10.95 (+20) Lower red hue
  []
 
-<images/upperred.png, id=491, 502.12593pt x 578.16pt>
+<images/upperred.png, id=504, 502.12593pt x 578.16pt>
 File: images/upperred.png Graphic file (type png)
 <use images/upperred.png>
 Package pdftex.def Info: images/upperred.png  used on input line 119. on input 
@@ -2443,21 +2451,21 @@ Underfull \hbox (badness 1983) in paragraph at lines 120--120
 [][][]|\T1/pplx/m/n/10.95 (+20) Up-per red hue
  []
 
-<images/redcombined1.png, id=492, 502.12593pt x 578.16pt>
+<images/redcombined1.png, id=505, 502.12593pt x 578.16pt>
 File: images/redcombined1.png Graphic file (type png)
 <use images/redcombined1.png>
 Package pdftex.def Info: images/redcombined1.png  used on input line 125. on in
 put line 125.
 Package pdftex.def Info: Requested size: 138.02509pt x 158.92831pt on input lin
 e 125.
-<images/redcombined2.png, id=493, 502.12593pt x 578.16pt>
+<images/redcombined2.png, id=506, 502.12593pt x 578.16pt>
 File: images/redcombined2.png Graphic file (type png)
 <use images/redcombined2.png>
 Package pdftex.def Info: images/redcombined2.png  used on input line 129. on in
 put line 129.
 Package pdftex.def Info: Requested size: 138.02509pt x 158.92831pt on input lin
 e 129.
-<images/detectedcirclescircle.png, id=494, 502.12593pt x 578.16pt>
+<images/detectedcirclescircle.png, id=507, 502.12593pt x 578.16pt>
 File: images/detectedcirclescircle.png Graphic file (type png)
 <use images/detectedcirclescircle.png>
 Package pdftex.def Info: images/detectedcirclescircle.png  used on input line 1
@@ -2469,15 +2477,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--136
 
  []
 
-[20]
-<images/2020.png, id=514, 53.44969pt x 53.44969pt>
+[21]
+<images/2020.png, id=527, 53.44969pt x 53.44969pt>
 File: images/2020.png Graphic file (type png)
 <use images/2020.png>
 Package pdftex.def Info: images/2020.png  used on input line 141. on input line
  141.
 Package pdftex.def Info: Requested size: 204.94751pt x 204.9932pt on input line
  141.
-<images/binaryimg.png, id=515, 53.44969pt x 53.44969pt>
+<images/binaryimg.png, id=528, 53.44969pt x 53.44969pt>
 File: images/binaryimg.png Graphic file (type png)
 <use images/binaryimg.png>
 Package pdftex.def Info: images/binaryimg.png  used on input line 145. on input
@@ -2489,7 +2497,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--149
 
  []
 
-[21 <./images/lowerred.png> <./images/upperred.png> <./images/redcombined1.png>
+[22 <./images/lowerred.png> <./images/upperred.png> <./images/redcombined1.png>
  <./images/redcombined2.png> <./images/detectedcirclescircle.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
@@ -2500,34 +2508,34 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 165--182
 []$[]$ 
  []
 
-[22 <./images/2020.png> <./images/binaryimg.png>] [23]
+[23 <./images/2020.png> <./images/binaryimg.png>] [24]
 Overfull \hbox (10.95pt too wide) in paragraph at lines 197--237
 []$[]$ 
  []
 
-[24] [25]) (./chapters/08_evaluation.tex [26]
+[25] [26]) (./chapters/08_evaluation.tex [27]
 chapter 8.
-) [27
+) [28
 
 
 ]
 Package tocbasic Info: character protrusion at lof deactivated on input line 52
 .
- (./main.lof [28
+ (./main.lof [29
 
 
 ])
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
- [29]
+ [30]
 Package tocbasic Info: character protrusion at lot deactivated on input line 53
 .
  (./main.lot)
 \tf@lot=\write9
 \openout9 = `main.lot'.
 
- [30
+ [31
 
 
 ]
@@ -2560,7 +2568,7 @@ Overfull \hbox (7.7896pt too wide) in paragraph at lines 55--55
 ghcircles # houghcircles$[]\T1/pplx/m/n/10.95 (-20) . 
  []
 
-[31
+[32
 
 
 ]
@@ -2576,21 +2584,15 @@ m/n/10.95 https : / / github . com / tensorflow / tensorflow /
  []
 
 No complaints by nag.
-[32]
+[33]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 33F3F148DAD6E725CBAF0DF0DF0380D4;2697.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: C78CD6CC9DCFE2ADFB8BBFDF68F7D3E0;2563
-(rerunfilecheck)             After:  783188135622BB34B66AB0E4D865455E;2697.
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -2599,11 +2601,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50793 strings out of 494307
- 1106402 string characters out of 6163504
- 1819186 words of memory out of 5000000
- 52855 multiletter control sequences out of 15000+600000
- 592869 words of font info for 297 fonts, out of 8000000 for 9000
+ 50807 strings out of 494307
+ 1107162 string characters out of 6163504
+ 1819259 words of memory out of 5000000
+ 52862 multiletter control sequences out of 15000+600000
+ 593079 words of font info for 300 fonts, out of 8000000 for 9000
  372 hyphenation exceptions out of 8191
  77i,12n,128p,10454b,2700s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/baba/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600p
@@ -2616,10 +2618,10 @@ fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type
 fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (39 pages, 5090129 bytes).
+Output written on main.pdf (40 pages, 5537051 bytes).
 PDF statistics:
- 936 PDF objects out of 1000 (max. 8388607)
- 694 compressed objects within 7 object streams
- 203 named destinations out of 1000 (max. 500000)
- 37365 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 954 PDF objects out of 1000 (max. 8388607)
+ 707 compressed objects within 8 object streams
+ 205 named destinations out of 1000 (max. 500000)
+ 37378 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -109,14 +109,18 @@ miss a sign in different lighting conditions.
 \fi
 
 \subsection{Real-time Traffic Sign Recognition System with Deep Convolutional Neural Network}
-In this paper, 6 types of traffic signs are trained to be classified by a convolutional
-neural network (CNN) architecture. In the detection phase, light-weight color-based segmentation and the Hough transform  are applied to extract sign candidates, that can be fed forward into the CNN. The recognition system
-nearly achieves real-time performance.
-On-line
-recognition test is performed on the KA[ST campus road,
-and the result shows all 16 traffic signs are recognized
-successfully through the driving. The recognition system
-is implanted into autonomous vehicle 'Eurecar'. Different
-types of traffic signs are trained consistently and
-development of clustering algorithm is considered as a
-future work for robust recognition system.
+It should be mentioned, that convolutional neural networks (CNN) are frequently used, when it comes to classifying images.
+In this subsection, the attention is on the classifying part of the project by Seokwoo Jung, Unghui Lee, Jiwon Jung and David Hyunchul Shim \cite{tsrcnn}. 
+Their paper, describes a system, that is trained to classify six types of traffic signs by a convolutional
+neural network architecture. In the detection phase, light-weight color-based segmentation and the Hough transform  are applied to extract sign candidates, that can be fed onwards into their CNN. The recognition system nearly achieves real-time performance, according to them. \newline
+Every proposed region of interest is resized to a square format of 1OO by 100 pixels, with an additional third dimension of three values, representing R, G and B. Their Output layer is designed to have eight nodes, although the system aims to differentiate between six distinguishable signs. The two additional neurons are for representing, whether the sign is a sign but none of the six wanted and to indicate, that a candidate is no sign at all. After each convolutional layer, the amount of data is being reduced.  
+At first, the
+training happened only with positive samples, created by hand cropped images. After several tests, false positive classifications have been collected (78000 samples), and reused to train the network again, mixed together with the positive images (25000). As camera input, a GoPro HERO 4 was connected to a PC running an i7-6820HK CPU and a Titan X graphic card with 12gb memory. As Neural Network framework Caffe has been used for implementation.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 0.8\linewidth]{images/koreancnn.png}
+	\caption{Applied Neural Network}
+	\label{fig:koreanNN}
+\end{figure}
+
