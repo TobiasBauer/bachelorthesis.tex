@@ -58,6 +58,32 @@
       \verb https://developer.android.com/ndk/index.html
       \endverb
     \endentry
+    \entry{brunvand}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=2376feeafc28c570a9ada11aa6856f83}{%
+           family={Brunvand},
+           familyi={B\bibinitperiod},
+           given={J.H.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {W. W. Norton}%
+      }
+      \strng{namehash}{2376feeafc28c570a9ada11aa6856f83}
+      \strng{fullhash}{2376feeafc28c570a9ada11aa6856f83}
+      \strng{authornamehash}{2376feeafc28c570a9ada11aa6856f83}
+      \strng{authorfullhash}{2376feeafc28c570a9ada11aa6856f83}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-393-30321-6}
+      \field{title}{The Choking Doberman: And Other Urban Legends}
+      \field{year}{1984}
+      \verb{url}
+      \verb https://books.google.de/books?id=OKFEnnfoUm8C
+      \endverb
+    \endentry
     \entry{imagesegmentation}{article}{}
       \name{author}{4}{}{%
         {{uniquename=0,hash=6a4fb8812f6b52a9a22824dacc04cefd}{%
@@ -121,6 +147,15 @@
       \field{title}{cv2.HoughCircles() documentation}
       \verb{url}
       \verb https://docs.opencv.org/2.4/modules/imgproc/doc/feature_detection.html?highlight=houghcircles#houghcircles
+      \endverb
+    \endentry
+    \entry{darpa2004}{article}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{d10b5413de1f3d197b20897dd0d565bb}
+      \field{labeltitlesource}{title}
+      \field{title}{DARPA Grand Challenge 2004}
+      \verb{url}
+      \verb https://www.darpa.mil/attachments/TestimonyArchived(March%2025%202004).pdf
       \endverb
     \endentry
     \entry{deep-learning-methods}{report}{}

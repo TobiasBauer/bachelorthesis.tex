@@ -8,9 +8,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Section}{1}{section.1.1}
+\contentsline {section}{\numberline {1.1}Urban legends about self driving cars}{1}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.1}Subsection}{1}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.1}DARPA Grand Challenges}{1}{subsection.1.1.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Motivation}{2}{chapter.2}
 \defcounter {refsection}{0}\relax 
