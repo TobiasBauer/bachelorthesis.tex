@@ -19,6 +19,13 @@
 
 \refsection{0}
   \sortlist[entry]{nty/global/}
+    \entry{darpa2007}{online}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \verb{url}
+      \verb http://archive.darpa.mil/grandchallenge/
+      \endverb
+    \endentry
     \entry{artificialneuron}{online}{}
       \field{sortinit}{}
       \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
@@ -527,6 +534,46 @@
       \verb{url}
       \verb http://www.aishack.in/static/img/tut/circle_edges.jpg
       \endverb
+    \endentry
+    \entry{darpa2005}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=faa9ca22e21d66623475327b61e238b0}{%
+           family={Seetharaman},
+           familyi={S\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{uniquename=0,hash=8da28cdffacc49720a22134db2922026}{%
+           family={Lakhotia},
+           familyi={L\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{uniquename=0,hash=af6384f1cb6a1e7f87f78192b6cb7aa3}{%
+           family={Blasch},
+           familyi={B\bibinitperiod},
+           given={E.\bibnamedelimi P.},
+           giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{c92c921850465f98e719a056279842ed}
+      \strng{fullhash}{c92c921850465f98e719a056279842ed}
+      \strng{authornamehash}{c92c921850465f98e719a056279842ed}
+      \strng{authorfullhash}{c92c921850465f98e719a056279842ed}
+      \field{sortinit}{S}
+      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0018-9162}
+      \field{journaltitle}{Computer}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{Unmanned vehicles come of age: The DARPA grand challenge}
+      \field{volume}{39}
+      \field{year}{2006}
+      \field{pages}{26\bibrangedash 29}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/MC.2006.447
+      \endverb
+      \keyw{Automatic control;History;Mobile robots;Navigation;Remotely operated vehicles;Road safety;Road vehicles;Robot kinematics;Streaming media;Vehicle driving;Autonomous vehicles;DARPA Grand Challenge;Unmanned vehicles}
     \endentry
     \entry{ndkspeed}{inproceedings}{}
       \name{author}{2}{}{%
