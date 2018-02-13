@@ -238,7 +238,9 @@ features {
 \subsection{Tensorflow Sessions}
 A Session object encapsulates the environment in which Operation objects are executed, and Tensor objects are evaluated\cite{tensorflowsession}. A session owns resources like Variables, in given case, all weights and biases are stored in a session, moreover if they change, say during the process of training, the current values are enclosed by the Session. In order to safe the current state of the graph, Tensorflow provides the Saver class, that allows easy saving of the whole session informations. 
 
-\subsection{Feeding and training}
-Before feeding data to the Network, a batch carrying them has to be loaded, in form of Tensors, or arrays. To achieve this, the TFRecord file, created before was read from, the image and the corresponding label decoded and converted into a numpy arrays. Then each individual pixel is transformed from uint8 range of [0; 255] to a float range [-0.5; 0.5] and reshaped from 20 by 20 to 1 by 400, in order to fulfill the demands of the ANN. After having the images ready to hand, a Session is created and it is possible to run this Session for training purposes, but before doing so, a cost and optimizing function have to be specified. 
+\subsection{Training and saving}
+Before feeding data to the Network, a batch carrying them has to be loaded, in form of Tensors, or arrays. To achieve this, the TFRecord file, created before was read from, the image and the corresponding label decoded and converted into a numpy arrays. Then each individual pixel is transformed from uint8 range of [0; 255] to a float range [-0.5; 0.5] and reshaped from 20 by 20 to 1 by 400, in order to fulfill the demands of the ANN. After having the images ready to hand, a Session is created and it is possible to run this Session for training purposes, but before doing so, a cost and optimizing function have to be specified. Now, finally the training loop can be started, with as many iterations as wanted. After the main loop, a validation batch with different data, than the ones used to train the NN can be created to check the accuracy of the now trained net. \newline
+To keep the freshly gained variables, before mentioned tf.Saver class is being applied to the session, resulting in four different files created in the specified directory: a checkpoint, .data, .meta and .index file. 
+ 
 
 

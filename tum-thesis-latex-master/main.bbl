@@ -26,13 +26,6 @@
       \verb http://archive.darpa.mil/grandchallenge/
       \endverb
     \endentry
-    \entry{artificialneuron}{online}{}
-      \field{sortinit}{}
-      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
-      \verb{url}
-      \verb https://en.wikipedia.org/wiki/Artificial_neuron#/media/File:Artificial_neuron.png
-      \endverb
-    \endentry
     \entry{sigmoid}{online}{}
       \field{sortinit}{}
       \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
@@ -65,6 +58,44 @@
       \verb https://developer.android.com/ndk/index.html
       \endverb
     \endentry
+    \entry{bengio}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Hanover, MA, USA}%
+      }
+      \list{publisher}{1}{%
+        {Now Publishers Inc.}%
+      }
+      \strng{namehash}{40a8e4774982146adc2688546f54efb2}
+      \strng{fullhash}{40a8e4774982146adc2688546f54efb2}
+      \strng{authornamehash}{40a8e4774982146adc2688546f54efb2}
+      \strng{authorfullhash}{40a8e4774982146adc2688546f54efb2}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1935-8237}
+      \field{journaltitle}{Found. Trends Mach. Learn.}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Learning Deep Architectures for AI}
+      \field{volume}{2}
+      \field{year}{2009}
+      \field{pages}{1\bibrangedash 127}
+      \range{pages}{127}
+      \verb{doi}
+      \verb 10.1561/2200000006
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1561/2200000006
+      \endverb
+    \endentry
     \entry{brunvand}{book}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=2376feeafc28c570a9ada11aa6856f83}{%
@@ -89,6 +120,39 @@
       \field{year}{1984}
       \verb{url}
       \verb https://books.google.de/books?id=OKFEnnfoUm8C
+      \endverb
+    \endentry
+    \entry{burges}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=846ace6aa78f87a4d8adc8acc6fe4b9e}{%
+           family={Burges},
+           familyi={B\bibinitperiod},
+           given={Christopher\bibnamedelima J.C.},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{846ace6aa78f87a4d8adc8acc6fe4b9e}
+      \strng{fullhash}{846ace6aa78f87a4d8adc8acc6fe4b9e}
+      \strng{authornamehash}{846ace6aa78f87a4d8adc8acc6fe4b9e}
+      \strng{authorfullhash}{846ace6aa78f87a4d8adc8acc6fe4b9e}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The tutorial starts with an overview of the concepts of VC dimension and structural risk minimization. We then describe linear Support Vector Machines (SVMs) for separable and non-separable data, working through a non-trivial example in detail. We describe a mechanical analogy, and discuss when SVM solutions are unique and when they are global. We describe how support vector training can be practically implemented, and discuss in detail the kernel mapping technique which is used to construct SVM solutions which are nonlinear in the data. We show how Support Vector machines can have very large (even infinite) VC dimension by computing the VC dimension for homogeneous polynomial and Gaussian radial basis function kernels. While very high VC dimension would normally bode ill for generalization performance, and while at present there exists no theory which shows that good generalization performance is guaranteed for SVMs, there are several arguments which support the observed high accuracy of SVMs, which we review. Results of some experiments which were inspired by these arguments are also presented. We give numerous examples and proofs of most of the key theorems. There is new material, and I hope that the reader will find that even old material is cast in a fresh light.}
+      \field{issn}{1573-756X}
+      \field{journaltitle}{Data Mining and Knowledge Discovery}
+      \field{month}{6}
+      \field{number}{2}
+      \field{title}{A Tutorial on Support Vector Machines for Pattern Recognition}
+      \field{volume}{2}
+      \field{year}{1998}
+      \field{pages}{121\bibrangedash 167}
+      \range{pages}{47}
+      \verb{doi}
+      \verb 10.1023/A:1009715923555
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1023/A:1009715923555
       \endverb
     \endentry
     \entry{imagesegmentation}{article}{}
@@ -353,6 +417,44 @@
       \endverb
       \keyw{character recognition;neural nets;neurophysiology;ANN application;artificial computational model;artificial neural networks;basic biological neuron;character recognition;interconnected simple processors;learning processes;massively parallel systems;network architectures;Artificial neural networks;Biological neural networks;Biological system modeling;Biology computing;Computer architecture;Concurrent computing;Humans;Integrated circuit interconnections;Parallel processing;Tutorial}
     \endentry
+    \entry{decisionbook}{book}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=df184c5fa522ac8a515ec4de13aef234}{%
+           family={James},
+           familyi={J\bibinitperiod},
+           given={Gareth},
+           giveni={G\bibinitperiod}}}%
+        {{uniquename=0,hash=1ab16961e0de50711fa6bd9425f9b4a6}{%
+           family={Witten},
+           familyi={W\bibinitperiod},
+           given={Daniela},
+           giveni={D\bibinitperiod}}}%
+        {{uniquename=0,hash=0cb8fe4210baa81c4b0e67913b4d2768}{%
+           family={Hastie},
+           familyi={H\bibinitperiod},
+           given={Trevor},
+           giveni={T\bibinitperiod}}}%
+        {{uniquename=0,hash=88eea600247d798f8b2ce0b2dc614492}{%
+           family={Tibshirani},
+           familyi={T\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Publishing Company, Incorporated}%
+      }
+      \strng{namehash}{da61646157a6be769f34984f5cb603b0}
+      \strng{fullhash}{da61646157a6be769f34984f5cb603b0}
+      \strng{authornamehash}{da61646157a6be769f34984f5cb603b0}
+      \strng{authorfullhash}{da61646157a6be769f34984f5cb603b0}
+      \field{sortinit}{J}
+      \field{sortinithash}{c86bd6cced82a15683b396c2169909ef}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{1461471370, 9781461471370}
+      \field{title}{An Introduction to Statistical Learning: With Applications in R}
+      \field{year}{2014}
+    \endentry
     \entry{tsrcnn}{inproceedings}{}
       \name{author}{4}{}{%
         {{uniquename=1,hash=9ddce5cf5ce8c712e6edca7b7c4abffd}{%
@@ -427,6 +529,44 @@
       \endverb
       \keyw{Hough transforms;convolution;edge detection;filtering theory;-16 dB;-25 dB;Hough transform filters;SNR;circle Hough transform;circle detection;complex phase;complex vector CHT;convolution operations;edge orientation;edge point distance;orientation;parameter space;positional accuracy;signal to noise ratios}
     \endentry
+    \entry{decision}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{uniquename=1,hash=bbcb9b30bc70976efa77fb3e2e61220c}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{uniquename=0,hash=7d6079be870eb1d7f469ed893e5e0854}{%
+           family={Cocea},
+           familyi={C\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{uniquename=0,hash=69b6ff49ca65a85f7b29f052e7591b6e}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{0a2beb74d6449f547c252326c12e7880}
+      \strng{fullhash}{0a2beb74d6449f547c252326c12e7880}
+      \strng{authornamehash}{0a2beb74d6449f547c252326c12e7880}
+      \strng{authorfullhash}{0a2beb74d6449f547c252326c12e7880}
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 International Conference on Machine Learning and Cybernetics (ICMLC)}
+      \field{month}{7}
+      \field{title}{Decision tree learning based feature evaluation and selection for image classification}
+      \field{volume}{2}
+      \field{year}{2017}
+      \field{pages}{569\bibrangedash 574}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ICMLC.2017.8108975
+      \endverb
+      \keyw{Algorithm design and analysis;Decision trees;Feature extraction;Machine learning algorithms;Niobium;Training;Data mining;Decision tree learning;Feature evaluation;Image classification;Machine learning}
+    \endentry
     \entry{mnist}{online}{}
       \field{sortinit}{M}
       \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
@@ -435,6 +575,46 @@
       \verb{url}
       \verb http://yann.lecun.com/exdb/mnist/
       \endverb
+    \endentry
+    \entry{moglemose}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=d6c448d481da7f4f33a557c5d264aea3}{%
+           family={Mogelmose},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{uniquename=0,hash=c032031a2817a667d475f90be384b07a}{%
+           family={Trivedi},
+           familyi={T\bibinitperiod},
+           given={M.\bibnamedelimi M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{uniquename=0,hash=64e5ec87376a9d7a7fc64ff3fa2e122d}{%
+           family={Moeslund},
+           familyi={M\bibinitperiod},
+           given={T.\bibnamedelimi B.},
+           giveni={T\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{3f37a7e0c2bd1abb1f7bb846df27a4ca}
+      \strng{fullhash}{3f37a7e0c2bd1abb1f7bb846df27a4ca}
+      \strng{authornamehash}{3f37a7e0c2bd1abb1f7bb846df27a4ca}
+      \strng{authorfullhash}{3f37a7e0c2bd1abb1f7bb846df27a4ca}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1524-9050}
+      \field{journaltitle}{IEEE Transactions on Intelligent Transportation Systems}
+      \field{month}{12}
+      \field{number}{4}
+      \field{title}{Vision-Based Traffic Sign Detection and Analysis for Intelligent Driver Assistance Systems: Perspectives and Survey}
+      \field{volume}{13}
+      \field{year}{2012}
+      \field{pages}{1484\bibrangedash 1497}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TITS.2012.2209421
+      \endverb
+      \keyw{automated highways;computer vision;driver information systems;feature extraction;image recognition;image segmentation;learning (artificial intelligence);object detection;road safety;road traffic;European traffic sign;TSR;US traffic sign;active safety;detection system;feature extraction;image database;intelligent driver assistance system;machine learning;segmentation;traffic sign recognition;vision-based traffic sign detection;Human computer interaction;Machine learning;Machine vision;Object detection;Road safety;Active safety;human-centered computing;machine learning;machine vision;object detection}
     \endentry
     \entry{moore}{article}{}
       \name{author}{1}{}{%
@@ -688,6 +868,68 @@
       \verb{url}
       \verb https://www.tensorflow.org/api_docs/python/tf/Session
       \endverb
+    \endentry
+    \entry{tran}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=0774e78ecf7a1933e8d3accde1c951cf}{%
+           family={Tran},
+           familyi={T\bibinitperiod},
+           given={Hai\bibnamedelima S.},
+           giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{0774e78ecf7a1933e8d3accde1c951cf}
+      \strng{fullhash}{0774e78ecf7a1933e8d3accde1c951cf}
+      \strng{authornamehash}{0774e78ecf7a1933e8d3accde1c951cf}
+      \strng{authorfullhash}{0774e78ecf7a1933e8d3accde1c951cf}
+      \field{sortinit}{T}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \verb{url}
+      \verb https://www.researchgate.net/publication/311540973_Traffic_Sign_Recognition_system_on_Android_devices
+      \endverb
+    \endentry
+    \entry{hogex}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=a2c3ce3ecb42479ac37df62916abfb5d}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Yuan},
+           giveni={Y\bibinitperiod}}}%
+        {{uniquename=1,hash=549ed7320dbe26b33f8ea09399cc93d9}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Li-Feng},
+           giveni={L\bibinithyphendelim F\bibinitperiod}}}%
+        {{uniquename=0,hash=595ffeeb1a6ef4f0cad6b4d2e914bbf8}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Cui-Hua},
+           giveni={C\bibinithyphendelim H\bibinitperiod}}}%
+        {{uniquename=0,hash=a4aff880507b3ff0828f4a5fee8b55d1}{%
+           family={Qu},
+           familyi={Q\bibinitperiod},
+           given={Yan-Yun},
+           giveni={Y\bibinithyphendelim Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{b370516d449ab389dd2bc9ed194bfd9b}
+      \strng{fullhash}{b370516d449ab389dd2bc9ed194bfd9b}
+      \strng{authornamehash}{b370516d449ab389dd2bc9ed194bfd9b}
+      \strng{authorfullhash}{b370516d449ab389dd2bc9ed194bfd9b}
+      \field{sortinit}{X}
+      \field{sortinithash}{755b54a59c4b54d471c87a4486a94349}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2009 IEEE Intelligent Vehicles Symposium}
+      \field{issn}{1931-0587}
+      \field{month}{6}
+      \field{title}{Unifying visual saliency with HOG feature learning for traffic sign detection}
+      \field{year}{2009}
+      \field{pages}{24\bibrangedash 29}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/IVS.2009.5164247
+      \endverb
+      \keyw{computer vision;edge detection;support vector machines;traffic engineering computing;HOG feature learning;bottom-up traffic sign saliency region;oriented gradient histogram;saliency-based visual attention;support vector machine;traffic sign detection;Histograms;Humans;Road vehicles;Robotics and automation;Robustness;Support vector machine classification;Support vector machines;Traffic control;Vehicle detection;Vehicle driving}
     \endentry
   \endsortlist
 \endrefsection

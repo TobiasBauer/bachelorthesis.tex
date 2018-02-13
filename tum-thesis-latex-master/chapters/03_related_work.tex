@@ -5,7 +5,7 @@
 In this section projects from third parties are going to be inspected, who also did work related to recognizing traffic signs, their used methods are pointed out, seeking to explain why they have been used.
 
 \section{Computer Vision}
-\subsection{OpenCV Based Road Sign Recognition on Zynq}
+\subsection{OpenCV Based Road Sign Recognition on Zynq}\label{zynq}
 \begin{figure}[H]
 	\centering
 	\minipage{0.6\textwidth}
@@ -21,6 +21,7 @@ algorithm, that is used to approximate a shape.
 This is applied to the remaining filled contours, in order to count the number of corners. The count is used
 to classify the shape as a triangle (3), rectangle(4), octagon(8) or unknown(others). This is repeated for all detected bounds and the detected shapes are joined with the list of circles to form a full list of detected sign candidates in the image. Mentioned list is now passed to the recognition step, where these nominees are classified via Template Matching. \newline
 As the purpose of addressing this work, was to highlight the Computer Vision aspect, so the classification, the overview ends here, but more about the recognition can be read independently in the paper \cite{zynq}. 
+
 \begin{figure}[H]
 	\minipage{0.33\textwidth}
 	\includegraphics[width=\linewidth]{images/zynq0.png}
@@ -48,11 +49,16 @@ As the purpose of addressing this work, was to highlight the Computer Vision asp
 	\caption{}\label{fig:zynq5}
 	\endminipage
 	\newline
-	\caption{Steps of processing image}
+	\caption{Steps of processing the image \cite{zynq}}
 \end{figure}
 
+\subsection{Other approaches}
+Different computer vision based methods, are also imaginable in the field of traffic sign detection, more generalized there are two different methods: shape- and color based \cite{moglemose}. But just like in \ref{zynq} often Hybrid forms are created. An example used for shape based methods is the Histogram Of Oriented Gradients (HOG) \cite{hogex}, or the Hough Transform and it's derivatives. Color based filtering techniques are also wide spread, as the analysis from Andreas Møgelmose indicates \cite{moglemose}. 
+It is also pointed out, each method has its pros and cons. While color based techniques might have a deficit in terms of changing lightning conditions, or bleached signs, due to erosion, algorithms targeting shapes, possibly have problems detecting partly covered signs. 
+
+
 \section{Machine Learning}
-\subsection{Introduction to the Special Issue on Machine Learning for Traffic Sign Recognition}\label{ssec:machinelearning}
+\subsection{ICJNN}\label{ssec:machinelearning}
 
 J. Stallkamp, M. Schlipsing, J. Salmen and C. Igel wrote their paper \cite{machinelearning}, in order to give a brief overview of the machine learning algorithms in the field of traffic sign recognition, with regard to the classification. \newline
 They point out, that some subsets of classes are
@@ -60,6 +66,7 @@ very similar to each other (e.g., speed limit signs). In addition to these inter
 Conference on Neural Networks" (IJCNN) \cite{ijcnn} took place, in order to compare pattern recognition and machine learning approaches. Over 20 participating teams competed against each other, with the following approaches: different kinds of neural
 networks (NN), support vector machines (SVMs), linear discriminant analysis, subspace analysis, ensemble classifiers, slow feature analysis, nearest neighbor classifiers and random forests. \newline
 The first and the second place were won by classifiers both using convolutional Nerual Networks, the third place was won by a random forest technique approach, paired with a Support Vector Machine. Notably, in the course of the competition, a human's performance on single framed image recognition was tested, as comparison, resulting in a score of 98.84\% correctly recognized images. In contrast to this result, the first place, utilizing a multi-column deep neural network (MCDNN) scored a total of 99.46\%, therefore beeing even better than a real person. 
+
 
 \begin{table}[h]
 	\begin{tabular}{||p{0.05\linewidth} | p{0.2\linewidth}|p{0.2\linewidth}|p{0.2\linewidth}|p{0.2\linewidth}||}
@@ -82,8 +89,15 @@ The first and the second place were won by classifiers both using convolutional 
 	
 \end{table}
 
+\subsection{More traditional approaches}
+There are numerous different methods to implement artificial intelligences, some of them are newer and some may have existed for a decent amount of time. 
+A good example for older kinds of machine learning might be decision tree learning \cite{decision}, although in direct comparison to other techniques like deep learning, this projection might come off poorly, because decision trees tend to be inaccurate, besides they are not really robust. Small changes in data might cause a big difference in the final prediction \cite{decisionbook}. \newline
+Support Vector Machines are another avenue, they often occur, in terms of image recognition. As could be seen in \ref{ssec:machinelearning}, this projection could not keep up with neural networks. Known limitations are the speed and size in training as well as testing, besides their algorithmic complexity and memory requirements in large-scale tasks are likely to be negative factors \cite{burges}. 
+
 
 \section{Deep Learning}\label{ssec:koreancnn}
+
+
 \if false
 
 \subsection{Traffic Sign Recognition system on Android devices}
@@ -123,6 +137,9 @@ training happened only with positive samples, created by hand cropped images. Af
 	\caption{Applied Convolutional Neural Network \cite{tsrcnn}}
 	\label{fig:koreanNN }
 \end{figure}
+\subsection{Common neural networks}
+Though when the task is to classify an image, convolutional neural networks can be considered being state of the art right now, there are a lot of other kinds of networks, like autoencoder networks \cite{bengio}. However this special architecture aims to transform the input values, but keeps the format, therefore the input and output neurons have to be the same quantity. This makes the ANN unsuitable for tasks like classifications.\newline
+Shallow ANN, only have one hidden Layer inside, nevertheless, they can also be used for tasks like classifying traffic signs. Tran, Hai S. ran such a network on an Android phone scoring a 84\% success rate on detecting the signs\cite{tran}. Considering there was only one hidden layer used with 100 neurons, this can actually be considered a pretty decent result.
 
 \section{Conclusion}
 As from subsection \ref{ssec:machinelearning} emerges, artificial neural networks (ANN) play an important role in classifying images and their performance seems to be overwhelming, because these approaches are even capable of outperforming human image classification. So the direction for the following project was set towards a neural network based system. Though convolutional are often the architecture of choice, they require a decent amount of computing power provided by the hardware, like in subsection \ref{ssec:koreancnn}. Furthermore given the task of only classifying numbers, a more simple network, could also be sufficient. Regarding these aspects, the choice was made to utilize a deep but not convolutional ANN, with respect to the more or less minimalistic circumstances of using an Android powered device.

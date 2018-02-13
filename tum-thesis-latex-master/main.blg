@@ -1,27 +1,32 @@
 [0] Config.pm:354> INFO - This is Biber 2.7 (beta)
 [0] Config.pm:357> INFO - Logfile is 'main.blg'
-[23] biber:303> INFO - === Mo Feb 12, 2018, 17:27:55
-[35] Biber.pm:360> INFO - Reading 'main.bcf'
-[91] Biber.pm:836> INFO - Found 35 citekeys in bib section 0
-[103] Biber.pm:3671> INFO - Processing section 0
-[115] Biber.pm:3841> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
-[116] bibtex.pm:1424> INFO - Decoding LaTeX character macros into UTF-8
-[122] bibtex.pm:1281> INFO - Found BibTeX data source 'bibliography.bib'
-[146] Utils.pm:164> WARN - month field 'Dec' in entry 'darpa2005' is not an integer - this will probably not sort properly.
-[148] Utils.pm:164> WARN - month field 'July' in entry 'zynq' is not an integer - this will probably not sort properly.
-[150] Utils.pm:164> WARN - month field 'Dec' in entry 'machinelearning' is not an integer - this will probably not sort properly.
-[152] Utils.pm:164> WARN - month field 'Aug' in entry 'tsrcnn' is not an integer - this will probably not sort properly.
-[154] Utils.pm:164> WARN - month field 'September' in entry 'farleyclark' is not an integer - this will probably not sort properly.
-[155] Utils.pm:164> WARN - month field 'Sept' in entry 'moore' is not an integer - this will probably not sort properly.
-[157] Utils.pm:164> WARN - month field 'Mar' in entry 'nntutorial' is not an integer - this will probably not sort properly.
-[159] Utils.pm:164> WARN - month field 'May' in entry 'deep-learning-methods' is not an integer - this will probably not sort properly.
-[159] Utils.pm:164> WARN - ISBN '' in entry 'deep-learning-methods' is invalid - run biber with '--validate_datamodel' for details.
-[162] Utils.pm:164> WARN - month field 'Jul' in entry 'circlehough' is not an integer - this will probably not sort properly.
-[165] Utils.pm:164> WARN - month field 'Sept' in entry 'ndkspeed' is not an integer - this will probably not sort properly.
-[207] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[207] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[207] Biber.pm:3500> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'en-US'
-[207] Biber.pm:3506> INFO - No sort tailoring available for locale 'en-US'
-[230] bbl.pm:608> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[234] bbl.pm:712> INFO - Output to main.bbl
-[234] Biber.pm:110> INFO - WARNINGS: 11
+[26] biber:303> INFO - === Di Feb 13, 2018, 22:04:15
+[38] Biber.pm:360> INFO - Reading 'main.bcf'
+[98] Biber.pm:836> INFO - Found 41 citekeys in bib section 0
+[110] Biber.pm:3671> INFO - Processing section 0
+[121] Biber.pm:3841> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[124] bibtex.pm:1424> INFO - Decoding LaTeX character macros into UTF-8
+[131] bibtex.pm:1281> INFO - Found BibTeX data source 'bibliography.bib'
+[155] Utils.pm:164> WARN - month field 'Dec' in entry 'darpa2005' is not an integer - this will probably not sort properly.
+[158] Utils.pm:164> WARN - month field 'July' in entry 'zynq' is not an integer - this will probably not sort properly.
+[160] Utils.pm:164> WARN - month field 'Dec' in entry 'moglemose' is not an integer - this will probably not sort properly.
+[161] Utils.pm:164> WARN - month field 'June' in entry 'hogex' is not an integer - this will probably not sort properly.
+[163] Utils.pm:164> WARN - month field 'Dec' in entry 'machinelearning' is not an integer - this will probably not sort properly.
+[165] Utils.pm:164> WARN - month field 'July' in entry 'decision' is not an integer - this will probably not sort properly.
+[166] Utils.pm:164> WARN - ISBN '1461471370, 9781461471370' in entry 'decisionbook' is invalid - run biber with '--validate_datamodel' for details.
+[167] Utils.pm:164> WARN - month field 'Jun' in entry 'burges' is not an integer - this will probably not sort properly.
+[169] Utils.pm:164> WARN - month field 'Aug' in entry 'tsrcnn' is not an integer - this will probably not sort properly.
+[173] Utils.pm:164> WARN - month field 'September' in entry 'farleyclark' is not an integer - this will probably not sort properly.
+[174] Utils.pm:164> WARN - month field 'Sept' in entry 'moore' is not an integer - this will probably not sort properly.
+[176] Utils.pm:164> WARN - month field 'Mar' in entry 'nntutorial' is not an integer - this will probably not sort properly.
+[178] Utils.pm:164> WARN - month field 'May' in entry 'deep-learning-methods' is not an integer - this will probably not sort properly.
+[178] Utils.pm:164> WARN - ISBN '' in entry 'deep-learning-methods' is invalid - run biber with '--validate_datamodel' for details.
+[180] Utils.pm:164> WARN - month field 'Jul' in entry 'circlehough' is not an integer - this will probably not sort properly.
+[183] Utils.pm:164> WARN - month field 'Sept' in entry 'ndkspeed' is not an integer - this will probably not sort properly.
+[249] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[249] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[249] Biber.pm:3500> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'en-US'
+[249] Biber.pm:3506> INFO - No sort tailoring available for locale 'en-US'
+[280] bbl.pm:608> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[285] bbl.pm:712> INFO - Output to main.bbl
+[285] Biber.pm:110> INFO - WARNINGS: 16

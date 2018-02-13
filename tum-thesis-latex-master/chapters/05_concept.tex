@@ -1,11 +1,19 @@
 % !TeX root = ../main.tex
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 \chapter{Concept}\label{chapter:Concept}
+The main draft of the project will be to run an app on a device, providing a camera. Running the life feed of the camera, speed signs should be detected and classified correctly, then this received information is passed to a driving simulator, steering an autonomous car. As soon as the simulator receives the required speed limit, the velocity is being adjusted. 
+\begin{figure}[H]
+	\includegraphics[width=\linewidth]{images/concept.jpg}
+	\caption{Concept visualized}
+\end{figure}
 
-The task of looking at a picture and telling what is in it, is quite trivial to humans and would usually not pose a challenging task to perform, whereas it is not that simple to computers. In order to classify images, or more exactly the objects comprised, machines ordinarily need a certain amount of preprocessing to extract characteristic Features. As described in chapter \ref{chapter:Related Work} it is common practice to partition the many small steps of the process in two bigger, more generalized, steps of Feature Extraction and Classification. Our targeted devices are going to be any smartphones running Android as operating system, basically the app on the device should be able to handle live input from the camera, detecting and classifying in real time. In the following subsections it is going to be broken down in detail, what  methods are used and how they work. \newline\newline\newline
 Komponentendiagramm\newline
 
+The task of looking at a picture and telling what is in it, is quite trivial to humans and would usually not pose a challenging task to perform, whereas it is not that simple to computers. In order to classify images, or more exactly the objects comprised, machines ordinarily need a certain amount of preprocessing to extract characteristic Features. As described in chapter \ref{chapter:Related Work} it is common practice to partition the many small steps of the process in two bigger, more generalized, steps of Feature Extraction and Classification.
 
+
+
+\section{Detection}
 \begin{figure}[H]
 	\minipage{0.33\textwidth}
 	\includegraphics[width=\linewidth]{images/101.jpg}
@@ -20,8 +28,6 @@ Komponentendiagramm\newline
 	\caption{Detected image}\label{fig:detected_image}
 	\endminipage
 \end{figure}
-
-\section{Detection}
 Before we pass data through to the Classification phase, it is a reasonable step in the Program, to specify a Region Of Interest, with regard to saving some processing power. In order to specify ROIs, advantage was taken of the red circle around European Speed signs, the main steps of this part are to filter every red pixel out of the original image (Figure: \ref{fig:red_filtered_image}), subsequently an algorithm checks the filtered image for circles (Figure: \ref{fig:detected_image}). Filtering red pixels from a picture is no big sorcery, so this part is going to be skipped for now to come back later to this in the implementation section. The real gist of this step is to search an image for circles, therefore a common method used is the Circle Hough Transform. 
 
 \subsection{Circle Hough Transform}
