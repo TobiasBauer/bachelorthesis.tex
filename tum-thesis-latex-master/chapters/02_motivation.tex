@@ -2,27 +2,11 @@
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 
 \chapter{Motivation}\label{chapter:motivation}
-In present times advanced driver assistance systems, also called ADAS, are common features, even for middle classed driving vehicles. Fully autonomous cars are on the rise and probably only a matter of years before entering series production and running on public streets. These systems usually cover a certain kind of traffic sign recognition. Right now older or not fully equipped cars often lack these kind of extras, which induces a certain absence of relative safeness over newer cars. As it is not really economic to retrofit these features professionally, the question arises, whether you could add some of them to your vehicle without too much of circumstances, for example with a low cost device, most drivers already have, like an Android Smartphone mounted to the mobile phone bracket. In particular, because these devices have all the hardware, you need to implement this kind of features on, a camera, processors and a display to output the results. So it would actually make sense to have an application, that assists the driver in following the speed limit, when steering a vehicle. \newline
-Being open source is one of the major benefits of Android over other operating systems for Handheld devices, meaning the code is publicly visible and primarily it is free of charges. There are also other gratuitous components beneficial to implement such functionalities, like the OpenCV-library for computer vision and other open-source frameworks for machine learning, like Tensorflow or Caffe(2). So the question comes to mind, how well this low-cost kind of solution actually scores. 
+In present times advanced driver assistance systems, also called ADAS, are common features, even for middle classed driving vehicles. Fully autonomous cars are on the rise and probably only a matter of years before entering series production and running on public streets. These systems usually cover a certain kind of traffic sign recognition. Right now older or not fully equipped cars often lack these kind of extras, which induces a certain absence of relative safeness over newer cars. As it is not really economic to retrofit these features professionally, the question arises, whether you could add some of them to your vehicle without too much of circumstances, for example with a low cost device, most drivers already have, like an Android smartphone mounted to the mobile phone bracket. In particular, because these devices have all the hardware, you need to implement this kind of features on, a camera, processors and a display to output the results. So it would actually make sense to have an application, that assists the driver in following the speed limit, when steering a vehicle. \newline
+Being open source is one of the major benefits of Android over other operating systems for handheld devices, meaning the code is publicly visible and primarily it is free of charges. There are also other gratuitous components beneficial to implement such functionalities, like the OpenCV-library for computer vision and other open-source frameworks for machine learning, like Tensorflow or Caffe(2). So the question comes to mind, how well this low-cost kind of solution actually scores. 
 
 \section{KIA4SM}
-Cooperative Intelligent Transport Systems (C-ITS) is a current research field, aiming to connect vehicles, mobile devices, traffic and transportation infrastructure\cite{kia4sm}. The KIA4SM project wants to achieve cooperative behavior between independently designed and running systems participating in traffic. Therefore it is not inevitable to change each participating system to make communication possible, rather it is desired to generate a single platform for different devices, which could be solved by Plug-and-Play properties. In this case, device independent actions and dynamic reconfiguration at runtime are going to be the use case, for demonstrating this concept. 
-
-Therefore, a flexible integration architecture based on universally
-applicable  Electronic  Control  Units  (ECUs)  is  needed  to  assure
-the  feasibility  of  software  components  on  the  above  mentioned
-affected heterogeneous devices. In this paper, a new approach on
-implementing and testing of such an architecture will be outlined.
-Plug-and-Play functionality shall be provided by a homogeneous,
-virtualized software-platform (L4 microkernel-based hypervisor)
-for heterogeneous hardware devices. Due to virtualization, former
-fixed  hardware/software-bindings  will  vanish  and  give  way  to
-a  flexible  management  of  separated  container,  each  providing
-secure access to software-based functionality. The hereby enabled
-context-sensitive reaction behaviour (e.g. en-/disabling, migrating
-or  upgrading/updating  of  software-based  functions)  will  have  to
-be tested in a virtual field test environment to ensure the retention
-of  the  required  automotive  degree  of  safety  and  reliability.
-%See~\autoref{tab:sample}, \autoref{fig:sample-drawing}, \autoref{fig:sample-plot}, \autoref{fig:sample-listing}.
-
-
+Cooperative Intelligent Transport Systems (C-ITS) is a current research field, aiming to connect vehicles, mobile devices, traffic and transportation infrastructure\cite{kia4sm}. The KIA4SM project wants to achieve cooperative behavior between independently designed and running systems participating in traffic. Therefore it is not inevitable to change each participating system to make communication possible, rather it is desired to generate a single platform for different devices, which could be solved by Plug-and-Play properties. In this case, device independent actions and dynamic reconfiguration at runtime are going to be the use case, for demonstrating this concept. In order to integrate these diverse components, Electronic Control Units are being used to achieve a flexible integration architecture. 
+The paper \cite{kia4sm}, presents a new approach on implementing and testing of the described system.
+The project results are, it is possible to lower down the boundaries of each participating component, by the integration architecture will be replaced by a cooperative and scalable system concept. 
+Desired communication between traffic participants could have the ability to create a safer and more economical future with regard to the traffic. 
