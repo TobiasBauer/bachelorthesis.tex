@@ -4,7 +4,7 @@
 
 \chapter{Implementation}\label{chapter:Implementation}
 The subsequent chapter is going to give a detailed view of how the methods described in section \ref{chapter:Concept}, were implemented. 
-As the Android-application described in passage \ref{chapter:Integration into existing App} was used as a basis, there is no reasonable alternative to further developing the app with Android Studio.
+As the Android-application described in passage \ref{chapter:Integration into existing App} was used as a basis, there is no reasonable alternative to further developing the app with Android Studio. All source code is available at GitHub\footnote{\url{https://github.com/TobiasBauer/androidsigndetection}}.
 \section{Development preliminary}
 Before the development begins, a phone has to be specified and general informations about native development are given.
 \subsection{Target device}
@@ -71,8 +71,8 @@ Nevertheless filtering red pixels from our preferred colourspace works slightly 
 
 
 \lstset{style=custompy}
-\begin{minipage}{\linewidth}
-\begin{lstlisting}[language=python]
+\begin{minipage}{0.95\linewidth}
+\begin{lstlisting}[language=python,  caption={Preprocessing image before HoughCircles}, label={lst:prehough},captionpos=b]
 hsv_image = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 lower_red = cv2.inRange(hsv_image, (0, 100, 100), (10, 255, 255))
 upper_red = cv2.inRange(hsv_image, (160, 100, 100), (179, 255, 255))
@@ -90,8 +90,8 @@ At first ranges of HSV values have been extracted, that are considered to be red
 %	\endminipage\hfill
 %\end{figure}
 
-\begin{minipage}{\linewidth}
-\begin{lstlisting}[language=python]
+\begin{minipage}{0.95\linewidth}
+\begin{lstlisting}[language=python, caption={Running Circle Hough Transform and extracting circles}, label={lst:hough},captionpos=b]
 circles = cv2.HoughCircles(red_combined, cv2.HOUGH_GRADIENT, 1, (red_combined.shape[0]) / 2, param1=100, param2=20, minRadius=10, maxRadius=0)
 if circles is not None:
 	circles = np.uint16(np.around(circles))
@@ -168,8 +168,8 @@ TensorFlow™ is an open source software library for numerical computation using
 %	\caption{Neural Net Model in Python}\label{fig:NNmodelPyth}
 %	\endminipage\hfill
 %\end{figure}
-\begin{minipage}{\linewidth}
-\begin{lstlisting}[language=python]
+\begin{minipage}{0.95\linewidth}
+\begin{lstlisting}[language=python,  caption={Creating Neural Network}, label={lst:createnn},captionpos=b]
 def neural_network_model(data):
 	hidden_layer_1 = {'weights': tf.Variable(tf.random_normal([input_size, n_nodes_hl1])), 'biases': tf.Variable(tf.random_normal([n_nodes_hl1]))}
 	hidden_layer_2 = {'weights': tf.Variable(tf.random_normal([n_nodes_hl1, n_nodes_hl2])), 'biases': tf.Variable(tf.random_normal([n_nodes_hl2]))}
@@ -200,8 +200,8 @@ Cropping every number manually would not have been too efficient, also not neces
 There are diverse mechanics to import data, for training purposes, but the recommended technique is to use a TFRecord file\footnote{\url{https://www.tensorflow.org/programmers\_guide/datasets} (visited on 02.14.2018)} that holds the image's data, including the encoded pixel values, labels, names or in fact every meta data needed or wanted. To give an idea of what a TFRecord file looks like inside, an extraction of the training data has been provided in Listing: \ref{lst:tfrecord}. There can be seen a TFRecord file containing one image that is labeled as 80, it should also be noted, the "image/encoded" value has been shortened, to consume less space in this listing, in fact in the real file, this part is considerably longer.\newline 
 As mentioned before, two different data sets were demanded. So with the help of a little script, that basically traverses every sub folder of a given folder, encodes and adds every image and it's inherent meta data to the TFRecord. After processing every wanted image, the resulting TFRecord file is being saved and can now be used for further steps of feeding it's held data into a NN. 
 
-\begin{minipage}{\linewidth}
-\begin{lstlisting}[language=python, caption={Minimized Excerpt of a  TFRecord file}, label={lst:tfrecord},captionpos=b]
+\begin{minipage}{0.95\linewidth}
+\begin{lstlisting}[language=python,  caption={Shortened TFRecord file containing one image with meta data}, label={lst:tfrecord},captionpos=b]
 features {
 	feature {
 		key: "image/class/label"
@@ -246,7 +246,25 @@ A tf.Session object encapsulates the environment in which Operation objects are 
 
 \subsection{Training and saving}
 Before feeding data to the Network, a batch carrying them has to be loaded, in form of Tensors, or arrays. To achieve this, the TFRecord file, created before was read from, the image and the corresponding label decoded and converted into a numpy arrays. Then each individual pixel is transformed from uint8 range of [0; 255] to a float range [-0.5; 0.5] and reshaped from 20 by 20 to 1 by 400, in order to fulfill the demands of the ANN. After having the images ready to hand, a Session is created and it is possible to run this Session for training purposes, but before doing so, a cost and optimizing function have to be specified. Now, finally the training loop can be started, with as many iterations as wanted. After the main loop, a validation batch with different data, than the ones used to train the NN can be created to check the accuracy of the now trained net. \newline
-To keep the freshly gained variables, before mentioned tf.Saver class is being applied to the session, resulting in four different files created in the specified directory: a checkpoint, .data, .meta and .index file. 
- 
+To keep the freshly gained variables, before mentioned tf.train.Saver\footnote{\url{https://www.tensorflow.org/api\_docs/python/tf/train/Saver} (visited on 02.14.2018)} class is being applied to the session, it's save method results in four different files created in the specified directory: a checkpoint, .data, .meta and .index file. These files contain every information needed to build the graph again, but a convenient step to just using the model, for example in the app, is to freeze the whole model. For this purpose, an outstanding description and script was presented by Morgan Giraud \footnote{\url{https://goo.gl/LxFBn8} (visited on 02.14.2018)}. Freezing the graph brings up a protobuf file (.pb), that can be imported from programs easily, by just loading this file. After restoring the graph, it is finally able to do predictions. Frozen graphs can also be visualized by TensorBoard (Figure:\ref{tensorboard})
 
+\subsection{Inference}
+Before doing predictions, few little steps have to be performed
+\newline
+
+\begin{minipage}{0.95\linewidth}
+	
+	\begin{lstlisting}[language=python, caption={Simplified excerpt of runinference.py}, label={lst:runinference},captionpos=b]
+	graph = load_graph(args.frozen_model_filename)
+	image_path = args.image
+	x = graph.get_tensor_by_name('prefix/input:0')
+	y = graph.get_tensor_by_name('prefix/Add_2:0')
+	with tf.Session(graph=graph) as sess:
+		im = cv2.imread(image_path, 0)
+		ten = np.reshape(im, (400,))
+		ten1 = ten / 255 - 0.5	
+		y_out = sess.run(y, feed_dict={x: [ten1]})
+	\end{lstlisting}
+	
+\end{minipage}
 

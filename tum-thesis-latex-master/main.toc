@@ -86,14 +86,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.3.4}Training and saving}{34}{subsection.7.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Evaluation}{35}{chapter.8}
+\contentsline {subsection}{\numberline {7.3.5}Inference}{34}{subsection.7.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Section}{35}{section.8.1}
+\contentsline {chapter}{\numberline {8}Evaluation}{36}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1.1}Subsection}{35}{subsection.8.1.1}
+\contentsline {section}{\numberline {8.1}Section}{36}{section.8.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{36}{chapter*.25}
+\contentsline {subsection}{\numberline {8.1.1}Subsection}{36}{subsection.8.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{38}{chapter*.26}
+\contentsline {chapter}{\nonumberline List of Figures}{37}{chapter*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{39}{chapter*.27}
+\contentsline {chapter}{\nonumberline List of Tables}{39}{chapter*.26}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Bibliography}{40}{chapter*.27}
