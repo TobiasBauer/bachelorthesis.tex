@@ -34,7 +34,7 @@ As the purpose of addressing this work, was to highlight the Computer Vision asp
 	\minipage{0.33\textwidth}%
 	\includegraphics[width=\linewidth]{images/zynq2.png}
 	\caption{}\label{fig:zynq2}
-	\endminipage
+	\endminipage\hfill
 	\newline
 	\minipage{0.33\textwidth}
 	\includegraphics[width=\linewidth]{images/zynq3.png}
@@ -63,7 +63,7 @@ It is also pointed out, each method has its pros and cons. While color based tec
 J. Stallkamp, M. Schlipsing, J. Salmen and C. Igel wrote their paper \cite{machinelearning}, in order to give a brief overview of the machine learning algorithms in the field of traffic sign recognition, with regard to the classification. \newline
 They point out, that some subsets of classes are
 very similar to each other (e.g., speed limit signs). In addition to these interclass differences and similarities, the classifier must be able to handle different optical appearances, like changes in lighting, partial occlusions, rotations and diverse other irregularities. In 2011 a competition named: "IEEE Joint
-Conference on Neural Networks" (IJCNN) \cite{ijcnn} took place, in order to compare pattern recognition and machine learning approaches. Over 20 participating teams competed against each other, with the following approaches: different kinds of neural
+Conference on Neural Networks" (IJCNN) \footnote{\url{http://benchmark.ini.rub.de./} (visited on 02.14.2018)} took place, in order to compare pattern recognition and machine learning approaches. Over 20 participating teams competed against each other, with the following approaches: different kinds of neural
 networks (NN), support vector machines (SVMs), linear discriminant analysis, subspace analysis, ensemble classifiers, slow feature analysis, nearest neighbor classifiers and random forests. \newline
 The first and the second place were won by classifiers both using convolutional Nerual Networks, the third place was won by a random forest technique approach, paired with a Support Vector Machine. Notably, in the course of the competition, a human's performance on single framed image recognition was tested, as comparison, resulting in a score of 98.84\% correctly recognized images. In contrast to this result, the first place, utilizing a multi-column deep neural network (MCDNN) scored a total of 99.46\%, therefore beeing even better than a real person. 
 
@@ -141,5 +141,6 @@ training happened only with positive samples, created by hand cropped images. Af
 Though when the task is to classify an image, convolutional neural networks can be considered being state of the art right now, there are a lot of other kinds of networks, like autoencoder networks \cite{bengio}. However this special architecture aims to transform the input values, but keeps the format, therefore the input and output neurons have to be the same quantity. This makes the ANN unsuitable for tasks like classifications.\newline
 Shallow ANN, only have one hidden Layer inside, nevertheless, they can also be used for tasks like classifying traffic signs. Tran, Hai S. ran such a network on an Android phone scoring a 84\% success rate on detecting the signs\cite{tran}. Considering there was only one hidden layer used with 100 neurons, this can actually be considered a pretty decent result.
 
+\newpage
 \section{Conclusion}
 As from subsection \ref{ssec:machinelearning} emerges, artificial neural networks (ANN) play an important role in classifying images and their performance seems to be overwhelming, because these approaches are even capable of outperforming human image classification. So the direction for the following project was set towards a neural network based system. Though convolutional are often the architecture of choice, they require a decent amount of computing power provided by the hardware, like in subsection \ref{ssec:koreancnn}. Furthermore given the task of only classifying numbers, a more simple network, could also be sufficient. Regarding these aspects, the choice was made to utilize a deep but not convolutional ANN, with respect to the more or less minimalistic circumstances of using an Android powered device.

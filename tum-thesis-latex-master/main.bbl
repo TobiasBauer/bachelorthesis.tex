@@ -19,46 +19,7 @@
 
 \refsection{0}
   \sortlist[entry]{nty/global/}
-    \entry{darpa2007}{online}{}
-      \field{sortinit}{}
-      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
-      \verb{url}
-      \verb http://archive.darpa.mil/grandchallenge/
-      \endverb
-    \endentry
-    \entry{sigmoid}{online}{}
-      \field{sortinit}{}
-      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
-      \verb{url}
-      \verb https://i.stack.imgur.com/t2mC3.png
-      \endverb
-    \endentry
-    \entry{10kmh}{online}{}
-      \field{sortinit}{}
-      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
-      \verb{url}
-      \verb https://upload.wikimedia.org/wikipedia/commons/1/1f/Fu%C3%9Fg%C3%A4nger_10_kmh.jpg
-      \endverb
-    \endentry
-    \entry{analogyneurons}{online}{}
-      \field{sortinit}{A}
-      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
-      \field{labeltitlesource}{title}
-      \field{title}{Analogy-between-artificial-neuron-and-biological-neuron}
-      \verb{url}
-      \verb https://www.researchgate.net/profile/Carmen_Galan2/publication/7947079/figure/fig1/AS:277631451844608@1443203904065/Fig-1-Analogy-between-artificial-neuron-and-biological-neuron.png
-      \endverb
-    \endentry
-    \entry{androidndk}{online}{}
-      \field{sortinit}{A}
-      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
-      \field{labeltitlesource}{title}
-      \field{title}{Android NDK info}
-      \verb{url}
-      \verb https://developer.android.com/ndk/index.html
-      \endverb
-    \endentry
-    \entry{bengio}{article}{}
+    \entry{bengio}{book}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=40a8e4774982146adc2688546f54efb2}{%
            family={Bengio},
@@ -202,32 +163,24 @@
       \endverb
       \keyw{Color image segmentation,Color representations,Color space transformations,Neural networks,Thresholding,Clustering,Edge detection,Region-based approach,Physics based approach,Fuzzy logic}
     \endentry
-    \entry{hough2}{online}{}
-      \field{sortinit}{C}
-      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
-      \field{labeltitlesource}{title}
-      \field{title}{Circle Hough Transform explained}
-      \verb{url}
-      \verb http://www.aishack.in/static/img/tut/circlehough_explanation.jpg
-      \endverb
-    \endentry
-    \entry{houghcircles}{online}{}
-      \field{sortinit}{c}
-      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
-      \field{labeltitlesource}{title}
-      \field{title}{cv2.HoughCircles() documentation}
-      \verb{url}
-      \verb https://docs.opencv.org/2.4/modules/imgproc/doc/feature_detection.html?highlight=houghcircles#houghcircles
-      \endverb
-    \endentry
-    \entry{darpa2004}{article}{}
+    \entry{darpa2007}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=4dfc523f0e64c3d37b27e3b43b3f5f20}{%
+           family={DARPA},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{4dfc523f0e64c3d37b27e3b43b3f5f20}
+      \strng{fullhash}{4dfc523f0e64c3d37b27e3b43b3f5f20}
+      \strng{authornamehash}{4dfc523f0e64c3d37b27e3b43b3f5f20}
+      \strng{authorfullhash}{4dfc523f0e64c3d37b27e3b43b3f5f20}
       \field{sortinit}{D}
       \field{sortinithash}{d10b5413de1f3d197b20897dd0d565bb}
-      \field{labeltitlesource}{title}
-      \field{title}{DARPA Grand Challenge 2004}
-      \verb{url}
-      \verb https://www.darpa.mil/attachments/TestimonyArchived(March%2025%202004).pdf
-      \endverb
+      \field{labelnamesource}{author}
+      \field{note}{Urban Challenge 2007 Available at \url{http://archive.darpa.mil/grandchallenge/}}
+      \field{urlday}{14}
+      \field{urlmonth}{2}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
     \endentry
     \entry{deep-learning-methods}{report}{}
       \name{author}{2}{}{%
@@ -258,7 +211,11 @@
       \field{month}{5}
       \field{title}{Deep Learning: Methods and Applications}
       \field{type}{techreport}
+      \field{urlday}{14}
+      \field{urlmonth}{2}
+      \field{urlyear}{2018}
       \field{year}{2014}
+      \field{urldateera}{ce}
       \field{pages}{199\bibrangedash 200}
       \range{pages}{2}
       \verb{url}
@@ -330,15 +287,6 @@
       \endverb
       \keyw{Computational modeling;Computer simulation;Contracts;Equations;Information systems;Laboratories;Mechanical factors;Organizing;TV;Tellurium;Time measurement;Transforms}
     \endentry
-    \entry{ffnn}{online}{}
-      \field{sortinit}{F}
-      \field{sortinithash}{276475738cc058478c1677046f857703}
-      \field{labeltitlesource}{title}
-      \field{title}{Feed Forward Neural Network}
-      \verb{url}
-      \verb https://www.researchgate.net/profile/Ramon_Quiza/publication/234055140/figure/fig2/AS:299964002521096@1448528399250/Figure-42-Graph-of-a-feed-forward-neural-network.png
-      \endverb
-    \endentry
     \entry{hebb}{book}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=6639fff05eeeb17ee7a4dba102b4dd06}{%
@@ -358,24 +306,6 @@
       \field{title}{The Organization of Behavior}
       \field{year}{1949}
       \field{dateera}{ce}
-    \endentry
-    \entry{hsv}{online}{}
-      \field{sortinit}{H}
-      \field{sortinithash}{2f664b453ec75da1fe3804ca92633405}
-      \field{labeltitlesource}{title}
-      \field{title}{HSV colour space}
-      \verb{url}
-      \verb https://edoras.sdsu.edu/doc/matlab/toolbox/images/color11.html
-      \endverb
-    \endentry
-    \entry{ijcnn}{online}{}
-      \field{sortinit}{I}
-      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
-      \field{labeltitlesource}{title}
-      \field{title}{ICJNN with results}
-      \verb{url}
-      \verb http://benchmark.ini.rub.de./
-      \endverb
     \endentry
     \entry{nntutorial}{article}{}
       \name{author}{3}{}{%
@@ -567,15 +497,6 @@
       \endverb
       \keyw{Algorithm design and analysis;Decision trees;Feature extraction;Machine learning algorithms;Niobium;Training;Data mining;Decision tree learning;Feature evaluation;Image classification;Machine learning}
     \endentry
-    \entry{mnist}{online}{}
-      \field{sortinit}{M}
-      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
-      \field{labeltitlesource}{title}
-      \field{title}{MNIST dataset}
-      \verb{url}
-      \verb http://yann.lecun.com/exdb/mnist/
-      \endverb
-    \endentry
     \entry{moglemose}{article}{}
       \name{author}{3}{}{%
         {{uniquename=0,hash=d6c448d481da7f4f33a557c5d264aea3}{%
@@ -646,22 +567,17 @@
       \endverb
       \keyw{Computers;Data mining;Films;Heating;Integrated circuits;Microwave amplifiers;Silicon}
     \endentry
-    \entry{rnn}{online}{}
-      \field{sortinit}{R}
-      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
+    \entry{houghcircles}{online}{}
+      \field{sortinit}{O}
+      \field{sortinithash}{f5d80ef71b5b58852663ecfd775b175a}
       \field{labeltitlesource}{title}
-      \field{title}{Recurrent Neural Network}
+      \field{title}{OpenCV Hough Circles documentation}
+      \field{urlday}{14}
+      \field{urlmonth}{2}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
       \verb{url}
-      \verb https://www.researchgate.net/profile/Ramon_Quiza/publication/234055140/figure/fig3/AS:299964002521099@1448528399394/Figure-43-Graph-of-a-recurrent-neural-network.png
-      \endverb
-    \endentry
-    \entry{hough3}{online}{}
-      \field{sortinit}{R}
-      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
-      \field{labeltitlesource}{title}
-      \field{title}{Result of Circle Hough Transorm}
-      \verb{url}
-      \verb http://www.aishack.in/static/img/tut/hough_circle.jpg
+      \verb https://docs.opencv.org/2.4/modules/imgproc/doc/feature_detection.html?highlight=houghcircles#houghcircles
       \endverb
     \endentry
     \entry{zynq}{inproceedings}{}
@@ -696,24 +612,6 @@
       \verb 10.1109/INDIN.2013.6622951
       \endverb
       \keyw{filtering theory;image classification;image colour analysis;public domain software;road vehicles;system-on-chip;traffic engineering computing;FMC slot;OpenCV-based road sign recognition;UK road sign database;Xilinx Zynq-7020 chip;Zedboard;Zynq PL section;autonomous vehicles;color-based image filtering;driver assistance systems;filtered image shape classification;image preprocessing functions;image scanning;on-semiconductor VITA-2000 sensor;real-time system-on-chip-based approach;road sign identification;road sign maintenance;template matching function;Field programmable gate arrays;Hardware;Image color analysis;Image segmentation;Roads;Shape;Software}
-    \endentry
-    \entry{hough0}{online}{}
-      \field{sortinit}{S}
-      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
-      \field{labeltitlesource}{title}
-      \field{title}{Sample circles for describing Circle Hough Transform}
-      \verb{url}
-      \verb http://www.aishack.in/static/img/tut/circles.gif
-      \endverb
-    \endentry
-    \entry{hough1}{online}{}
-      \field{sortinit}{S}
-      \field{sortinithash}{3c1547c63380458f8ca90e40ed14b83e}
-      \field{labeltitlesource}{title}
-      \field{title}{Sample edge detetction for describing Circle Hough Transform}
-      \verb{url}
-      \verb http://www.aishack.in/static/img/tut/circle_edges.jpg
-      \endverb
     \endentry
     \entry{darpa2005}{article}{}
       \name{author}{3}{}{%
@@ -833,40 +731,29 @@
       \endverb
       \keyw{Machine learning algorithms;Neural networks;Real-time systems;Special issues and sections}
     \endentry
-    \entry{tensorflowcore}{online}{}
+    \entry{darpa2004}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=82491cddfc1b176d176a6fd8efdc4197}{%
+           family={Tether},
+           familyi={T\bibinitperiod},
+           given={Dr.\bibnamedelimi Tony},
+           giveni={D\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{82491cddfc1b176d176a6fd8efdc4197}
+      \strng{fullhash}{82491cddfc1b176d176a6fd8efdc4197}
+      \strng{authornamehash}{82491cddfc1b176d176a6fd8efdc4197}
+      \strng{authorfullhash}{82491cddfc1b176d176a6fd8efdc4197}
       \field{sortinit}{T}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Tensorflow core Github repository}
+      \field{title}{statement on DARPA Grand Challenge 2004}
+      \field{urlday}{14}
+      \field{urlmonth}{2}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
       \verb{url}
-      \verb https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core
-      \endverb
-    \endentry
-    \entry{tensorflowdata}{online}{}
-      \field{sortinit}{T}
-      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
-      \field{labeltitlesource}{title}
-      \field{title}{Tensorflow feed input manual}
-      \verb{url}
-      \verb https://www.tensorflow.org/programmers_guide/datasets
-      \endverb
-    \endentry
-    \entry{tensorflow}{online}{}
-      \field{sortinit}{T}
-      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
-      \field{labeltitlesource}{title}
-      \field{title}{Tensorflow homepage}
-      \verb{url}
-      \verb https://www.tensorflow.org/
-      \endverb
-    \endentry
-    \entry{tensorflowsession}{online}{}
-      \field{sortinit}{T}
-      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
-      \field{labeltitlesource}{title}
-      \field{title}{Tensorflow session manual}
-      \verb{url}
-      \verb https://www.tensorflow.org/api_docs/python/tf/Session
+      \verb https://www.darpa.mil/attachments/TestimonyArchived(March%2025%202004).pdf
       \endverb
     \endentry
     \entry{tran}{online}{}
@@ -884,6 +771,10 @@
       \field{sortinit}{T}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
       \field{labelnamesource}{author}
+      \field{urlday}{14}
+      \field{urlmonth}{2}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
       \verb{url}
       \verb https://www.researchgate.net/publication/311540973_Traffic_Sign_Recognition_system_on_Android_devices
       \endverb

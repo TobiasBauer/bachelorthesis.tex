@@ -27,17 +27,18 @@
 \BOOKMARK [2][-]{subsection.5.2.1}{Model}{section.5.2}% 27
 \BOOKMARK [0][-]{chapter.6}{Integration into existing Android App}{}% 28
 \BOOKMARK [0][-]{chapter.7}{Implementation}{}% 29
-\BOOKMARK [1][-]{section.7.1}{Target device}{chapter.7}% 30
-\BOOKMARK [1][-]{section.7.2}{Native Development Kit}{chapter.7}% 31
-\BOOKMARK [1][-]{section.7.3}{Extracting Speed Sign Candidates}{chapter.7}% 32
-\BOOKMARK [1][-]{section.7.4}{Neural Net Classification}{chapter.7}% 33
-\BOOKMARK [2][-]{subsection.7.4.1}{Building Neural Network with Tensorflow}{section.7.4}% 34
-\BOOKMARK [2][-]{subsection.7.4.2}{Preparing training data}{section.7.4}% 35
-\BOOKMARK [2][-]{subsection.7.4.3}{Tensorflow Sessions}{section.7.4}% 36
-\BOOKMARK [2][-]{subsection.7.4.4}{Training and saving}{section.7.4}% 37
-\BOOKMARK [0][-]{chapter.8}{Evaluation}{}% 38
-\BOOKMARK [1][-]{section.8.1}{Section}{chapter.8}% 39
-\BOOKMARK [2][-]{subsection.8.1.1}{Subsection}{section.8.1}% 40
-\BOOKMARK [0][-]{chapter*.25}{List of Figures}{}% 41
-\BOOKMARK [0][-]{chapter*.26}{List of Tables}{}% 42
-\BOOKMARK [0][-]{chapter*.27}{Bibliography}{}% 43
+\BOOKMARK [1][-]{section.7.1}{Development preliminary}{chapter.7}% 30
+\BOOKMARK [2][-]{subsection.7.1.1}{Target device}{section.7.1}% 31
+\BOOKMARK [2][-]{subsection.7.1.2}{Native Development Kit}{section.7.1}% 32
+\BOOKMARK [1][-]{section.7.2}{Detection}{chapter.7}% 33
+\BOOKMARK [1][-]{section.7.3}{Classification}{chapter.7}% 34
+\BOOKMARK [2][-]{subsection.7.3.1}{Building Neural Network with Tensorflow}{section.7.3}% 35
+\BOOKMARK [2][-]{subsection.7.3.2}{Preparing training data}{section.7.3}% 36
+\BOOKMARK [2][-]{subsection.7.3.3}{Tensorflow Sessions}{section.7.3}% 37
+\BOOKMARK [2][-]{subsection.7.3.4}{Training and saving}{section.7.3}% 38
+\BOOKMARK [0][-]{chapter.8}{Evaluation}{}% 39
+\BOOKMARK [1][-]{section.8.1}{Section}{chapter.8}% 40
+\BOOKMARK [2][-]{subsection.8.1.1}{Subsection}{section.8.1}% 41
+\BOOKMARK [0][-]{chapter*.25}{List of Figures}{}% 42
+\BOOKMARK [0][-]{chapter*.26}{List of Tables}{}% 43
+\BOOKMARK [0][-]{chapter*.27}{Bibliography}{}% 44

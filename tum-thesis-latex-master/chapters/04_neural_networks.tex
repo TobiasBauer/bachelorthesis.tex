@@ -7,20 +7,22 @@ The subsequent section gives a brief introduction to artificial neural networks,
 \subsection{General}
 Artificial neural networks, or simply neural networks, are special kinds of computing systems that are inspired by the functionality of biological neural networks, for Example, the brains of mammals'. ANN are important representatives or techniques for modern artificial intelligence, although the idea of NN is not as new as the recent hype around them, seen in the last couple years might indicate. Actually, the beginning of artificial neural networks points back to the end of the 1940s, when D.O. Hebb created Hypothesis on neural plasticity \cite{hebb}. These theories where actually being executed on digital calculators later by Farley an Clark in 1954 \cite{farleyclark}. Today's networks are, speaking on a very high level,  trained by feeding data and telling them what the corresponding output should look like. \newline
 So what has changed over the last couple of years, increasing the importance of NN, is the massive amount of new data and a general increase in computing power \cite{moore}, these two major advantages over the earlier years, may have been contributed to the recent increasing spread of artificial neural networks, regarding the field of image recognition.
-
+\newpage
 \begin{figure}[H]
 	\centering
-	\minipage{0.49\textwidth}
+	\minipage{0.5\textwidth}
 	\includegraphics[height=4cm]{images/Fig-1-Analogy-between-artificial-neuron-and-biological-neuron.png}
-	\caption{Biological and artificial neuron \cite{analogyneurons}}
+	\caption{Biological and artificial neuron\protect\footnotemark}
 	\label{fig:artifical_and_biological}
 	\endminipage\hfill
-	\minipage{0.46\textwidth}
+	\minipage{0.47\textwidth}
 	\includegraphics[height=4cm]{images/artificial_neuron.png}
 	\caption{Single artificial neuron model}
 	\label{fig:artificial_neuron}
 	\endminipage
 \end{figure}
+\footnotetext{\url{https://goo.gl/QqycYK} (visited on 02.14.2018)
+}
 
 \subsection{Neurons}
 An artificial neuron is basically a mathematic function, aimed to imitate biological neurons.
@@ -48,11 +50,11 @@ S(x) = \frac{e^x}{e^x + 1} = \frac{1}{1 + e^{-x}}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{images/sigmoid.png}
-	\caption{Sigmoid function with bias weight: 5 (blue), 0 (green), -5 (red){\cite{sigmoid}}}
+	\caption{Sigmoid function with bias weight: 5 (blue), 0 (green), -5 (red)\protect\footnotemark}
 	\label{fig:sigmoid}
-	
 \end{figure}
 
+\footnotetext{\url{https://i.stack.imgur.com/t2mC3.png} (visited on 02.14.2018)}
 
 \subsection{From neurons To networks}
 Feeding a signal or data through a neuron and transporting resulting output further to the next neuron(s) can be called a network. Now as the major purpose of artificial neural networks is to process any sort of data given to the ANN and produce some sort of output. Consequently, a model needs to have two different kinds of interfaces for importing and exporting data. \newline
@@ -68,14 +70,18 @@ In contrast to this, recurrent neural networks are slightly more complex than FF
 	
 	\minipage{0.45\textwidth}
 	\includegraphics[height=3.5cm]{images/feed_forward_neural_net.png}
-	\caption{Feed forward neural network \cite{ffnn}}
+	\caption{Feed forward neural network\protect\footnotemark}
 	\label{fig:ff_neural_net}
 	\endminipage
 	\hfill
 	\minipage{0.5\textwidth}
 	\includegraphics[height=3cm]{images/recurrent_neural_net.png}
-	\caption{Recurrent neural network \cite{rnn}}
+	\caption{Recurrent neural network\protect\footnotemark }
 	\label{fig:rec_neural_net}
 	\endminipage
+	
 \end{figure}
-
+\setcounter{footnote}{3}
+\footnotetext{\url{https://goo.gl/KbqZDe} (visited on 02.14.2018)}
+\setcounter{footnote}{4}
+\footnotetext{\url{https://goo.gl/Kaqs45} (visited on 02.14.2018)}

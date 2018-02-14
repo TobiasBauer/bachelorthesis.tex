@@ -3,10 +3,11 @@
 
 
 \chapter{Implementation}\label{chapter:Implementation}
-The subsequent chapter is going to give a detailed view of how the methods described in section \ref{chapter:Concept}, were implemented. Moreover, possible problems regarding the process are listed. 
+The subsequent chapter is going to give a detailed view of how the methods described in section \ref{chapter:Concept}, were implemented. 
 As the Android-application described in passage \ref{chapter:Integration into existing App} was used as a basis, there is no reasonable alternative to further developing the app with Android Studio.
-
-\section{Target device}
+\section{Development preliminary}
+Before the development begins, a phone has to be specified and general informations about native development are given.
+\subsection{Target device}
 As target device, the mid-range phone Huawei P8 Lite ALE-L21 is going to be used (Figure: \ref{fig:p8lite}), with the phone specifications seen in Table \ref{table:specifications}.
 \begin{table}[h]
 	\begin{tabular}{|p{0.3\linewidth} || p{0.58\linewidth}|}
@@ -28,22 +29,25 @@ As target device, the mid-range phone Huawei P8 Lite ALE-L21 is going to be used
 		Video & 1080p@30fps \\
 		\hline
 	\end{tabular}
-	\caption{Specifications}
+	\caption{Specifications\protect\footnotemark}
 	\label{table:specifications}
 \end{table}
+\footnotetext{\url{https://www.androidcentral.com/huawei-p8-lite-specs} (visited on 02.14.2018)}
+\newpage
 \begin{figure}[h]
 	\centering
 	\minipage{0.35\textwidth}
 	\includegraphics[width=\linewidth]{images/p8lite.jpg}
-	\caption{Huawei P8 Lite ALE-L21}\label{fig:p8lite}
+	\caption{Huawei P8 Lite ALE-L21\protect\footnotemark}\label{fig:p8lite}
 	\endminipage\hfill
 \end{figure}
+\footnotetext{\url{https://goo.gl/Kgx4if} (visited on 02.14.2018)}
 
-\section{Native Development Kit}
-The Android NDK is a toolset that lets you implement parts of your app in native code, using languages such as C and C++. For certain types of apps, this can help to reuse code libraries written in those languages \cite{androidndk}. Moreover employing the Native Development Kit to the application's code can increase the performance significantly  \cite{ndkspeed}. Anticipated using the Native Kit might have a bigger workload, than Android's classic SDK, was considered just fine, if the performance was superiorly compared to the approach written in Java. \newline
+\subsection{Native Development Kit}
+The Android NDK is a toolset that lets you implement parts of your app in native code, using languages such as C and C++. For certain types of apps, this can help to reuse code libraries written in those languages\footnote{\url{https://developer.android.com/ndk/index.html} (visited on 02.14.2018)}. Moreover employing the Native Development Kit to the application's code can increase the performance significantly  \cite{ndkspeed}. Anticipated using the Native Kit might have a bigger workload, than Android's classic SDK, was considered just fine, if the performance was superiorly compared to the approach written in Java. \newline
 The first part, dealing with the detection of Speed Signs, doing image processing with OpenCV,  was relatively simple in C++, compared to the mammoth task of building Tensorflow from source, loading a model and integrating everything into the actual app. It actually was so time-consuming, it looked like it could not be done on schedule. A lack of supporting features like code completion and code correction in Android Studio, poor documentation from Tensorflow (at least for novices to the framework) paired with proportionally sparse discussion board entries on "Stack Overflow", that often referenced different versions, led to the turning point, where the NDK was given up for the SDK. In total, this excursion cost about one to two weeks of time, that had been reserved for the implementation. 
 
-\section{Extracting Speed Sign Candidates}\label{extraction}
+\section{Detection}\label{extraction}
 The algorithm has been implemented in three languages: C++, Java and Python, every language serving different purposes. C++ and Java versions were necessary to operate for the application, first one running the Native approach, the second for the "standard" SDK version. The last program written in Python has been utilized for extracting data from images collected from Google image search, running on PC, in order to get training data to feed my Neural Network model (more about this topic later on). Nevertheless, apart from syntactical differences, every program basically does the same operations. For the sake of simplicity, only the python variation is going to be examined, as it is probably the easiest version to read. Every step of image processing in every language has been done with the OpenCV library. \newline
 After reading the image, changing the colour space from RGB/BGR to HSL/HSV is optional, but a reasonable step, because in the RGB/BGR space, all three Values of red, green and blue are correlated when it comes to changes in brightness \cite{imagesegmentation}. Unlike that, HSL/HSV holds lightness or the value of brightness in a separate variable, which can lead to better results with respect to filtering colours under alternating lighting conditions. In the following, the HSV space is going to be used, even though HSL space is defined almost analogical, they differentiate each other from the arrangement of white color \cite{zynq}. \newline
 
@@ -51,9 +55,10 @@ After reading the image, changing the colour space from RGB/BGR to HSL/HSV is op
 	\centering
 	\minipage{0.5\textwidth}
 	\includegraphics[width=\linewidth]{images/hsv.jpg}
-	\caption{HSV colourspace \cite{hsv}}\label{fig:hsv}
+	\caption{HSV colourspace\protect\footnotemark}\label{fig:hsv}
 	\endminipage\hfill
 \end{figure}
+\footnotetext{\url{https://edoras.sdsu.edu/doc/matlab/toolbox/images/color11.html} (visited on 02.14.2018)}
 
 
 Nevertheless filtering red pixels from our preferred colourspace works slightly different than just excerpting the Red channel of an image, as it would be done using RGB:
@@ -109,11 +114,11 @@ In order to crop the input image, the x- and y- coordinates of the cropping wind
 	\minipage[t]{0.33\textwidth}%
 	\includegraphics[width=\linewidth]{images/101.jpg}
 	
-	\caption{Original Image}\label{fig:original_image}
+	\caption{Original Image\protect\footnotemark}\label{fig:original_image}
 	\endminipage\hfill
 	\minipage[t]{0.33\textwidth}
 	\includegraphics[width=\linewidth]{images/lowerred.png}
-	\caption{Lower red hue pixels}\label{fig:lower_red}
+	\caption{Lower red \newline hue pixels}\label{fig:lower_red}
 	\endminipage\hfill
 	\minipage[t]{0.33\textwidth}%
 	\includegraphics[width=\linewidth]{images/upperred.png}
@@ -135,6 +140,7 @@ In order to crop the input image, the x- and y- coordinates of the cropping wind
 	\endminipage
 	
 \end{figure}
+\footnotetext{\url{https://goo.gl/Q6doij} (visited on 02.14.2018)}
 
 \begin{figure}[H]
 	\minipage[t]{0.49\textwidth}%
@@ -149,11 +155,11 @@ In order to crop the input image, the x- and y- coordinates of the cropping wind
 	
 \end{figure}
 
-\section{Neural Net Classification}
+\section{Classification}
 Hypothetically speaking, above excerpt image(s) only needs to be filled into a tensor, fed into the model and subsequent the result(s) need to be fetched. Though, getting to this point, there needs to be done several work, regarding the Neural Network.  
 
 \subsection{Building Neural Network with Tensorflow}
-TensorFlow™ is an open source software library for numerical computation using data flow graphs. Nodes in the graph represent mathematical operations, while the graph edges represent the multidimensional data arrays (tensors) communicated between them. \cite{tensorflow} When it comes to building models on a PC, Tensorflow's C++, Go, Java or Python API could be used, although the core is programmed in C++ \cite{tensorflowcore}. It was decided to use the Python API for the project, because again this language was considered to be the easiest choice. \newline
+TensorFlow™ is an open source software library for numerical computation using data flow graphs\footnote{\url{https://www.tensorflow.org/} (visited on 02.14.2018)}. Nodes in the graph represent mathematical operations, while the graph edges represent the multidimensional data arrays (tensors) communicated between them. When it comes to building models on a PC, Tensorflow's C++, Go, Java or Python API could be used, although the core is programmed in C++\footnote{\url{https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core} (visited on 02.14.2018)}. It was decided to use the Python API for the project, because again this language was considered to be the easiest choice. \newline
 
 % \begin{figure}[H]
 %	\centering
@@ -191,7 +197,7 @@ As the Artificial Neural Network uses some data, to be trained in order to run c
 Cropping every number manually would not have been too efficient, also not necessarily precise, so a Python script was written, having the core functionality described in section \ref{extraction}, with the extension of traversing every folder hold by the "image" directory, executing the algorithm and finally saving the resulting image sections into the "cropped" directory to the corresponding folder. At last an inspection of the results had to be done by hand, since the algorithm from \ref{extraction} searches for red circles, at least some false positives could be expected. Examining the freshly filled folders, every image not containing proper values of speed signs was cut and pasted to the "nosign" folder, frames containing numbers, but badly displayed were deleted to prevent the Network from being trained in the wrong direction. In total, 222 images could be used for further training. Additionally the amount of processed pictures was separated into training and validation data, to check whether the ANN works correctly. Overall 39 images were selected to operated as test data, remaining 183 were actually used in order to practice. 
 
 \subsubsection{Creating TfRecord file}
-There are diverse mechanics to import data, for training purposes, but the recommended technique is to use a TFRecord file \cite{tensorflowdata} that holds the image's data, including the encoded pixel values, labels, names or in fact every meta data needed or wanted. To give an idea of what a TFRecord file looks like inside, an extraction of the training data has been provided in Listing: \ref{lst:tfrecord}. There can be seen a TFRecord file containing one image that is labeled as 80, it should also be noted, the "image/encoded" value has been shortened, to consume less space in this listing, in fact in the real file, this part is considerably longer.\newline 
+There are diverse mechanics to import data, for training purposes, but the recommended technique is to use a TFRecord file\footnote{\url{https://www.tensorflow.org/programmers\_guide/datasets} (visited on 02.14.2018)} that holds the image's data, including the encoded pixel values, labels, names or in fact every meta data needed or wanted. To give an idea of what a TFRecord file looks like inside, an extraction of the training data has been provided in Listing: \ref{lst:tfrecord}. There can be seen a TFRecord file containing one image that is labeled as 80, it should also be noted, the "image/encoded" value has been shortened, to consume less space in this listing, in fact in the real file, this part is considerably longer.\newline 
 As mentioned before, two different data sets were demanded. So with the help of a little script, that basically traverses every sub folder of a given folder, encodes and adds every image and it's inherent meta data to the TFRecord. After processing every wanted image, the resulting TFRecord file is being saved and can now be used for further steps of feeding it's held data into a NN. 
 
 \begin{minipage}{\linewidth}
@@ -236,7 +242,7 @@ features {
 \end{minipage}
 
 \subsection{Tensorflow Sessions}
-A Session object encapsulates the environment in which Operation objects are executed, and Tensor objects are evaluated\cite{tensorflowsession}. A session owns resources like Variables, in given case, all weights and biases are stored in a session, moreover if they change, say during the process of training, the current values are enclosed by the Session. In order to safe the current state of the graph, Tensorflow provides the Saver class, that allows easy saving of the whole session informations. 
+A tf.Session object encapsulates the environment in which Operation objects are executed, and Tensor objects are evaluated\footnote{\url{https://www.tensorflow.org/api\_docs/python/tf/Session} (visited on 02.14.2018)}. A session owns resources like Variables, in given case, all weights and biases are stored in a session, moreover if they change, say during the process of training, the current values are enclosed by the Session. In order to safe the current state of the graph, Tensorflow provides the Saver class, that allows easy saving of the whole session informations. 
 
 \subsection{Training and saving}
 Before feeding data to the Network, a batch carrying them has to be loaded, in form of Tensors, or arrays. To achieve this, the TFRecord file, created before was read from, the image and the corresponding label decoded and converted into a numpy arrays. Then each individual pixel is transformed from uint8 range of [0; 255] to a float range [-0.5; 0.5] and reshaped from 20 by 20 to 1 by 400, in order to fulfill the demands of the ANN. After having the images ready to hand, a Session is created and it is possible to run this Session for training purposes, but before doing so, a cost and optimizing function have to be specified. Now, finally the training loop can be started, with as many iterations as wanted. After the main loop, a validation batch with different data, than the ones used to train the NN can be created to check the accuracy of the now trained net. \newline
