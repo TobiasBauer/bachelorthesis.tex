@@ -4,8 +4,8 @@
 \chapter{Evaluation}\label{chapter:Evaluation}
 This chapter is going to demonstrate the functionality of the trained ANN, also it is going to be explained, why there was no part about running the model on Android. After 250000 epochs of training, the NN had an accuracy of 100\% in classifying the validation images correctly, though this result should be treated with caution, as the amount of 39 test images might not be that significant. Furthermore these pictures did not exhibit any issues regarding the lighting. 
 
-\section{Showcase}
-To present some case to be shown, related image was chosen to demonstrate "runinference.py" with the related image (Figure: \ref{fig:802}), worth mentioning, the network has never seen this picture before, as it was separated into the validations folder, before the actual training began. Running the program with mentioned image results in the output seen in Figure: \ref{fig:programout}. Ignoring the output information about the Tensorflow binary, the output Tensor is printed and it's eighth score is the highest, fortunately. Additionally the translation from the highest scoring index to the corresponding image tells everything went well. 
+\section{Showcase}\label{sec:showcase}
+To present some case to be shown, related image was chosen to demonstrate "runinference.py" with the related image (Figure: \ref{fig:802}), worth mentioning, the network has never seen this picture before, as it was separated into the validations folder, before the actual training began. Running the program with mentioned image results in the output seen in Figure: \ref{fig:programout}. Ignoring the output information about the Tensorflow binary, the output Tensor is printed and it's eighth score is the highest, fortunately. Additionally the translation from the highest scoring index to the corresponding image indicates everything went well. 
 
 \begin{figure}[H]
 	\centering
@@ -29,5 +29,5 @@ Unfortunately, due to unforeseeable circumstances, the correct implementation on
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{images/screenshotfun.png}
-	\caption{Screenshot of the app running detection}\label{fig:screenfun}
+	\caption{Screenshot of the app running detection on camera mode}\label{fig:screenfun}
 \end{figure}

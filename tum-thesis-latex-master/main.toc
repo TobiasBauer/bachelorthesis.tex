@@ -94,8 +94,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.2}Transition to Android}{38}{section.8.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{40}{chapter*.29}
+\contentsline {chapter}{\numberline {9}Limitations}{40}{chapter.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{42}{chapter*.30}
+\contentsline {chapter}{\numberline {10}Future work}{41}{chapter.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{43}{chapter*.31}
+\contentsline {chapter}{\numberline {11}Conclusion}{42}{chapter.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Figures}{43}{chapter*.29}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Tables}{45}{chapter*.30}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Bibliography}{46}{chapter*.31}

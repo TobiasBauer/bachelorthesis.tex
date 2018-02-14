@@ -12,21 +12,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Concept \cite {zynq}\relax }}{5}{figure.caption.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces \relax }}{7}{figure.caption.4}
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces HSV\relax }}{7}{figure.caption.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces \relax }}{7}{figure.caption.4}
+\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Thresholded\relax }}{7}{figure.caption.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces \relax }}{7}{figure.caption.4}
+\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Grayscale\relax }}{7}{figure.caption.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces \relax }}{7}{figure.caption.4}
+\contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Canny\relax }}{7}{figure.caption.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.6}{\ignorespaces \relax }}{7}{figure.caption.4}
+\contentsline {figure}{\numberline {\relax 3.6}{\ignorespaces Filled\relax }}{7}{figure.caption.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.7}{\ignorespaces \relax }}{7}{figure.caption.4}
+\contentsline {figure}{\numberline {\relax 3.7}{\ignorespaces Extracted\relax }}{7}{figure.caption.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.8}{\ignorespaces Steps of processing the image \cite {zynq}\relax }}{7}{figure.caption.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 3.9}{\ignorespaces Applied Convolutional Neural Network \cite {tsrcnn}\relax }}{10}{figure.caption.6}
+\contentsline {figure}{\numberline {\relax 3.8}{\ignorespaces Applied Convolutional Neural Network \cite {tsrcnn}\relax }}{10}{figure.caption.6}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -62,13 +60,13 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Main screen\relax }}{23}{figure.caption.16}
+\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Main screen\relax }}{24}{figure.caption.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Load\newline Image\relax }}{23}{figure.caption.16}
+\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Load Image\relax }}{24}{figure.caption.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces About \newline infos\relax }}{23}{figure.caption.16}
+\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces About infos\relax }}{24}{figure.caption.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 6.4}{\ignorespaces New \newline tile\relax }}{23}{figure.caption.16}
+\contentsline {figure}{\numberline {\relax 6.4}{\ignorespaces Added tile\relax }}{24}{figure.caption.16}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -101,5 +99,11 @@
 \contentsline {figure}{\numberline {\relax 8.2}{\ignorespaces Test picture 802(0).jpeg\relax }}{38}{figure.caption.27}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 8.3}{\ignorespaces Screenshot of the app running detection\relax }}{39}{figure.caption.28}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
