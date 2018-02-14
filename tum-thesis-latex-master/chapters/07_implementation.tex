@@ -118,7 +118,7 @@ In order to crop the input image, the x- and y- coordinates of the cropping wind
 	\endminipage\hfill
 	\minipage[t]{0.33\textwidth}
 	\includegraphics[width=\linewidth]{images/lowerred.png}
-	\caption{Lower red \newline hue pixels}\label{fig:lower_red}
+	\caption{Lower red hue pixels}\label{fig:lower_red}
 	\endminipage\hfill
 	\minipage[t]{0.33\textwidth}%
 	\includegraphics[width=\linewidth]{images/upperred.png}
@@ -246,11 +246,17 @@ A tf.Session object encapsulates the environment in which Operation objects are 
 
 \subsection{Training and saving}
 Before feeding data to the Network, a batch carrying them has to be loaded, in form of Tensors, or arrays. To achieve this, the TFRecord file, created before was read from, the image and the corresponding label decoded and converted into a numpy arrays. Then each individual pixel is transformed from uint8 range of [0; 255] to a float range [-0.5; 0.5] and reshaped from 20 by 20 to 1 by 400, in order to fulfill the demands of the ANN. After having the images ready to hand, a Session is created and it is possible to run this Session for training purposes, but before doing so, a cost and optimizing function have to be specified. Now, finally the training loop can be started, with as many iterations as wanted. After the main loop, a validation batch with different data, than the ones used to train the NN can be created to check the accuracy of the now trained net. \newline
-To keep the freshly gained variables, before mentioned tf.train.Saver\footnote{\url{https://www.tensorflow.org/api\_docs/python/tf/train/Saver} (visited on 02.14.2018)} class is being applied to the session, it's save method results in four different files created in the specified directory: a checkpoint, .data, .meta and .index file. These files contain every information needed to build the graph again, but a convenient step to just using the model, for example in the app, is to freeze the whole model. For this purpose, an outstanding description and script was presented by Morgan Giraud \footnote{\url{https://goo.gl/LxFBn8} (visited on 02.14.2018)}. Freezing the graph brings up a protobuf file (.pb), that can be imported from programs easily, by just loading this file. After restoring the graph, it is finally able to do predictions. Frozen graphs can also be visualized by TensorBoard (Figure:\ref{tensorboard})
+To keep the freshly gained variables, before mentioned tf.train.Saver\footnote{\url{https://www.tensorflow.org/api\_docs/python/tf/train/Saver} (visited on 02.14.2018)} class is being applied to the session, it's save method results in four different files created in the specified directory: a checkpoint, .data, .meta and .index file. These files contain every information needed to build the graph again, but a convenient step to just using the model, for example in the app, is to freeze the whole model. For this purpose, an outstanding description and script was presented by Morgan Giraud \footnote{\url{https://goo.gl/LxFBn8} (visited on 02.14.2018)}. Freezing the graph brings up a protobuf file (.pb), that can be imported from programs easily, by just loading this file. After restoring the graph, it is finally able to do predictions. Frozen graphs can also be visualized by TensorBoard (Figure:\ref{fig:tensorboard})
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/tensorboard.png}
+	\caption{Tensorboard graph visualization}\label{fig:tensorboard}
+\end{figure}
 
 \subsection{Inference}
-Before doing predictions, few little steps have to be performed
-\newline
+Before doing predictions, few little steps have to be performed, starting with loading the graph, defined by the handed over input parameter "frozen\_model\_filename"(Listing: \ref{lst:runinference} line: 1). The load\_graph function can be found in the full script. The image directory, wanted to be classified is handed over by the "image" parameter. Now the input and output Tensors are loaded from the graph(Listing: \ref{lst:runinference} line: 3-4), their names can be determined from the Tensorboard output(Figure:\ref{fig:tensorboard}). After a new session is initialized, the picture is actually loaded from the before specified path, reshaped and transformed into the desired format(Listing: \ref{lst:runinference} line: 6-8). Now the the "Session.run" function is called and the result stored in the "y\_out" variable. After running "y\_out" is a filled Tensor with ten values of type double, the positions in the Tensor are distributed as following: ["10km/h", 20km/h, ..., 90km/h, "nosign"]. The highest scoring number can be considered the output of the prediction. 
 
 \begin{minipage}{0.95\linewidth}
 	
@@ -267,4 +273,6 @@ Before doing predictions, few little steps have to be performed
 	\end{lstlisting}
 	
 \end{minipage}
+
+
 
