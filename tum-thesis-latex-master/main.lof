@@ -42,63 +42,65 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Concept visualized\relax }}{17}{figure.caption.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Original image\footnotemark \relax }}{18}{figure.caption.11}
+\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Component diagram\relax }}{18}{figure.caption.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces Filtered Image\relax }}{18}{figure.caption.11}
+\contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces Original image\footnotemark \relax }}{19}{figure.caption.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces Detected image\relax }}{18}{figure.caption.11}
+\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces Filtered Image\relax }}{19}{figure.caption.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 5.5}{\ignorespaces Binary image\footnotemark \relax }}{20}{figure.caption.13}
+\contentsline {figure}{\numberline {\relax 5.5}{\ignorespaces Detected sign\relax }}{19}{figure.caption.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 5.6}{\ignorespaces Edge detected\footnotemark \relax }}{20}{figure.caption.13}
+\contentsline {figure}{\numberline {\relax 5.6}{\ignorespaces Binary image\footnotemark \relax }}{20}{figure.caption.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 5.7}{\ignorespaces Voting process visualized\footnotemark \relax }}{20}{figure.caption.13}
+\contentsline {figure}{\numberline {\relax 5.7}{\ignorespaces Edge detected\footnotemark \relax }}{20}{figure.caption.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 5.8}{\ignorespaces Voted image\footnotemark \relax }}{20}{figure.caption.13}
+\contentsline {figure}{\numberline {\relax 5.8}{\ignorespaces Voting process visualized\footnotemark \relax }}{20}{figure.caption.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 5.9}{\ignorespaces Simplified representation of the Neural Network Model \relax }}{22}{figure.caption.15}
+\contentsline {figure}{\numberline {\relax 5.9}{\ignorespaces Voted image\footnotemark \relax }}{20}{figure.caption.14}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Main screen\relax }}{24}{figure.caption.16}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Load Image\relax }}{24}{figure.caption.16}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces About infos\relax }}{24}{figure.caption.16}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 6.4}{\ignorespaces Added tile\relax }}{24}{figure.caption.16}
+\contentsline {figure}{\numberline {\relax 5.10}{\ignorespaces Simplified representation of the Neural Network Model \relax }}{22}{figure.caption.16}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.1}{\ignorespaces Huawei P8 Lite ALE-L21\footnotemark \relax }}{26}{figure.caption.18}
+\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Main screen\relax }}{23}{figure.caption.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.2}{\ignorespaces HSV colourspace\footnotemark \relax }}{27}{figure.caption.19}
+\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Load Image\relax }}{23}{figure.caption.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.3}{\ignorespaces Original Image\footnotemark \relax }}{29}{figure.caption.20}
+\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces About infos\relax }}{23}{figure.caption.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.4}{\ignorespaces Lower red hue pixels\relax }}{29}{figure.caption.20}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.5}{\ignorespaces Upper red hue pixels\relax }}{29}{figure.caption.20}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.6}{\ignorespaces Upper and lower pixels combined\relax }}{29}{figure.caption.20}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.7}{\ignorespaces Gaussian Blurred\relax }}{29}{figure.caption.20}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.8}{\ignorespaces Marked circle in original image\relax }}{29}{figure.caption.20}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.9}{\ignorespaces Cropped image\relax }}{30}{figure.caption.21}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.10}{\ignorespaces Cropped and converted image\relax }}{30}{figure.caption.21}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.11}{\ignorespaces Tensorboard graph visualization\relax }}{35}{figure.caption.25}
+\contentsline {figure}{\numberline {\relax 6.4}{\ignorespaces Added tile\relax }}{23}{figure.caption.17}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 8.1}{\ignorespaces Test picture 802(0).jpeg\relax }}{37}{figure.caption.26}
+\contentsline {figure}{\numberline {\relax 7.1}{\ignorespaces Huawei P8 Lite ALE-L21\footnotemark \relax }}{25}{figure.caption.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 8.2}{\ignorespaces Test picture 802(0).jpeg\relax }}{38}{figure.caption.27}
+\contentsline {figure}{\numberline {\relax 7.2}{\ignorespaces HSV colourspace\footnotemark \relax }}{26}{figure.caption.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 8.3}{\ignorespaces Screenshot of the app running detection\relax }}{39}{figure.caption.28}
+\contentsline {figure}{\numberline {\relax 7.3}{\ignorespaces Original Image\footnotemark \relax }}{28}{figure.caption.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 7.4}{\ignorespaces Lower red hue pixels\relax }}{28}{figure.caption.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 7.5}{\ignorespaces Upper red hue pixels\relax }}{28}{figure.caption.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 7.6}{\ignorespaces Upper and lower pixels combined\relax }}{28}{figure.caption.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 7.7}{\ignorespaces Gaussian Blurred\relax }}{28}{figure.caption.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 7.8}{\ignorespaces Marked circle in original image\relax }}{28}{figure.caption.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 7.9}{\ignorespaces Cropped image\relax }}{29}{figure.caption.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 7.10}{\ignorespaces Cropped and converted image\relax }}{29}{figure.caption.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 7.11}{\ignorespaces Tensorboard graph visualization of the ANN\relax }}{34}{figure.caption.26}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 8.1}{\ignorespaces Test picture 802(0).jpeg\relax }}{36}{figure.caption.27}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 8.2}{\ignorespaces Test picture 802(0).jpeg\relax }}{37}{figure.caption.28}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 8.3}{\ignorespaces Screenshot of the app running detection on camera mode\relax }}{38}{figure.caption.29}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

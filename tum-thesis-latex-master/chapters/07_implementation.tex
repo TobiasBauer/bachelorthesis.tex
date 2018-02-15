@@ -3,12 +3,12 @@
 
 
 \chapter{Implementation}\label{chapter:Implementation}
-The subsequent chapter is going to give a detailed view of how the methods described in section \ref{chapter:Concept}, were implemented. 
-As the Android-application described in passage \ref{chapter:Integration into existing App} was used as a basis, there is no reasonable alternative to further developing the app with Android Studio. All source code is available at GitHub\footnote{\url{https://github.com/TobiasBauer/androidsigndetection}}.
+The subsequent chapter is going to give a detailed view of how the methods described in chapter \ref{chapter:Concept}, were implemented. 
+As the Android-application described in passage \ref{chapter:Integration into existing App} was used as a basis, there is no reasonable alternative to further developing the app with Android Studio. All source code shown is available at GitHub\footnote{\url{https://github.com/TobiasBauer/androidsigndetection}}.
 \section{Development preliminary}
-Before the development begins, a phone has to be specified and general informations about native development are given.
+Before the development begins, a phone has to be specified and general information about native development is given.
 \subsection{Target device}
-As target device, the mid-range phone Huawei P8 Lite ALE-L21 is going to be used (Figure: \ref{fig:p8lite}), with the phone specifications seen in Table \ref{table:specifications}.
+As the target device, the mid-range phone Huawei P8 Lite ALE-L21 is going to be used (Figure: \ref{fig:p8lite}), with the phone specifications seen in Table \ref{table:specifications}.
 \begin{table}[h]
 	\begin{tabular}{|p{0.3\linewidth} || p{0.58\linewidth}|}
 		\hline
@@ -48,8 +48,8 @@ The Android NDK is a toolset that lets you implement parts of your app in native
 The first part, dealing with the detection of Speed Signs, doing image processing with OpenCV,  was relatively simple in C++, compared to the mammoth task of building Tensorflow from source, loading a model and integrating everything into the actual app. It actually was so time-consuming, it looked like it could not be done on schedule. A lack of supporting features like code completion and code correction in Android Studio, poor documentation from Tensorflow (at least for novices to the framework) paired with proportionally sparse discussion board entries on "Stack Overflow", that often referenced different versions, led to the turning point, where the NDK was given up for the SDK. In total, this excursion cost about one to two weeks of time, that had been reserved for the implementation. 
 
 \section{Detection}\label{extraction}
-The algorithm has been implemented in three languages: C++, Java and Python, every language serving different purposes. C++ and Java versions were necessary to operate for the application, first one running the Native approach, the second for the "standard" SDK version. The last program written in Python has been utilized for extracting data from images collected from Google image search, running on PC, in order to get training data to feed my Neural Network model (more about this topic later on). Nevertheless, apart from syntactical differences, every program basically does the same operations. For the sake of simplicity, only the python variation is going to be examined, as it is probably the easiest version to read. Every step of image processing in every language has been done with the OpenCV library. \newline
-After reading the image, changing the colour space from RGB/BGR to HSL/HSV is optional, but a reasonable step, because in the RGB/BGR space, all three Values of red, green and blue are correlated when it comes to changes in brightness \cite{imagesegmentation}. Unlike that, HSL/HSV holds lightness or the value of brightness in a separate variable, which can lead to better results with respect to filtering colours under alternating lighting conditions. In the following, the HSV space is going to be used, even though HSL space is defined almost analogical, they differentiate each other from the arrangement of white color \cite{zynq}. \newline
+The algorithm has been implemented in three languages: C++, Java and Python, every language serving different purposes. C++ and Java versions were necessary to operate for the application, first, one running the Native approach, the second for the "standard" SDK version. The last program written in Python has been utilized for extracting data from images collected from Google image search, running on PC, in order to get training data to feed my Neural Network model (more about this topic later on). Nevertheless, apart from syntactical differences, every program basically does the same operations. For the sake of simplicity, only the python variation is going to be examined, as it is probably the easiest version to read. Every step of image processing in every language has been done with the OpenCV library. \newline
+After reading the image, changing the colour space from RGB/BGR to HSL/HSV is optional, but a reasonable step, because in the RGB/BGR space, all three Values of red, green and blue are correlated when it comes to changes in brightness \cite{imagesegmentation}. Unlike that, HSL/HSV holds lightness or the value of brightness in a separate variable, which can lead to better results with respect to filtering colours under alternating lighting conditions. In the following, the HSV (Figure: \ref{fig:hsv}) space is going to be used, even though HSL space is defined almost analogical, they differentiate each other from the arrangement of white colour \cite{zynq}. \newline
 
 \begin{figure}[H]
 	\centering
@@ -61,54 +61,54 @@ After reading the image, changing the colour space from RGB/BGR to HSL/HSV is op
 \footnotetext{\url{https://edoras.sdsu.edu/doc/matlab/toolbox/images/color11.html} (visited on 02.14.2018)}
 
 
-Nevertheless filtering red pixels from our preferred colourspace works slightly different than just excerpting the Red channel of an image, as it would be done using RGB:
+Nevertheless filtering red pixels from our preferred colourspace works slightly different than just excerpting the red channel of an image, as it would be done using RGB:
 %\begin{figure}[H]
-%	\minipage{\textwidth}
-%	\includegraphics[width=\linewidth]{images/filterredimage.jpg}
-%	\caption{Python code for extracting red pixels}\label{fig:filter_red_code}
-%	\endminipage\hfill
+%    \minipage{\textwidth}
+%    \includegraphics[width=\linewidth]{images/filterredimage.jpg}
+%    \caption{Python code for extracting red pixels}\label{fig:filter_red_code}
+%    \endminipage\hfill
 %\end{figure}
 
 
 \lstset{style=custompy}
 \begin{minipage}{0.95\linewidth}
-\begin{lstlisting}[language=python,  caption={Preprocessing image before HoughCircles}, label={lst:prehough},captionpos=b]
-hsv_image = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
-lower_red = cv2.inRange(hsv_image, (0, 100, 100), (10, 255, 255))
-upper_red = cv2.inRange(hsv_image, (160, 100, 100), (179, 255, 255))
-red_combined = cv2.addWeighted(lower_red, 1.0, upper_red, 1.0, 0.0)
-red_combined = cv2.GaussianBlur(red_combined, (9, 9), 2, 2)
-\end{lstlisting}
+	\begin{lstlisting}[language=python,  caption={Preprocessing image before HoughCircles}, label={lst:prehough},captionpos=b]
+	hsv_image = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+	lower_red = cv2.inRange(hsv_image, (0, 100, 100), (10, 255, 255))
+	upper_red = cv2.inRange(hsv_image, (160, 100, 100), (179, 255, 255))
+	red_combined = cv2.addWeighted(lower_red, 1.0, upper_red, 1.0, 0.0)
+	red_combined = cv2.GaussianBlur(red_combined, (9, 9), 2, 2)
+	\end{lstlisting}
 \end{minipage}
 
 At first ranges of HSV values have been extracted, that are considered to be red. This is done in two slices, for the upper range (Figure: \ref{fig:lower_red}), and one for the lower (Figure: \ref{fig:upper_red}). After these two slices are combined into one single binary image (Figure: \ref{fig:combined}), the Gaussian Blur filter is executed (Figure: \ref{fig:combined_blurred}) on the image, to prepare it for the Circle Hough transform, in order to avoid false positive circles.\newline
- 
+
 %\begin{figure}[H]
-%	\minipage{\textwidth}
-%	\includegraphics[width=\linewidth]{images/detectioncode.png}
-%	\caption{Code for performing Circle Hough Transform}\label{fig:detection_code}
-%	\endminipage\hfill
+%    \minipage{\textwidth}
+%    \includegraphics[width=\linewidth]{images/detectioncode.png}
+%    \caption{Code for performing Circle Hough Transform}\label{fig:detection_code}
+%    \endminipage\hfill
 %\end{figure}
 
 \begin{minipage}{0.95\linewidth}
-\begin{lstlisting}[language=python, caption={Running Circle Hough Transform and extracting circles}, label={lst:hough},captionpos=b]
-circles = cv2.HoughCircles(red_combined, cv2.HOUGH_GRADIENT, 1, (red_combined.shape[0]) / 2, param1=100, param2=20, minRadius=10, maxRadius=0)
-if circles is not None:
+	\begin{lstlisting}[language=python, caption={Running Circle Hough Transform and extracting circles}, label={lst:hough},captionpos=b]
+	circles = cv2.HoughCircles(red_combined, cv2.HOUGH_GRADIENT, 1, (red_combined.shape[0]) / 2, param1=100, param2=20, minRadius=10, maxRadius=0)
+	if circles is not None:
 	circles = np.uint16(np.around(circles))
 	for i in circles[0, :]:
-		x1 = i[1] - i[2]
-		x2 = i[1] + i[2]
-		y1 = i[0] - i[2]
-		y2 = i[0] + i[2]
-		cropped = img[x1: x2, y1: y2]
-		img2020 = cv2.resize(cropped, (20, 20))
-		hsv_chans = cv2.split(img2020)
-		_, binary_image_cropped = cv2.threshold(hsv_chans[2], 150, 255, cv2.THRESH_BINARY)
-\end{lstlisting}
+	x1 = i[1] - i[2]
+	x2 = i[1] + i[2]
+	y1 = i[0] - i[2]
+	y2 = i[0] + i[2]
+	cropped = img[x1: x2, y1: y2]
+	img2020 = cv2.resize(cropped, (20, 20))
+	hsv_chans = cv2.split(img2020)
+	_, binary_image_cropped = cv2.threshold(hsv_chans[2], 150, 255, cv2.THRESH_BINARY)
+	\end{lstlisting}
 \end{minipage}
 
-When executing the HoughCircles Function \cite{houghcircles}, the result is passed to the circles variable, this function returns all found circles, described with an array of [x-coordinate, y-coordinate, radius],  after checking whether any circles were found, these values only have to be rounded to integer. Looping  over the array containing triplets, delivers every found circle. \newline
-In order to crop the input image, the x- and y- coordinates of the cropping window are being calculated, this window can be described by the coordinates of two edges. After actually cropping the image this section is resized to the desired 20 by 20 pixels format (Figure: \ref{fig:2020}). Then this sub picture is converted from coloured to binary format (Figure: \ref{fig:2020bin}). Now the image is actually ready, to be passed to the Neural Network. It should be noted, there can be multiple candidates in one image that need to be passed further.   
+When executing the HoughCircles Function \cite{houghcircles}, the result is passed to the circles variable, this function returns all found circles, described with an array of [x-coordinate, y-coordinate, radius],  after checking whether any circles were found, these values only have to be rounded to an integer. Looping over the array containing triplets delivers every found circle. \newline
+In order to crop the input image, the x- and y- coordinates of the cropping window are being calculated, this window can be described by the coordinates of two edges. After actually cropping the image this section is resized to the desired 20 by 20 pixels format (Figure: \ref{fig:2020}). Then this sub-picture is converted from coloured to binary format (Figure: \ref{fig:2020bin}). Now the image is actually ready, to be passed to the Neural Network. It should be noted, there can be multiple candidates in one image that need to be passed further.   
 
 \begin{figure}[H]
 	\minipage[t]{0.33\textwidth}%
@@ -156,21 +156,21 @@ In order to crop the input image, the x- and y- coordinates of the cropping wind
 \end{figure}
 
 \section{Classification}
-Hypothetically speaking, above excerpt image(s) only needs to be filled into a tensor, fed into the model and subsequent the result(s) need to be fetched. Though, getting to this point, there needs to be done several work, regarding the Neural Network.  
+Hypothetically speaking, above excerpt image(s) only needs to be filled into a tensor, fed into the model and subsequent the result(s) need to be fetched. Though, getting to this point, there needs to be done several works, regarding the Neural Network.  
 
 \subsection{Building Neural Network with Tensorflow}
-TensorFlow™ is an open source software library for numerical computation using data flow graphs\footnote{\url{https://www.tensorflow.org/} (visited on 02.14.2018)}. Nodes in the graph represent mathematical operations, while the graph edges represent the multidimensional data arrays (tensors) communicated between them. When it comes to building models on a PC, Tensorflow's C++, Go, Java or Python API could be used, although the core is programmed in C++\footnote{\url{https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core} (visited on 02.14.2018)}. It was decided to use the Python API for the project, because again this language was considered to be the easiest choice. \newline
+TensorFlow™ is an open source software library for numerical computation using data flow graphs\footnote{\url{https://www.tensorflow.org/} (visited on 02.14.2018)}. Nodes in the graph represent mathematical operations, while the graph edges represent the multidimensional data arrays (tensors) communicated between them. When it comes to building models on a PC, Tensorflow's C++, Go, Java or Python API could be used, although the core is programmed in C++\footnote{\url{https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core} (visited on 02.14.2018)}. It was decided to use the Python API for the project because again this language was considered to be the simplest choice. \newline
 
 % \begin{figure}[H]
-%	\centering
-%	\minipage{\textwidth}
-%	\includegraphics[width=\linewidth]{images/neuralnetmodelcode.png}
-%	\caption{Neural Net Model in Python}\label{fig:NNmodelPyth}
-%	\endminipage\hfill
+%    \centering
+%    \minipage{\textwidth}
+%    \includegraphics[width=\linewidth]{images/neuralnetmodelcode.png}
+%    \caption{Neural Net Model in Python}\label{fig:NNmodelPyth}
+%    \endminipage\hfill
 %\end{figure}
 \begin{minipage}{0.95\linewidth}
-\begin{lstlisting}[language=python,  caption={Creating Neural Network}, label={lst:createnn},captionpos=b]
-def neural_network_model(data):
+	\begin{lstlisting}[language=python,  caption={Creating Neural Network}, label={lst:createnn},captionpos=b]
+	def neural_network_model(data):
 	hidden_layer_1 = {'weights': tf.Variable(tf.random_normal([input_size, n_nodes_hl1])), 'biases': tf.Variable(tf.random_normal([n_nodes_hl1]))}
 	hidden_layer_2 = {'weights': tf.Variable(tf.random_normal([n_nodes_hl1, n_nodes_hl2])), 'biases': tf.Variable(tf.random_normal([n_nodes_hl2]))}
 	output_layer = {'weights': tf.Variable(tf.random_normal([n_nodes_hl2, n_classes])), 'biases': tf.Variable(tf.random_normal([n_classes]))}
@@ -183,80 +183,80 @@ def neural_network_model(data):
 	output = tf.add(tf.matmul(l2, output_layer['weights']), output_layer['biases'])
 	
 	return output
-\end{lstlisting}
+	\end{lstlisting}
 \end{minipage}
 
-Obviously, the "data" parameter, given to the neural\_network\_model represents the input tensor, thus it holds every pixel provided by the image. The dictionaries "hidden\_layer\_1", "hidden\_layer\_2" and "output\_layer" hold the weights and biases of the incoming edges, they are all initialized with random values before the training phase. The "tf.add" and "tf.mul" adds, respectively multiplies two tensors. The variables "l1" and "l2" each have two initialization steps, in the first, preceding nodes are multiplied with the corresponding weights and added to it's biases. The second part calls "tf.nn.relu", which is just the activation function used for this network. The "output" variable after all holds and returns the final output tensor. 
+Obviously, the "data" parameter, given to the neural\_network\_model represents the input tensor, thus it holds every pixel provided by the image. The dictionaries "hidden\_layer\_1", "hidden\_layer\_2" and "output\_layer" hold the weights and biases of the incoming edges, they are all initialized with random values before the training phase. The "tf.add" and "tf.mul" adds, respectively multiplies two tensors. The variables "l1" and "l2" each have two initialization steps, in the first, preceding nodes are multiplied with the corresponding weights and added to its biases. The second part calls "tf.nn.relu", which is just the activation function used for this network. The "output" variable after all holds and returns the final output tensor. 
 
 \subsection{Preparing training data}
-\subsubsection{Collect images}
-As the Artificial Neural Network uses some data, to be trained in order to run correctly, a certain amount of data was needed. Searching for a suitable dataset did not bring the expected results, so it was necessary to create a training dataset. The focus has been set to the scope from 10km/h to 90km/h, so for each individual sign, Google image searches were performed manually, with search terms like "x km/h sign", "tempo x", "speed limit x", ...  To avoid false positive detections, i also searched for some signs with red edges, that did not represent speed limits. A folder, called "images" was created, that contained more folders named: "10", "20", ..., "90", "nosign". For the processed images, a new folder was created called "cropped", containing sub folders ranging from "10" over "90" to "nosign". Described search led to a total of 219 images. 
+\subsubsection{Collecting images}
+As the artificial neural network uses some data, to be trained in order to run correctly, a decent amount of data was needed. Searching for a suitable dataset did not bring the expected results, so it was necessary to create a training dataset. The focus has been set to the scope from 10km/h to 90km/h, so for each individual sign, Google image searches were performed manually, with search terms like "x km/h sign", "tempo x", "speed limit x", ...  To avoid false positive detections, it was also searched for some signs with red edges, that did not represent speed limits. A folder, called "images" was created, that contained more folders named: "10", "20", ..., "90", "nosign". For the processed images, a new folder was created called "cropped", containing subfolders ranging from "10" over "90" to "nosign". The described search led to a total of 219 images. 
 
 
 \subsubsection{Process images}
-Cropping every number manually would not have been too efficient, also not necessarily precise, so a Python script was written, having the core functionality described in section \ref{extraction}, with the extension of traversing every folder hold by the "image" directory, executing the algorithm and finally saving the resulting image sections into the "cropped" directory to the corresponding folder. At last an inspection of the results had to be done by hand, since the algorithm from \ref{extraction} searches for red circles, at least some false positives could be expected. Examining the freshly filled folders, every image not containing proper values of speed signs was cut and pasted to the "nosign" folder, frames containing numbers, but badly displayed were deleted to prevent the Network from being trained in the wrong direction. In total, 222 images could be used for further training. Additionally the amount of processed pictures was separated into training and validation data, to check whether the ANN works correctly. Overall 39 images were selected to operated as test data, remaining 183 were actually used in order to practice. 
+Cropping every number manually would not have been too efficient, also not necessarily precise, so a Python script was written\footnote{https://github.com/TobiasBauer/androidsigndetection/blob/master/(don'tuse)convertImages.py}, having the core functionality described in section \ref{extraction}, with the extension of traversing every folder hold by the "image" directory, executing the algorithm and finally saving the resulting image sections into the "cropped" directory to the corresponding folder. At last, an inspection of the results had to be done by hand, since the algorithm from \ref{extraction} searches for red circles, at least some false positives could be expected. Examining the freshly filled folders, every image not containing proper values of speed signs was cut and pasted to the "nosign" folder, frames containing numbers, but badly displayed were deleted to prevent the Network from being trained in the wrong direction. In total, 222 images could be used for further training. Additionally, the number of processed pictures was separated into training and validation data, to check whether the ANN works correctly. Overall 39 images were selected to operate as test data, remaining 183 were actually used in order to practice. 
 
 \subsubsection{Creating TfRecord file}
-There are diverse mechanics to import data, for training purposes, but the recommended technique is to use a TFRecord file\footnote{\url{https://www.tensorflow.org/programmers\_guide/datasets} (visited on 02.14.2018)} that holds the image's data, including the encoded pixel values, labels, names or in fact every meta data needed or wanted. To give an idea of what a TFRecord file looks like inside, an extraction of the training data has been provided in Listing: \ref{lst:tfrecord}. There can be seen a TFRecord file containing one image that is labeled as 80, it should also be noted, the "image/encoded" value has been shortened, to consume less space in this listing, in fact in the real file, this part is considerably longer.\newline 
-As mentioned before, two different data sets were demanded. So with the help of a little script, that basically traverses every sub folder of a given folder, encodes and adds every image and it's inherent meta data to the TFRecord. After processing every wanted image, the resulting TFRecord file is being saved and can now be used for further steps of feeding it's held data into a NN. 
+There are diverse mechanics to import data, for training purposes, but the recommended technique is to use a TFRecord file\footnote{\url{https://www.tensorflow.org/programmers\_guide/datasets} (visited on 02.14.2018)} that holds the image's data, including the encoded pixel values, labels, names or in fact every metadata needed or wanted. To give an idea of what a TFRecord file looks like inside, an extraction of the training data has been provided in Listing: \ref{lst:tfrecord}. There can be seen a TFRecord file containing one image that is labelled as 80, it should also be noted, the "image/encoded" value has been shortened, to consume less space in this listing, in fact in the real file, this part is considerably longer.\newline 
+As mentioned before, two different data sets were demanded. So with the help of a little script, that basically traverses every subfolder of a given folder, encodes and adds every image and it's inherent metadata to the TFRecord. This was done to the images and the validation folder. After processing every wanted image, the resulting TFRecord file is being saved and can now be used for further steps of feeding it's held data into the NN. 
 
 \begin{minipage}{0.95\linewidth}
-\begin{lstlisting}[language=python,  caption={Shortened TFRecord file containing one image with meta data}, label={lst:tfrecord},captionpos=b]
-features {
+	\begin{lstlisting}[language=python,  caption={Shortened TFRecord file containing one image with meta data}, label={lst:tfrecord},captionpos=b]
+	features {
 	feature {
-		key: "image/class/label"
-		value {
-			int64_list {
-			value: 8
-			}
-		}
+	key: "image/class/label"
+	value {
+	int64_list {
+	value: 8
+	}
+	}
 	}
 	feature {
-		key: "image/class/text"
-		value {
-			bytes_list {
-			value: "80"
-			}
-		}
+	key: "image/class/text"
+	value {
+	bytes_list {
+	value: "80"
+	}
+	}
 	}
 	feature {
-		key: "image/encoded"
-		value {
-			bytes_list {
-			value: "\377\330\377\340\000\020JFIF\000\001\001\...
-			...\241|I\0231\216EGVE\373>\212+\377\331"
-			}
-		}
+	key: "image/encoded"
+	value {
+	bytes_list {
+	value: "\377\330\377\340\000\020JFIF\000\001\001\...
+	...\241|I\0231\216EGVE\373>\212+\377\331"
+	}
+	}
 	}
 	feature {
-		key: "image/filename"
-			value {
-			bytes_list {
-			value: "815(0).jpg"
-			}
-		}
+	key: "image/filename"
+	value {
+	bytes_list {
+	value: "815(0).jpg"
 	}
-}
-
-\end{lstlisting}
+	}
+	}
+	}
+	
+	\end{lstlisting}
 \end{minipage}
-
+\newpage
 \subsection{Tensorflow Sessions}
-A tf.Session object encapsulates the environment in which Operation objects are executed, and Tensor objects are evaluated\footnote{\url{https://www.tensorflow.org/api\_docs/python/tf/Session} (visited on 02.14.2018)}. A session owns resources like Variables, in given case, all weights and biases are stored in a session, moreover if they change, say during the process of training, the current values are enclosed by the Session. In order to safe the current state of the graph, Tensorflow provides the Saver class, that allows easy saving of the whole session informations. 
+A tf.Session object encapsulates the environment in which operation objects are executed, and Tensor objects are evaluated\footnote{\url{https://www.tensorflow.org/api\_docs/python/tf/Session} (visited on 02.14.2018)}. A session owns resources like Variables, in given case, all weights and biases are stored in a session, moreover, if they change, say during the process of training, the current values are enclosed by the Session. In order to save the current state of the graph, Tensorflow provides the tf.train.Saver\footnote{\url{https://www.tensorflow.org/api\_docs/python/tf/train/Saver (visited on 02.14.2018)}} class, that allows easy saving of the whole session information. 
 
 \subsection{Training and saving}
-Before feeding data to the Network, a batch carrying them has to be loaded, in form of Tensors, or arrays. To achieve this, the TFRecord file, created before was read from, the image and the corresponding label decoded and converted into a numpy arrays. Then each individual pixel is transformed from uint8 range of [0; 255] to a float range [-0.5; 0.5] and reshaped from 20 by 20 to 1 by 400, in order to fulfill the demands of the ANN. After having the images ready to hand, a Session is created and it is possible to run this Session for training purposes, but before doing so, a cost and optimizing function have to be specified. Now, finally the training loop can be started, with as many iterations as wanted. After the main loop, a validation batch with different data, than the ones used to train the NN can be created to check the accuracy of the now trained net. \newline
-To keep the freshly gained variables, before mentioned tf.train.Saver\footnote{\url{https://www.tensorflow.org/api\_docs/python/tf/train/Saver} (visited on 02.14.2018)} class is being applied to the session, it's save method results in four different files created in the specified directory: a checkpoint, .data, .meta and .index file. These files contain every information needed to build the graph again, but a convenient step to just using the model, for example in the app, is to freeze the whole model. For this purpose, an outstanding description and script was presented by Morgan Giraud \footnote{\url{https://goo.gl/LxFBn8} (visited on 02.14.2018)}. Freezing the graph brings up a protobuf file (.pb), that can be imported from programs easily, by just loading this file. After restoring the graph, it is finally able to do predictions. Frozen graphs can also be visualized by TensorBoard (Figure:\ref{fig:tensorboard})
+Before feeding data to the Network, a batch carrying them has to be loaded, in form of Tensors, or arrays. To achieve this, the TFRecord file, created before was read from, the image and the corresponding label decoded and converted into a numpy arrays. Then each individual pixel is transformed from uint8 range of [0; 255] to a float range [-0.5; 0.5] and reshaped from 20 by 20 to 1 by 400, in order to fulfil the demands of the ANN. After having the images ready to hand, a session is created and it is possible to run this session for training purposes, but before doing so, a cost and optimizing function have to be specified. Now, finally, the training loop can be started, with as many iterations as wanted. After the main loop, a validation batch with different data, than the ones used to train the NN can be created to check the accuracy of the now trained net. \newline
+To keep the freshly gained variables, before mentioned tf.train.Saver  class is being applied to the session, it's save method results in four different files created in the specified directory: a checkpoint, .data, .meta and .index file. These files contain every information needed to build the graph again, but a convenient step to just using the model, for example in the app, is to freeze the whole model. For this purpose, an outstanding description and script were presented by Morgan Giraud \footnote{\url{https://goo.gl/LxFBn8} (visited on 02.14.2018)}. Freezing the graph brings up a protobuf file (.pb), that can be imported from programs easily, by just loading this file. After restoring the graph, it is finally able to do predictions. Frozen graphs can also be visualized by TensorBoard (Figure:\ref{fig:tensorboard})
 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{images/tensorboard.png}
-	\caption{Tensorboard graph visualization}\label{fig:tensorboard}
+	\caption{Tensorboard graph visualization of the ANN}\label{fig:tensorboard}
 \end{figure}
 
 \subsection{Inference}
-Before doing predictions, few little steps have to be performed, starting with loading the graph, defined by the handed over input parameter "frozen\_model\_filename"(Listing: \ref{lst:runinference} line: 1). The load\_graph function can be found in the full script. The image directory, wanted to be classified is handed over by the "image" parameter. Now the input and output Tensors are loaded from the graph(Listing: \ref{lst:runinference} line: 3-4), their names can be determined from the Tensorboard output(Figure:\ref{fig:tensorboard}). After a new session is initialized, the picture is actually loaded from the before specified path, reshaped and transformed into the desired format(Listing: \ref{lst:runinference} line: 6-8). Now the the "Session.run" function is called and the result stored in the "y\_out" variable. After running "y\_out" is a filled Tensor with ten values of type double, the positions in the Tensor are distributed as following: ["10km/h", 20km/h, ..., 90km/h, "nosign"]. The highest scoring number can be considered the output of the prediction. 
+Before doing predictions, few little steps have to be performed, starting with loading the graph, defined by the handed over input parameter "frozen\_model\_filename" (Listing: \ref{lst:runinference} line: 1). The load\_graph function can be found in the full script. The image directory wanted to be classified is handed over by the "image" parameter. Now the input and output Tensors are loaded from the graph(Listing: \ref{lst:runinference} line: 3-4), their names can be determined from the Tensorboard output (Figure:\ref{fig:tensorboard}). After a new session is initialized, the picture is actually loaded from the before specified path, reshaped and transformed into the desired format(Listing: \ref{lst:runinference} line: 6-8). Now the "Session.run" function is called and the result stored in the "y\_out" variable. After running "y\_out" is a filled Tensor with ten values of type double, the positions in the Tensor are distributed as following: ["10km/h", 20km/h, ..., 90km/h, "nosign"]. The highest scoring number can be considered the output of the prediction. 
 
 \begin{minipage}{0.95\linewidth}
 	
@@ -266,10 +266,10 @@ Before doing predictions, few little steps have to be performed, starting with l
 	x = graph.get_tensor_by_name('prefix/input:0')
 	y = graph.get_tensor_by_name('prefix/Add_2:0')
 	with tf.Session(graph=graph) as sess:
-		im = cv2.imread(image_path, 0)
-		ten = np.reshape(im, (400,))
-		ten1 = ten / 255 - 0.5	
-		y_out = sess.run(y, feed_dict={x: [ten1]})
+	im = cv2.imread(image_path, 0)
+	ten = np.reshape(im, (400,))
+	ten1 = ten / 255 - 0.5    
+	y_out = sess.run(y, feed_dict={x: [ten1]})
 	\end{lstlisting}
 	
 \end{minipage}

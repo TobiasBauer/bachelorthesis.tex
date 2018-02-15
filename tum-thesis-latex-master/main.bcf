@@ -2169,16 +2169,17 @@
     <bcf:citekey order="24">tran</bcf:citekey>
     <bcf:citekey order="25">hebb</bcf:citekey>
     <bcf:citekey order="26">farleyclark</bcf:citekey>
-    <bcf:citekey order="27">moore</bcf:citekey>
-    <bcf:citekey order="28">nntutorial</bcf:citekey>
+    <bcf:citekey order="27">goodfellow</bcf:citekey>
+    <bcf:citekey order="28">moore</bcf:citekey>
     <bcf:citekey order="29">nntutorial</bcf:citekey>
     <bcf:citekey order="30">nntutorial</bcf:citekey>
-    <bcf:citekey order="31">deep-learning-methods</bcf:citekey>
-    <bcf:citekey order="32">circlehough</bcf:citekey>
-    <bcf:citekey order="33">ndkspeed</bcf:citekey>
-    <bcf:citekey order="34">imagesegmentation</bcf:citekey>
-    <bcf:citekey order="35">zynq</bcf:citekey>
-    <bcf:citekey order="36">houghcircles</bcf:citekey>
+    <bcf:citekey order="31">nntutorial</bcf:citekey>
+    <bcf:citekey order="32">deep-learning-methods</bcf:citekey>
+    <bcf:citekey order="33">circlehough</bcf:citekey>
+    <bcf:citekey order="34">ndkspeed</bcf:citekey>
+    <bcf:citekey order="35">imagesegmentation</bcf:citekey>
+    <bcf:citekey order="36">zynq</bcf:citekey>
+    <bcf:citekey order="37">houghcircles</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>
